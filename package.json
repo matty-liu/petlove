@@ -13,5 +13,12 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "webpack": "^3.8.1"
+  },
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.1.x"
+  },
+  "scripts": {
+    "postinstall": "webpack"
   }
 }
