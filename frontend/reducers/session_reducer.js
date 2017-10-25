@@ -6,7 +6,8 @@ const sessionReducer = ( state = {currentUser: null}, action ) => {
 
     case RECEIVE_CURRENT_USER:
       const user = action.currentUser;
-      newState = { currentUser: action.currentUser };
+      
+      newState = { currentUser: user };
       return newState;
 
     default:
