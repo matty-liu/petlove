@@ -1,3 +1,30 @@
 // Place all the styles related to the api/sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  border: 1px black solid;
+  position: relative;
+}
+
+.header-main-title {
+  border: 1px black solid;
+  top: 50%;
+}
+
+.header-main-greeting {
+  display: flex;
+  align-items: center;
+  border: 1px black solid;
+  float: right;
+}
+
+.header-main-greeting-signup {
+
+}
+
+.header-main-greeting-login {
+
+}

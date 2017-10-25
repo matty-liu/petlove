@@ -22,10 +22,10 @@ class Greeting extends React.Component{
       );
     } else {
       return (
-        <div>
-          <Link to="/signup">Sign Up</Link>
+        <div className="header-main-greeting">
+          <Link to="/signup" className="header-main-greeting-signup">Sign Up</Link>
           <span> </span>
-          <Link to="/login">Login</Link>
+          <Link to="/login" classname="header-main-greeting-login">Login</Link>
         </div>
       );
     }
