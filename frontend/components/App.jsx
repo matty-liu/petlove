@@ -11,10 +11,9 @@ const App = () => (
       <GreetingContainer />
     </header>
 
-    <Switch>
-      <Route path="/login" component={SessionFormContainer} />
-      <Route path="/signup" component={SessionFormContainer} />
-    </Switch>
+    <Route path="/login" component={SessionFormContainer} />
+    <Route path="/signup" component={SessionFormContainer} />
+
   </div>
 );
 

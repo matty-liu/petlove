@@ -13,13 +13,17 @@ window.logout = logout;
 document.addEventListener('DOMContentLoaded', () => {
 
   let store;
+  debugger
   if (window.currentUser) {
-    const preloadedState = { session: {currentUser: window.currentUser} };
-    store = configureStore(preloadedState)
+    const preloadedState = { session: { currentUser: window.currentUser } };
+    store = configureStore(preloadedState);
     delete window.currentUser;
   } else {
     store = configureStore()
   }
+
+  window.getState = store.getState;
+  window.dispatch = store.dispatch;
 
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
