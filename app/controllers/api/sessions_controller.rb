@@ -4,26 +4,23 @@ class Api::SessionsController < ApplicationController
     @user = User.find_by(username: params[:user][:username])
     if @user && @user.is_password?(params[:user][:password])
       login(@user)
-      render :create, status: 200
+      render "api/users/show"
     else
-      render json: "Invalid Credentials", status: 401
+      render json: "Invalid credentials", status: 401
     end
 
   end
 
   def destroy
-    if current_user
+    @user = current_user
+    if @user
       logout
-      render json: {}, status: 200
+      debugger
+      render "api/users/show"
     else
       render json: "No logged in user", status: 404
+    end
 
   end
-
-
-  def user_params
-    params.require(:user).permit(:username,:password)
-  end
-
 
 end
