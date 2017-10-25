@@ -14,4 +14,4 @@ const sessionReducer = ( state = {currentUser: null}, action ) => {
   }
 };
 
-export default sessionsReducer
+export default sessionReducer
