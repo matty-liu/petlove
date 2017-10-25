@@ -15,13 +15,11 @@ class SessionForm extends React.Component {
   };
 
   handleUsername(e) {
-    e.preventDefault()
-    this.setState(username: e.target.value)
+    this.setState({username: e.target.value})
   }
 
   handlePassword(e) {
-    e.preventDefault()
-    this.setState(password: e.target.password)
+    this.setState({password: e.target.value})
   }
 
   handleSubmit(e) {
@@ -33,7 +31,7 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.props.formType === 'signup' ? "Sign Up" : "Login"}</h1>
+        <h2>{this.props.formType === 'signup' ? "Sign Up" : "Login"}</h2>
         <form onSubmit={this.handleSubmit}>
           Welcome to petLove!
           <br />
@@ -46,7 +44,7 @@ class SessionForm extends React.Component {
           </label>
           <label>
             Password:
-            <input type="text"
+            <input type="password"
               value={this.state.password}
               onChange={this.handlePassword}
             />
@@ -56,6 +54,6 @@ class SessionForm extends React.Component {
       </div>
     )
   }
-
-
 }
+
+export default withRouter(SessionForm);

@@ -1,10 +1,9 @@
 import { connect } from 'react-redux';
 
-import sessionForm from './greeting';
+import SessionForm from './session_form';
 import { signup, login } from '../actions/session_actions';
 
 function mapStateToProps(state, ownProps) {
-
   let loggedIn;
   if (state.session.currentUser) {
     loggedIn = true;
@@ -39,4 +38,4 @@ function mapDispatchToProps(dispatch, ownProps) {
   }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(sessionForm)
+export default connect(mapStateToProps,mapDispatchToProps)(SessionForm)
