@@ -8,6 +8,11 @@ class Greeting extends React.Component{
     this.handleLogout = this.handleLogout.bind(this);
   }
 
+  handleLogin(e) {
+    e.preventDefault();
+    window.location = '/#/login';
+  }
+
   handleLogout(e) {
     this.props.logout();
   }
@@ -23,9 +28,8 @@ class Greeting extends React.Component{
     } else {
       return (
         <div className="header-main-greeting">
-          <Link to="/signup" className="header-main-greeting-signup">Sign Up</Link>
-          <span> </span>
-          <Link to="/login" classname="header-main-greeting-login">Login</Link>
+          <span className="have-an-account">Have an account?</span>
+          <button className="header-main-greeting-login" onClick={this.handleLogin}><span>Sign In</span></button>
         </div>
       );
     }
