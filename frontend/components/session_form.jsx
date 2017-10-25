@@ -10,6 +10,8 @@ class SessionForm extends React.Component {
       password: "",
     }
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleUsername = this.handleUsername.bind(this)
+    this.handlePassword = this.handlePassword.bind(this)
   };
 
   handleUsername(e) {
@@ -19,18 +21,19 @@ class SessionForm extends React.Component {
 
   handlePassword(e) {
     e.preventDefault()
-    this.setState(username: e.target.password)
+    this.setState(password: e.target.password)
   }
 
   handleSubmit(e) {
     e.preventDefault()
-    const user = this.state
-    this.props.processForm(user)
+    const user = Object.assign({},this.state);
+    this.props.processForm(user);
   }
 
   render() {
     return (
       <div>
+        <h1>{this.props.formType}</h1>
         <form onSubmit={this.handleSubmit}>
           Welcome to petLove!
           <br />
@@ -48,7 +51,7 @@ class SessionForm extends React.Component {
               onChange={this.handlePassword}
             />
           </label>
-          <button>Submit</button>
+          <button>{this.props.formType === 'signup' ? "Sign Up" : "Log In"}</button>
         </form>
       </div>
     )
