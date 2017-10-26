@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import GreetingContainer from './greeting_container';
-import SessionFormContainer from './session_form_container';
+import LandingPageContainer from './landing_page_container';
 
 import { AuthRoute } from '../util/route_util';
 
@@ -14,22 +14,8 @@ const App = () => (
       <GreetingContainer />
     </header>
 
-    <div className="main">
-      <div className="main-top">
-        <div className="main-top-left">
-          <div className="main-top-phrase">
-            SUBSTANCE,
-            <br/>
-            NOT JUST SELFIES
-          </div>
-          <div className="main-top-description">
-            There are many types of dating apps. But there is only one that can show the real animal in you.
-          </div>
-        </div>
-        <div className="main-top-right">
-          <div className="main-top-right-image"></div>
-        </div>
-      </div>
+    <div>
+      <LandingPageContainer />
     </div>
 
     <div className= "footer-temp">

@@ -16,8 +16,7 @@ class Greeting extends React.Component{
       login: false
     }
 
-    this.openModal = this.openModal.bind(this);
-    // this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.onModalOpen = this.onModalOpen.bind(this);
     this.closeModal = this.closeModal.bind(this);
 
     this.handleLogin = this.handleLogin.bind(this);
@@ -25,16 +24,13 @@ class Greeting extends React.Component{
     this.handleLogout = this.handleLogout.bind(this);
   }
 
-  openModal(e) {
-    this.setState({modalOpen: true});
-  }
-
-  afterOpenModal() {
-  // references are now sync'd and can be accessed.
-    this.subtitle.style.color = '#f00';
+  onModalOpen() {
+    loginModalStyle.content.opacity = 100;
+    loginModalStyle.overlay.opacity = 100;
   }
 
   closeModal() {
+    loginModalStyle.overlay.opacity = 0;
     this.setState({modalOpen: false});
   }
 
@@ -56,7 +52,7 @@ class Greeting extends React.Component{
     if (this.props.currentUser) {
       return(
         <div className="header-greeting">
-          <h3 className="header-greeting-text">Welcome {this.props.currentUser.username}</h3>
+          <p className="header-greeting-text">Welcome {this.props.currentUser.username}</p>
           <button onClick={this.handleLogout} className="header-greeting-logout-button">Logout</button>
         </div>
       );
@@ -68,6 +64,7 @@ class Greeting extends React.Component{
 
           <Modal
             isOpen={this.state.modalOpen}
+            onAfterOpen={this.onModalOpen}
             onRequestClose={this.closeModal}
             style={loginModalStyle}>
             <div>

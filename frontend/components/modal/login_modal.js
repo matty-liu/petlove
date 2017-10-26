@@ -5,7 +5,10 @@ module.exports = {
     left              : 0,
     right             : 0,
     bottom            : 0,
-    backgroundColor   : 'hsla(0, 0%, 7%, 0.7)'
+    backgroundColor   : 'hsla(0, 0%, 7%, 0.7)',
+    opacity                    : '0',
+    transition                 : 'opacity 0.4s',
+
   },
   content : {
     position                   : 'absolute',
@@ -19,8 +22,11 @@ module.exports = {
     outline                    : 'none',
     padding                    : '20px',
 
-    width                      : '310px',
-    height                     : '437px',
+    width                      : '295px',
+    height                     : '410px',
     margin                     : '0 auto',
+
+    opacity                    : '0',
+    transition                 : 'opacity 0.4s',
   }
 }
