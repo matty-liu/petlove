@@ -23,7 +23,7 @@ const App = () => (
             NOT JUST SELFIES
           </div>
           <div className="main-top-description">
-            There are many types of dating apps. But there is only one that can show the real animal in you
+            There are many types of dating apps. But there is only one that can show the real animal in you.
           </div>
         </div>
         <div className="main-top-right">

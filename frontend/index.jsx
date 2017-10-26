@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Modal from 'react-modal';
+
 import configureStore from './store/store'
 import Root from './components/root'
 
@@ -11,7 +13,7 @@ window.login = login;
 window.logout = logout;
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+
   let store;
   if (window.currentUser) {
     const preloadedState = { session: { currentUser: window.currentUser } };
@@ -23,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.getState = store.getState;
   window.dispatch = store.dispatch;
+
+  Modal.setAppElement(document.body);
 
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
