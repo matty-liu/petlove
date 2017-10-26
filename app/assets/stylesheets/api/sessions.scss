@@ -4,24 +4,23 @@
 
 .body {
   background-color: #4fc5d0;
-}
-
-.body {
   display: flex;
   justify-content: center;
+}
+
+.body-top {
+  width: 900px;
 }
 
 .header-main {
   display: flex;
   justify-content: space-between;
-
   position: relative;
   background-color: inherit;
 }
 
 .header-main-title {
   margin-left: 5px;
-
   top: 50%;
   font-family: 'Lemon';
   color: white;
@@ -43,7 +42,7 @@
   height: 40px;
   font-size: 16px;
   padding: 0 14px;
-
+  border: 1px solid #fff;
   border-radius: 3px;
   color: #fff;
   background: #4fc5d0;
@@ -59,28 +58,26 @@
 
 .main-bottom {
   display: flex;
-
   justify-content: center;
 }
 
 .main-top-left {
   display: flex;
   flex-direction: column;
-  width: 66%;
+  width: 60%;
   justify-content: center;
 }
 
 .main-top-right {
   display: flex;
   width: 45%;
-
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
 }
 
-.main-top-right-images {
+.main-top-right-image {
   background-image: image-url('home-painter@2x.png');
-
+  float: right;
   width: 295px;
   height: 290px;
   background-size: 100%;
@@ -112,6 +109,13 @@
   margin: 5px;
   font-size: 17px;
 }
+
+// .footer-temp {
+//   height: 0px;
+//   background-color: #f3f5f9;
+//   padding-top: 0px;
+// }
+
 
 .selector {
   margin: 5px;

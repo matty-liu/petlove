@@ -18,7 +18,7 @@ const App = () => (
       <div className="main-top">
         <div className="main-top-left">
           <div className="main-top-phrase">
-            SUBSTANCE
+            SUBSTANCE,
             <br/>
             NOT JUST SELFIES
           </div>
@@ -27,13 +27,14 @@ const App = () => (
           </div>
         </div>
         <div className="main-top-right">
-          <div className="main-top-right-images"></div>
+          <div className="main-top-right-image"></div>
         </div>
       </div>
-      
     </div>
 
+    <div className= "footer-temp">
 
+    </div>
 
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
