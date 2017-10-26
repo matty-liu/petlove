@@ -33,11 +33,7 @@ const App = () => (
     </div>
 
     <div className= "footer-temp">
-
     </div>
-
-    <AuthRoute path="/login" component={SessionFormContainer} />
-    <AuthRoute path="/signup" component={SessionFormContainer} />
 
   </div>
 );

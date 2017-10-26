@@ -1,0 +1,22 @@
+.header-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header-greeting-text {
+  margin: 5px;
+}
+
+.header-greeting-logout-button {
+  margin: 5px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 14px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  background: #4fc5d0;
+}

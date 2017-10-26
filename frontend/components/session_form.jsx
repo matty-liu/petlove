@@ -30,26 +30,25 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>{this.props.formType === 'signup' ? "Sign Up" : "Login"}</h2>
-        <form onSubmit={this.handleSubmit}>
-          Welcome to petLove!
+      <div className="modal-login">
+        <h2 className="modal-login-title">{this.props.formType === 'signup' ? "Sign Up" : "Sign In"}</h2>
+        <form onSubmit={this.handleSubmit} className="modal-login-form">
           <br />
-          <label>
-            Username:
+          <label className="modal-login-form-username">
             <input type="text"
               value={this.state.username}
               onChange={this.handleUsername}
-            />
-          </label>
-          <label>
-            Password:
+              className="modal-login-form-input"
+              placeholder="Username"/>
+            </label>
+            <label className="modal-login-form-password">
             <input type="password"
               value={this.state.password}
               onChange={this.handlePassword}
-            />
-          </label>
-          <button>{this.props.formType === 'signup' ? "Sign Up" : "Login"}</button>
+              className="modal-login-form-input"
+              placeholder="Password"/>
+            </label>
+          <button className="modal-login-form-button">{this.props.formType === 'signup' ? "Sign Up" : "Sign In"}</button>
         </form>
       </div>
     )

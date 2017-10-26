@@ -17,7 +17,7 @@ class Greeting extends React.Component{
     }
 
     this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
+    // this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
 
     this.handleLogin = this.handleLogin.bind(this);
@@ -44,7 +44,7 @@ class Greeting extends React.Component{
   }
 
   handleSignup(e) {
-    e.preventDefault();
+    this.setState({login: false, modalOpen: true});
     // window.location = '/#/signup';
   }
 
@@ -55,26 +55,25 @@ class Greeting extends React.Component{
   render() {
     if (this.props.currentUser) {
       return(
-        <div>
-          <h3>Welcome {this.props.currentUser.username}</h3>
-          <button onClick={this.handleLogout}>Logout</button>
+        <div className="header-greeting">
+          <h3 className="header-greeting-text">Welcome {this.props.currentUser.username}</h3>
+          <button onClick={this.handleLogout} className="header-greeting-logout-button">Logout</button>
         </div>
       );
     } else {
       return (
         <div className="header-main-greeting">
-          <button className="header-main-greeting-login" onClick={this.handleLogin}><span>Sign Up</span></button>
-            <Modal
-              isOpen={this.state.modalOpen}
-              onRequestClose={this.closeModal}
-              style={loginModalStyle}>
-              <div>
+          <button className="header-main-greeting-login" onClick={this.handleSignup}><span>Sign Up</span></button>
+          <button className="header-main-greeting-login" onClick={this.handleLogin}><span>Sign In</span></button>
 
-              </div>
-            </Modal>
-
-          <button className="header-main-greeting-login" onClick={this.openModal}><span>Sign In</span></button>
-
+          <Modal
+            isOpen={this.state.modalOpen}
+            onRequestClose={this.closeModal}
+            style={loginModalStyle}>
+            <div>
+              <SessionFormContainer login={this.state.login}/>
+            </div>
+          </Modal>
 
         </div>
       );
