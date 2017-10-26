@@ -13,6 +13,11 @@ class Greeting extends React.Component{
     window.location = '/#/login';
   }
 
+  handleSignup(e) {
+    e.preventDefault();
+    window.location = '/#/signup';
+  }
+
   handleLogout(e) {
     this.props.logout();
   }
@@ -28,8 +33,9 @@ class Greeting extends React.Component{
     } else {
       return (
         <div className="header-main-greeting">
-          <span className="have-an-account">Have an account?</span>
+          <button className="header-main-greeting-login" onClick={this.handleSignup}><span>Sign Up</span></button>
           <button className="header-main-greeting-login" onClick={this.handleLogin}><span>Sign In</span></button>
+
         </div>
       );
     }

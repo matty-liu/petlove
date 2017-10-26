@@ -6,16 +6,22 @@
   background-color: #4fc5d0;
 }
 
+.body {
+  display: flex;
+  justify-content: center;
+}
+
 .header-main {
   display: flex;
   justify-content: space-between;
-  border: 1px black solid;
+
   position: relative;
   background-color: inherit;
 }
 
 .header-main-title {
-  border: 1px black solid;
+  margin-left: 5px;
+
   top: 50%;
   font-family: 'Lemon';
   color: white;
@@ -24,8 +30,7 @@
 .header-main-greeting {
   display: flex;
   align-items: center;
-  border: 1px black solid;
-  float: right;
+
 }
 
 .header-main-greeting-signup {
@@ -33,18 +38,113 @@
 }
 
 .header-main-greeting-login {
+  margin: 5px;
   cursor: pointer;
   height: 40px;
   font-size: 16px;
   padding: 0 14px;
-  border: 1px solid #fff;
+
   border-radius: 3px;
   color: #fff;
   background: #4fc5d0;
 }
 
-.have-an-account {
-  margin-right: 17px;
-  font-size: 17px;
-  font-family: GT America,sans-serif;
+.main-top {
+  display: flex;
+  justify-content: center;
+
+  height: 325px;
+  width: auto;
 }
+
+.main-bottom {
+  display: flex;
+
+  justify-content: center;
+}
+
+.main-top-left {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  justify-content: center;
+}
+
+.main-top-right {
+  display: flex;
+  width: 45%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.main-top-right-images {
+  background-image: image-url('home-painter@2x.png');
+
+  width: 295px;
+  height: 290px;
+  background-size: 100%;
+}
+
+.main-top-phrase {
+  display: inline-block;
+  font-size: 60px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+  margin: 20px 5px;
+}
+
+.main-top-description {
+  display: inline-block;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: white;
+  margin: 5px;
+}
+
+.main-bottom-signup-landing {
+  display: flex;
+}
+
+.main-bottom-signup-landing select {
+  margin: 5px;
+  font-size: 17px;
+}
+
+.selector {
+  margin: 5px;
+  background-color: white;
+  border-width: 1px;
+  display: block;
+  font-size: 17px;
+  line-height: 17px;
+  cursor: pointer;
+  // opacity: 0;
+}
+
+
+// <div className="main-middle">
+//   <div className="main-bottom">
+//     <div className="main-bottom-signup-landing">
+//       <div className="main-bottom-signup-landing-choices">
+//         <select className="main-bottom-signup-landing-orientation">
+//           <option>Straight</option>
+//           <option>Gay</option>
+//           <option>Bisexual</option>
+//           <option>Other</option>
+//         </select>
+//         <select className="main-bottom-signup-landing-sex">
+//           <option>Male</option>
+//           <option>Female</option>
+//         </select>
+//         <select className="main-bottom-signup-landing-type">
+//           <option>Dog</option>
+//           <option>Cat</option>
+//           <option>Other</option>
+//         </select>
+//       </div>
+//       <button className="main-button-signup">Continue</button>
+//     </div>
+//   </div>
