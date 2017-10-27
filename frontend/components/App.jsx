@@ -3,25 +3,32 @@ import { Route, Switch } from 'react-router-dom';
 
 import GreetingContainer from './greeting_container';
 import LandingPageContainer from './landing_page_container';
+import HomePageContainer from './home_page_container';
 
 import { AuthRoute } from '../util/route_util';
 
-const App = () => (
-  <div className="body-top">
+const App = () => {
 
-    <header className="header-main">
-      <h1 className="header-main-title">{'petLo<3'}</h1>
-      <GreetingContainer />
-    </header>
+  return (
+    <div className="body-top">
 
-    <div>
-      <LandingPageContainer />
+      <header className="header-main">
+        <h1 className="header-main-title">{'petLo<3'}</h1>
+        <GreetingContainer />
+      </header>
+
+      <div>
+        <LandingPageContainer />
+      </div>
+
+      <AuthRoute path="/home" component={HomePageContainer} />
+
+      <div className="footer-temp">
+      </div>
+
     </div>
+  )
 
-    <div className= "footer-temp">
-    </div>
-
-  </div>
-);
+};
 
 export default App;

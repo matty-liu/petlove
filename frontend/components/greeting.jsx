@@ -67,7 +67,7 @@ class Greeting extends React.Component{
             onAfterOpen={this.onModalOpen}
             onRequestClose={this.closeModal}
             style={loginModalStyle}>
-            <div>
+            <div className="modal-login">
               <SessionFormContainer login={this.state.login}/>
             </div>
           </Modal>

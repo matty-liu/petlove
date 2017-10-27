@@ -22,8 +22,8 @@ module.exports = {
     outline                    : 'none',
     padding                    : '20px',
 
-    width                      : '295px',
-    height                     : '410px',
+    width                      : '290px',
+    height                     : '400px',
     margin                     : '0 auto',
 
     opacity                    : '0',

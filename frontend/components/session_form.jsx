@@ -26,11 +26,12 @@ class SessionForm extends React.Component {
     e.preventDefault()
     const user = Object.assign({},this.state);
     this.props.processForm(user);
+
   }
 
   render() {
     return (
-      <div className="modal-login">
+      <div className="modal-login-inner">
         <h2 className="modal-login-title">{this.props.formType === 'signup' ? "Sign Up" : "Sign In"}</h2>
         <form onSubmit={this.handleSubmit} className="modal-login-form">
           <br />
@@ -48,6 +49,7 @@ class SessionForm extends React.Component {
               className="modal-login-form-input"
               placeholder="Password"/>
             </label>
+          <p>{this.props.errors}</p>
           <button className="modal-login-form-button">{this.props.formType === 'signup' ? "Sign Up" : "Sign In"}</button>
         </form>
       </div>

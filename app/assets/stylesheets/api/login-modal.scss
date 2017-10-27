@@ -27,6 +27,11 @@
 
 .modal-login {
   display: flex;
+  justify-content: center;
+}
+
+.modal-login-inner {
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 214px;

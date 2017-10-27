@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Route, Redirect, withRouter } from 'react-router-dom'
+
+import HomePageContainer from './home_page_container'
 
 class LandingPage extends React.Component {
 
@@ -24,6 +26,8 @@ class LandingPage extends React.Component {
           </div>
         </div>
       )
+    } else {
+      return (<Redirect to="/home" />)
     }
   }
 
