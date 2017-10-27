@@ -3,10 +3,12 @@ import { connect } from 'react-redux';
 import HomePage from './home_page';
 
 function mapStateToProps(state, ownProps) {
-
+  console.log(state)
   let loggedIn;
+  let imageUrl = "";
   if (state.session.currentUser) {
-    loggedIn = true;
+    loggedIn = true
+    imageUrl = state.session.currentUser.image_url
   } else {
     loggedIn = false
   }
@@ -14,6 +16,7 @@ function mapStateToProps(state, ownProps) {
   return {
     loggedIn: loggedIn,
     errors: state.errors.session,
+    imageUrl: imageUrl
   }
 
 }

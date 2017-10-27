@@ -27,6 +27,11 @@ class User < ApplicationRecord
   validates :password_digest, presence: true
   validates :password, length: { minimum: 6, allow_nil: true }
 
+  has_attached_file :image, default_url: "small_dog.jpg"
+  validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+
+
+
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)

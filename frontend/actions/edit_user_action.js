@@ -13,10 +13,11 @@ export const receiveUpdateErrors = user => ({
   error: [error.responseText]
 })
 
-export const edit = (user) => (dispatch) => {
+export const update = (user) => (dispatch) => {
   return APIUtil
-  .edit_user(user)
-  .then(
-    (user) => dispatch(receiveEditUser(user))
-  )
+    .update(user)
+    .then(
+      (user) => dispatch(receiveUpdateUser(user)),
+      (error) => dispatch(receiveUpdateError(error))
+    )
 }
