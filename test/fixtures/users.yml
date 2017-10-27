@@ -8,6 +8,15 @@
 #  session_token   :string           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  first_name      :string
+#  last_name       :string
+#  email           :string
+#  sex             :string
+#  birthday        :date
+#  profile         :text
+#  location        :string
+#  age_range_min   :integer
+#  age_range_max   :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
