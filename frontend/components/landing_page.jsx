@@ -1,8 +1,6 @@
 import React from 'react';
 import { Route, Redirect, withRouter } from 'react-router-dom'
 
-import HomePageContainer from './home_page_container'
-
 class LandingPage extends React.Component {
 
   render() {

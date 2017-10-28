@@ -1,3 +1,26 @@
+.header {
+  position: sticky;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: inherit;
+}
+
+.header-main-title {
+  margin-left: 5px;
+  top: 50%;
+  font-family: 'Lemon';
+  color: white;
+}
+
+.header-main-greeting {
+  display: flex;
+  align-items: center;
+}
+
 .header-greeting {
   display: flex;
   justify-content: center;
@@ -7,6 +30,18 @@
 
 .header-greeting-text {
   margin: 5px;
+}
+
+.header-main-greeting-login {
+  margin: 5px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 14px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  background: #4fc5d0;
 }
 
 .header-greeting-logout-button {

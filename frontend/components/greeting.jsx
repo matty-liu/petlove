@@ -51,26 +51,32 @@ class Greeting extends React.Component{
   render() {
     if (this.props.currentUser) {
       return(
-        <div className="header-greeting">
-          <p className="header-greeting-text">Welcome {this.props.currentUser.username}</p>
-          <button onClick={this.handleLogout} className="header-greeting-logout-button">Logout</button>
+        <div className="header-main">
+          <h1 className="header-main-title">{'petLo<3'}</h1>
+          <div className="header-greeting">
+            <p className="header-greeting-text">Welcome {this.props.currentUser.username}</p>
+            <button onClick={this.handleLogout} className="header-greeting-logout-button">Logout</button>
+          </div>
         </div>
       );
     } else {
       return (
-        <div className="header-main-greeting">
-          <button className="header-main-greeting-login" onClick={this.handleSignup}><span>Sign Up</span></button>
-          <button className="header-main-greeting-login" onClick={this.handleLogin}><span>Sign In</span></button>
+        <div className="header-main">
+          <h1 className="header-main-title">{'petLo<3'}</h1>
+          <div className="header-main-greeting">
+            <button className="header-main-greeting-login" onClick={this.handleSignup}><span>Sign Up</span></button>
+            <button className="header-main-greeting-login" onClick={this.handleLogin}><span>Sign In</span></button>
 
-          <Modal
-            isOpen={this.state.modalOpen}
-            onAfterOpen={this.onModalOpen}
-            onRequestClose={this.closeModal}
-            style={loginModalStyle}>
-            <div className="modal-login">
-              <SessionFormContainer login={this.state.login}/>
-            </div>
-          </Modal>
+            <Modal
+              isOpen={this.state.modalOpen}
+              onAfterOpen={this.onModalOpen}
+              onRequestClose={this.closeModal}
+              style={loginModalStyle}>
+              <div className="modal-login">
+                <SessionFormContainer login={this.state.login}/>
+              </div>
+            </Modal>
+          </div>
 
         </div>
       );

@@ -12,16 +12,12 @@ const App = () => {
   return (
     <div className="body-top">
 
-      <header className="header-main">
-        <h1 className="header-main-title">{'petLo<3'}</h1>
+      <nav>
         <GreetingContainer />
-      </header>
-
-      <div>
-        <LandingPageContainer />
-      </div>
+      </nav>
 
       <AuthRoute path="/home" component={HomePageContainer} />
+      <Route exact path="/" component={LandingPageContainer} />
 
       <div className="footer-temp">
       </div>

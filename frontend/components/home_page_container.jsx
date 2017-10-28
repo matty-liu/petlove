@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import HomePage from './home_page';
 
 function mapStateToProps(state, ownProps) {
-  console.log(state)
   let loggedIn;
   let imageUrl = "";
   if (state.session.currentUser) {
