@@ -4,8 +4,18 @@
 // }
 
 #root {
-  position: sticky;
+  display: flex;
+  position: absolute;
+  min-width: 900px;
+  max-width: auto;
   width: 100vw;
   justify-content: center;
-  display: flex;
+}
+
+.body {
+  display: block;
+}
+
+.app {
+  position: sticky;
 }

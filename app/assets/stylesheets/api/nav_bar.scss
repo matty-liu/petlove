@@ -1,0 +1,40 @@
+.navbar-main {
+  display: flex;
+  position: relative;
+  min-width: 900px;
+}
+
+.navbar-main-title {
+  margin-left: 5px;
+  top: 50%;
+  font-family: 'Lemon';
+  color: white;
+}
+
+.navbar-main-greeting {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.navbar-greeting-text {
+  margin: 5px;
+}
+
+.navbar-greeting-logout-button {
+  margin: 5px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 14px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  background: #4fc5d0;
+}

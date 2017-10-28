@@ -4,14 +4,17 @@ import { HashRouter } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 
 import App from './App';
-import HomePageContainer from './home_page_container'
+import Landing from './Landing';
+import HomePageContainer from './home_page_container';
+import { AuthRoute } from '../util/route_util';
 
 const Root = ({ store }) => (
   <Provider store={ store }>
     <HashRouter>
-      <div>
-        <Route path="/" component={App} />
-      </div>
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <AuthRoute path="/home" component={App} />
+      </Switch>
     </HashRouter>
   </Provider>
 );
