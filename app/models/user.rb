@@ -31,7 +31,6 @@ class User < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
 
-
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)

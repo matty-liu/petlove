@@ -14,16 +14,21 @@ class HomePage extends React.Component {
   }
 
   updateFile(event) {
-    let file = event.currentTarget.result;
+    let file = event.nativeEvent.target.files[0];
     let fileReader = new FileReader();
     fileReader.onloadend = () => {
-      debugger
-      this.setState(imageFile: file, imageUrl: fileReader.result)
+      this.setState({imageFile: file, imageUrl: fileReader.result})
     };
 
     if (file) {
       fileReader.readAsDataURL(file);
     }
+  };
+
+  handleSubmit(event) {
+    let formData = new FormData();
+    formData.append(this.state.imageFile)
+    this.props.uploadPic(this.state.currentUser.id, formData)
   };
 
   render() {
@@ -38,6 +43,7 @@ class HomePage extends React.Component {
           <p>Home Page coming soon....</p>
           <img src={this.props.imageUrl} className="pet-profile-pic"/>
           <input type="file" onChange={this.updateFile} />
+          <img src={this.state.imageUrl} className="pet-profile-pic"/>
         </div>
       )
     }
