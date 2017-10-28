@@ -1,0 +1,21 @@
+
+.profile-header {
+  display: flex;
+  height: 200px;
+  align-self: flex-end;
+  margin-top: 40px;
+}
+
+.profile-header-pic {
+  float: left;
+  position: relative;
+  z-index: 2;
+  width: 180px;
+  height: 180px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.profile-content {
+  background-color: white;
+}

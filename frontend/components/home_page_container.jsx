@@ -7,7 +7,6 @@ function mapStateToProps(state, ownProps) {
   let imageUrl = "";
   console.log(state.session)
   if (state.session.currentUser) {
-    debugger
     loggedIn = true,
     imageUrl = state.session.currentUser.image_url
   } else {

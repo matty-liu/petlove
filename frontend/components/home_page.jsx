@@ -39,11 +39,23 @@ class HomePage extends React.Component {
       )
     } else {
       return (
-        <div>
-          <p>Home Page coming soon....</p>
-          <img src={this.props.imageUrl} className="pet-profile-pic"/>
-          <input type="file" onChange={this.updateFile} />
-          <img src={this.state.imageUrl} className="pet-profile-pic"/>
+        <div className="profile">
+          <div className="profile-header">
+            <img src={this.props.imageUrl} className="profile-header-pic"/>
+            <div className="profile-header-text">
+              <h2>{this.props.username}</h2>
+              <h4>{this.props.location}</h4>
+            </div>
+            <input type="file" onChange={this.updateFile} />
+          </div>
+          <div className="profile-content">
+            <div className="profile-content-essay"></div>
+              <h3>Profile</h3>
+              <p>{this.props.profile}</p>
+            <div className="profile-content-sidebar">
+
+            </div>
+          </div>
         </div>
       )
     }
