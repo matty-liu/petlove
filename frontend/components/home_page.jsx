@@ -40,22 +40,28 @@ class HomePage extends React.Component {
     } else {
       return (
         <div className="profile">
+
           <div className="profile-header">
+
             <img src={this.props.imageUrl} className="profile-header-pic"/>
             <div className="profile-header-text">
-              <h2>{this.props.username}</h2>
-              <h4>{this.props.location}</h4>
+              <div className="profile-header-text-username">{this.props.username}</div>
+              <div className="profile-header-text-location">{this.props.location}</div>
             </div>
             <input type="file" onChange={this.updateFile} />
-          </div>
-          <div className="profile-content">
-            <div className="profile-content-essay"></div>
-              <h3>Profile</h3>
-              <p>{this.props.profile}</p>
-            <div className="profile-content-sidebar">
 
+          </div>
+
+          <div className="profile-main">
+
+            <div className="profile-content-essay"></div>
+              <div>Profile</div>
+              <div>{this.props.profile}</div>
+
+              <div className="profile-content-sidebar">
             </div>
           </div>
+
         </div>
       )
     }

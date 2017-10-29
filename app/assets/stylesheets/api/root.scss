@@ -3,19 +3,24 @@
 //   border: 1px red solid;
 // }
 
+// removes margin and padding so the inner boxes strectch to max area
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+// this is cruicial for resizing issues.
+// without the absolute position, nothign is fixed
+// the min-width is crucial for maintaining size,
+// else on resize the, the box keeps getting smaller,
+// and the units will get push out of the box.
+
 #root {
   display: flex;
   position: absolute;
   min-width: 900px;
-  max-width: auto;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
-}
-
-.body {
-  display: block;
-}
-
-.app {
-  position: sticky;
 }

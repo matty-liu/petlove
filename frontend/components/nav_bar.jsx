@@ -52,7 +52,7 @@ class NavBar extends React.Component{
     if (this.props.currentUser) {
       return(
         <div className="navbar-main">
-          <h1 className="navbar-main-title">{'petLo<3'}</h1>
+          <div className="navbar-main-title">{'petLo<3'}</div>
           <div className="navbar-greeting">
             <p className="navbar-greeting-text">Welcome {this.props.currentUser.username}</p>
             <button onClick={this.handleLogout} className="navbar-greeting-logout-button">Logout</button>

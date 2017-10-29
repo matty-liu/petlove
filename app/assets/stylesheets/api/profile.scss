@@ -1,20 +1,48 @@
 
+
 .profile-header {
   display: flex;
-  height: 200px;
+  height: 150px;
   align-self: flex-end;
   margin-top: 40px;
 }
 
 .profile-header-pic {
+  margin-left: 75px;
   float: left;
   position: relative;
   width: 180px;
   height: 180px;
-  border-radius: 10%;
+  border-radius: 100%;
   cursor: pointer;
 }
 
-.profile-content {
-  background-color: white;
+.profile-main {
+  width: 1000px;
+  height: 2000px;
+  background-color: gray;
+  // outline: thick solid #ffffff;
+}
+
+.profile-header-text {
+  padding-top: 25px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  color: white;
+  font-family: 'Yantramanav', sans-serif;;
+  font-weight: normal;
+
+  .profile-header-text-username {
+    margin: 5px;
+    font-size: 35px;
+  }
+
+  .profile-header-text-location {
+    margin: 5px;
+    font-size: 17px;
+  }
 }

@@ -1,14 +1,25 @@
+.navbar {
+  width: auto;
+}
+
 .navbar-main {
   display: flex;
   position: relative;
-  min-width: 900px;
+  justify-content: space-between;
+  width: auto;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(157,186,242,0.25);
 }
 
 .navbar-main-title {
-  margin-left: 5px;
-  top: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
   font-family: 'Lemon';
-  color: white;
+  color: #104da1;
+
+  font-size: 25px;
+  text-shadow: -2px -2px #FFFFFF, 2px 2px #FFFFFF, -2px 2px #FFFFFF, 2px -2px #FFFFFF;
 }
 
 .navbar-main-greeting {
@@ -21,6 +32,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  padding-right: 40px;
 }
 
 .navbar-greeting-text {

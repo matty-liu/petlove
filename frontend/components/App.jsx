@@ -10,23 +10,26 @@ import { AuthRoute } from '../util/route_util';
 const App = () => {
 
   return (
-    <div className="app">
+    <div className="page">
 
       <script>
         { document.body.style.backgroundColor = "#104da1" }
       </script>
 
-      <NavBar />
+      <NavBar className="navbar"/>
 
-      <Switch>
-        <Route exact path="/" component={LandingPageContainer} />
-        <AuthRoute path="/home" component={HomePageContainer} />
-      </Switch>
+      <div className="app-content">
 
-      <div className="footer-temp">
+        <Switch>
+          <Route exact path="/" component={LandingPageContainer} />
+          <AuthRoute path="/home" component={HomePageContainer} />
+        </Switch>
+
       </div>
 
-    </div>
+      <div className="footer-temp"></div>
+
+  </div>
   )
 
 };
