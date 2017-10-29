@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171027161655) do
+ActiveRecord::Schema.define(version: 20171029131230) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,14 @@ ActiveRecord::Schema.define(version: 20171027161655) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
+    t.string "species"
+    t.string "orientation"
+    t.string "size"
+    t.string "weight"
+    t.string "status"
+    t.string "look_for"
+    t.string "look_gender"
+    t.string "diet"
   end
 
 end

@@ -1,5 +1,4 @@
 
-
 .profile-header {
   display: flex;
   height: 150px;
@@ -20,7 +19,7 @@
 
 .profile-header-thumbnail-pic {
   float: left;
-  position: relative;
+  position: absolute;
   width: 180px;
   height: 180px;
   border-radius: 100%;
@@ -58,6 +57,7 @@
 }
 
 .profile-header-thumbnail-upload-label {
+  position: absolute;
   width: 100px;
   height: 30px;
   font-size: 1.25em;
@@ -76,8 +76,8 @@
 
 .profile-header-text {
   position: relative;
-  padding-top: 25px;
-  padding-left: 200px;
+  margin-top: 25px;
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
