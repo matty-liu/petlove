@@ -51,7 +51,7 @@ class EditForm extends React.Component {
         <div>Basics</div>
         <form onSubmit={this.handleSubmit} >
           <label>Orientation</label>
-          <select onChange={this.handleOrientation}>
+          <select onChange={this.handleOrientation} defaultValue={this.props.orientation}>
             <option value="Straight">Straight</option>
             <option value="Gay">Gay</option>
             <option value="Other">Other</option>
@@ -59,14 +59,14 @@ class EditForm extends React.Component {
           <br />
 
           <label>Sex</label>
-          <select onChange={this.handleSex}>
+          <select onChange={this.handleSex} defaultValue={this.props.sex}>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
           <br />
 
           <label>Species</label>
-          <select onChange={this.handleSpecies}>
+          <select onChange={this.handleSpecies} defaultValue={this.props.species}>
             <option value="Dog">Dog</option>
             <option value="Cat">Cat</option>
             <option value="Horse">Horse</option>
@@ -78,8 +78,7 @@ class EditForm extends React.Component {
           <br />
 
           <label>Size</label>
-
-          <select onChange={this.handleSize}>
+          <select onChange={this.handleSize} defaultValue={this.props.size}>
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Large</option>
@@ -87,7 +86,7 @@ class EditForm extends React.Component {
           <br />
 
           <label>Weight</label>
-          <select onChange={this.handleWeight}>
+          <select onChange={this.handleWeight} defaultValue={this.props.weight}>
             <option value="Light">Light</option>
             <option value="Average">Average</option>
             <option value="Heavy">Heavy</option>
