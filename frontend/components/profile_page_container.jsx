@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import HomePage from './home_page';
+import ProfilePage from './profile_page';
 
 function mapStateToProps(state, ownProps) {
   let loggedIn;
@@ -32,7 +32,7 @@ function mapStateToProps(state, ownProps) {
     look_gender: state.session.currentUser.look_gender,
     diet: state.session.currentUser.diet
   }
-  
+
 }
 
-export default connect(mapStateToProps)(HomePage)
+export default connect(mapStateToProps)(ProfilePage)

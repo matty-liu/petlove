@@ -13,7 +13,7 @@ const Root = ({ store }) => (
     <HashRouter>
       <Switch>
         <Route exact path="/" component={Landing} />
-        <AuthRoute path="/home" component={App} />
+        <AuthRoute path="/" component={App} />
       </Switch>
     </HashRouter>
   </Provider>

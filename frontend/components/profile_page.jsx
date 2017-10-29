@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect, withRouter } from 'react-router-dom'
 
-class HomePage extends React.Component {
+class ProfilePage extends React.Component {
   constructor(props) {
     super(props)
 
@@ -121,4 +121,4 @@ class HomePage extends React.Component {
 
 }
 
-export default HomePage;
+export default ProfilePage;

@@ -43,7 +43,6 @@ class User < ApplicationRecord
   has_attached_file :image, default_url: "default-empty-profile.jpg"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
-
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)
