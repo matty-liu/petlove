@@ -42,8 +42,10 @@ class HomePage extends React.Component {
         <div className="profile">
 
           <div className="profile-header">
+            <div className="profile-header-thumbnail">
+              <img src={this.props.imageUrl} className="profile-header-pic" onClick={this.updateFile} />
 
-            <img src={this.props.imageUrl} className="profile-header-pic"/>
+            </div>
             <div className="profile-header-text">
               <div className="profile-header-text-username">{this.props.username}</div>
               <div className="profile-header-text-location">{this.props.location}</div>
@@ -54,12 +56,44 @@ class HomePage extends React.Component {
 
           <div className="profile-main">
 
-            <div className="profile-content-essay"></div>
-              <div>Profile</div>
-              <div>{this.props.profile}</div>
+            <div className="profile-main-about">
+
+              <div className="profile-main-essay">
+
+                <div className="profile-main-essay-cont1">
+                  <span className="profile-main-essay-cont1-summary">My self summary</span>
+                  <div className="profile-main-essay-cont1-summary-text">
+                    Curious individual who likes to play around.
+                    Interested in trying new things and looking for a
+                    friend! {this.props.profile}
+                  </div>
+                </div>
+
+                <div className="profile-main-essay-cont2">
+                  <span className="profile-main-essay-cont1-summary">My self summary</span>
+                  <div className="profile-main-essay-cont1-summary-text">
+                    Curious individual who likes to play around.
+                    Interested in trying new things and looking for a
+                    friend! {this.props.profile}
+                  </div>
+                </div>
+
+              </div>
 
               <div className="profile-content-sidebar">
+                <button className="profile-content-sidebar-button1">
+
+                  <table>
+                    Single Dog Male
+                  </table>
+
+                </button>
+                <button className="profile-content-sidebar-button2"></button>
+              </div>
+
             </div>
+
+
           </div>
 
         </div>

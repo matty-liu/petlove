@@ -5,10 +5,17 @@
   height: 150px;
   align-self: flex-end;
   margin-top: 40px;
+  position: relative;
+
+  max-width: 1000px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+
 .profile-header-pic {
-  margin-left: 75px;
   float: left;
   position: relative;
   width: 180px;
@@ -17,12 +24,6 @@
   cursor: pointer;
 }
 
-.profile-main {
-  width: 1000px;
-  height: 2000px;
-  background-color: gray;
-  // outline: thick solid #ffffff;
-}
 
 .profile-header-text {
   padding-top: 25px;
@@ -33,7 +34,7 @@
   align-items: flex-start;
 
   color: white;
-  font-family: 'Yantramanav', sans-serif;;
+  font-family: 'Yantramanav', sans-serif;
   font-weight: normal;
 
   .profile-header-text-username {
@@ -46,3 +47,103 @@
     font-size: 17px;
   }
 }
+
+.profile-main {
+  width: auto;
+  height: 800px;
+  background-color: rgba(243, 245, 250, 1);
+  display: flex;
+  justify-content: center;
+  // outline: thick solid #ffffff;
+}
+
+.profile-main-about {
+  display: flex;
+  padding-top: 60px;
+  min-height: 420px;
+  width: 1000px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-main-essay {
+  max-width: 560px;
+}
+
+.profile-main-essay-cont1 {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  padding-bottom: 10px
+}
+
+.profile-main-essay-cont1-summary {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 10px;;
+}
+
+.profile-main-essay-cont1-summary-text {
+  margin: 10px;
+}
+
+// For testing purposes
+.profile-main-essay-cont2 {
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  padding-bottom: 10px
+}
+
+.profile-main-essay-cont2-summary {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.profile-main-essay-cont2-summary-text {
+  margin: 10px;
+}
+//
+
+.profile-content-sidebar {
+  width: 320px;
+}
+
+.profile-content-sidebar-button1 {
+  background: transparent;
+  width: 336px;
+  height: 100px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  border-radius: 3px;
+  transition: background-color 100ms linear,box-shadow 100ms linear;
+  -webkit-transition: background-color 100ms linear,box-shadow 100ms linear;
+  -moz-transition: background-color 100ms linear,box-shadow 100ms linear;
+}
+
+.profile-content-sidebar-button1:hover {
+  background: white;
+}
+
+.profile-content-sidebar-button2 {
+  background: transparent;
+  width: 336px;
+  height: 100px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  border-radius: 3px;
+  transition: background-color 100ms linear,box-shadow 100ms linear;
+  -webkit-transition: background-color 100ms linear,box-shadow 100ms linear;
+  -moz-transition: background-color 100ms linear,box-shadow 100ms linear;
+}
+
+.profile-content-sidebar-button2:hover {
+  background: white;
+}
+
+
+
+//
