@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 import loginModalStyle from './modal/login_modal.js'
 import SessionFormContainer from './session_form_container';
 
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 class NavBar extends React.Component{
   constructor(props) {
@@ -13,7 +13,8 @@ class NavBar extends React.Component{
 
     this.state = {
       modalOpen: false,
-      login: false
+      login: false,
+      home: false
     }
 
     this.onModalOpen = this.onModalOpen.bind(this);
@@ -22,6 +23,8 @@ class NavBar extends React.Component{
     this.handleLogin = this.handleLogin.bind(this);
     this.handleSignup = this.handleSignup.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
+
+    this.handleLogoClick = this.handleLogoClick.bind(this);
   }
 
   onModalOpen() {
@@ -48,13 +51,22 @@ class NavBar extends React.Component{
     this.props.logout();
   }
 
+  handleLogoClick(e) {
+    this.setState({home:true})
+  }
+
   render() {
+    if (this.state.home) {
+      return <Redirect to="/" />
+    }
     if (this.props.currentUser) {
       return(
         <div className="navbar-main">
-          <div className="navbar-main-title">{'petLo<3'}</div>
+          <div className="navbar-main-title" onClick={this.handleLogoClick}>{'petLo<3'}</div>
           <div className="navbar-greeting">
-            <p className="navbar-greeting-text">Welcome {this.props.currentUser.username}</p>
+            <p className="navbar-greeting-text">
+              Welcome <Link to="/profile">{this.props.currentUser.username}</Link>
+            </p>
             <button onClick={this.handleLogout} className="navbar-greeting-logout-button">Logout</button>
           </div>
         </div>

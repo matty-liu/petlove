@@ -9,38 +9,50 @@
 User.delete_all
 
 User.create!(username: "Doggy", password: "password",
-  sex: "M", birthday: "", location: "New York",
+  sex: "male", birthday: "", location: "New York",
   species: "dog", age_range_min: 21, age_range_max: 100,
+  look_for: "friendship", look_gender: "does not matter",
+  size: "medium", status: "single", weight: "average",
   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
   and someone to play with!")
 
 User.create!(username: "Kitty", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "M", birthday: "", location: "New York",
+  sex: "female", birthday: "", location: "New York",
   species: "cat", age_range_min: 21, age_range_max: 100,
+  look_for: "friendship", look_gender: "does not matter",
+  size: "small", status: "single", weight: "light",
   profile: "Loooking for someone to cuddle and play with!")
 
 User.create!(username: "Piggy", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "M", birthday: "", location: "New York",
+  sex: "male", birthday: "", location: "New York",
   species: "pig",  age_range_min: 21, age_range_max: 100,
+  look_for: "friendship", look_gender: "does not matter",
+  size: "small", status: "single", weight: "average",
   profile: "I enjoy getting dirty and rolling around in mud. I do this mainly to prevent myself from getting
   sunburned so please understand. I promise I'm fun to hang around with and please don't turn me into
   ham, or bacon")
 
 User.create!(username: "Owl", password: "password",
   species: "owl", first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "M", birthday: "", profile: "text me", location: "New York", age_range_min: 21, age_range_max: 100,
+  sex: "male", birthday: "", profile: "text me", location: "New York", age_range_min: 21, age_range_max: 100,
+  look_for: "friendship", look_gender: "does not matter",
+  size: "small", status: "single", weight: "light",
   profile: "I am an hoot owl. That is all. HOOT HOOT")
 
 User.create!(username: "Giraffi", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "M", birthday: "", location: "New York",
+  sex: "male", birthday: "", location: "New York",
   species: "giraffe", age_range_min: 21, age_range_max: 100,
+  look_for: "friendship", look_gender: "does not matter",
+  size: "big", status: "single", weight: "average",
   profile: "Just saying, I don't do drugs because I'm naturally high, I'll see myself out but please send
   me a message!")
 
 User.create!(username: "Hamsty", password: "password",
   first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "M", birthday: "", location: "New York",
+  sex: "male", birthday: "", location: "New York",
   species: "hamster", age_range_min: 21, age_range_max: 100,
+  look_for: "friendship", look_gender: "does not matter",
+  size: "small", status: "single", weight: "light",
   profile: "I love traveling, and I must say my favorite location is hAmsterdam")
 
 
