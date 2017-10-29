@@ -14,8 +14,11 @@
   margin-right: auto;
 }
 
+.profile-header-thumbnail {
+  position: relative;
+}
 
-.profile-header-pic {
+.profile-header-thumbnail-pic {
   float: left;
   position: relative;
   width: 180px;
@@ -24,18 +27,66 @@
   cursor: pointer;
 }
 
+.profile-header-thumbnail-upload {
+  z-index: -1;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+
+  // background: transparent;
+  // position: absolute;
+  // border: none;
+  // padding: 0;
+  // vertical-align: top;
+
+  // white-space: nowrap;
+  // color: #fff;
+  // text-align: center;
+  // text-transform: none;
+  // border-radius: 3px;
+  // -webkit-transition-property: background-color,color,border;
+  // transition-property: background-color,color,border;
+  // -webkit-transition-duration: 75ms;
+  // transition-duration: 75ms;
+  // -webkit-transition-timing-function: ease;
+  // transition-timing-function: ease;
+
+  .profile-header-thumbnail-upload:hover {
+    cursor: pointer;
+  }
+}
+
+.profile-header-thumbnail-upload-label {
+  width: 100px;
+  height: 30px;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  text-align: center;
+  padding-top: 9px;
+  border-radius: 10%
+}
+
+.profile-header-thumbnail-upload-label:hover {
+  cursor: pointer;
+}
 
 .profile-header-text {
+  position: relative;
   padding-top: 25px;
-  padding-left: 15px;
+  padding-left: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 
   color: white;
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: normal;
+  font-family: 'Lato';
+  font-weight: 100;
+
 
   .profile-header-text-username {
     margin: 5px;

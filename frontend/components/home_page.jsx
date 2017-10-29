@@ -43,14 +43,14 @@ class HomePage extends React.Component {
 
           <div className="profile-header">
             <div className="profile-header-thumbnail">
-              <img src={this.props.imageUrl} className="profile-header-pic" onClick={this.updateFile} />
-
+              <img src={this.state.imageUrl} className="profile-header-thumbnail-pic" />
+              <input type="file" id="profilepic-upload-button" className="profile-header-thumbnail-upload" onClick={this.updateFile} />
+              <label htmlFor="profilepic-upload-button" className="profile-header-thumbnail-upload-label">Add</label>
             </div>
             <div className="profile-header-text">
               <div className="profile-header-text-username">{this.props.username}</div>
               <div className="profile-header-text-location">{this.props.location}</div>
             </div>
-            <input type="file" onChange={this.updateFile} />
 
           </div>
 
