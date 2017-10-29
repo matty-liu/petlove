@@ -1,21 +1,11 @@
 import { connect } from 'react-redux';
 
-import HomePage from './home_page';
+import ProfilePageMainSidebar from './profile_page_main_sidebar';
 
 function mapStateToProps(state, ownProps) {
-  let loggedIn;
-  let imageUrl = "";
-  if (state.session.currentUser) {
-    loggedIn = true,
-    imageUrl = state.session.currentUser.image_url
-  } else {
-    loggedIn = false
-  }
 
   return {
-    loggedIn: loggedIn,
     errors: state.errors.session,
-    imageUrl: imageUrl,
     username: state.session.currentUser.username,
     location: state.session.currentUser.location,
     profile: state.session.currentUser.profile,
@@ -34,4 +24,4 @@ function mapStateToProps(state, ownProps) {
 
 }
 
-export default connect(mapStateToProps)(HomePage)
+export default connect(mapStateToProps)(ProfilePageMainSidebar)

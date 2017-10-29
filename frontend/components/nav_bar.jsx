@@ -25,6 +25,7 @@ class NavBar extends React.Component{
     this.handleLogout = this.handleLogout.bind(this);
 
     this.handleLogoClick = this.handleLogoClick.bind(this);
+    this.handleUsernameClick = this.handleUsernameClick.bind(this);
   }
 
   onModalOpen() {
@@ -53,6 +54,10 @@ class NavBar extends React.Component{
 
   handleLogoClick(e) {
     this.setState({home:true})
+  }
+
+  handleUsernameClick(e) {
+
   }
 
   render() {
