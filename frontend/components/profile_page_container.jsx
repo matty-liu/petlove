@@ -5,7 +5,7 @@ import ProfilePage from './profile_page';
 function mapStateToProps(state, ownProps) {
   let loggedIn;
   if (state.session.currentUser) {
-    loggedIn = true,
+    loggedIn = true
   } else {
     loggedIn = false
   }
@@ -14,7 +14,6 @@ function mapStateToProps(state, ownProps) {
     loggedIn: loggedIn,
     errors: state.errors.session,
   }
-
 }
 
 export default connect(mapStateToProps)(ProfilePage)

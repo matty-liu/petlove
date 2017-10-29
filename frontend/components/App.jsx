@@ -20,13 +20,11 @@ const App = () => {
       <NavBar className="navbar"/>
 
       <div className="app-content">
-
         <Switch>
           <Route exact path="/" component={LandingPageContainer} />
           <AuthRoute exact path="/home" component={HomePageContainer} />
           <AuthRoute exact path="/profile" component={ProfilePageContainer} />
         </Switch>
-
       </div>
 
       <div className="footer-temp"></div>

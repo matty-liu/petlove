@@ -1,16 +1,17 @@
 
-export const update = () = {
+export const update = (user) => {
+  
   return $.ajax({
     method: "PATCH",
-    url: {`api/users/${user.id}`},
+    url: `api/users/${user.id}`,
     data: { user }
   });
 };
 
-export const updatePic = (formData) = {
+export const updatePic = (formData) => {
   return $.ajax({
     method: "PATCH",
-    url: {`api/users/${user.id}`},
+    url: `api/users/${user.id}`,
     dataType: "json",
     contentType: false,
     processType: false,

@@ -3,7 +3,7 @@ import React from 'react'
 class ProfilePageMainEssay extends React.Component {
 
   render() {
-    debugger
+    
     return (
       <div>
         <div className="profile-main-essay-cont1">
