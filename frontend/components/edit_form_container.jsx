@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import EditForm from './edit_form';
-import { update } from '../actions/edit_user_action';
+import { update } from '../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
   return {

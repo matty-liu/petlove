@@ -4,6 +4,8 @@ import ProfilePageMainSidebar from './profile_page_main_sidebar';
 
 function mapStateToProps(state, ownProps) {
 
+
+
   return {
     errors: state.errors.session,
     username: state.session.currentUser.username,
