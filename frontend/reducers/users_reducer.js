@@ -1,12 +1,14 @@
-import { RECEIVE_UPDATE_USER } from '../actions/users_actions';
+import { RECEIVE_UPDATE_USER, FETCH_ALL_USERS } from '../actions/users_actions';
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 
 const usersReducer = ( state = {user: null}, action ) => {
   let newState;
   let user;
 
-
   switch (action.type) {
+
+    case FETCH_ALL_USERS:
+      return Object.assign({},state,action.users);
 
     case RECEIVE_CURRENT_USER:
       if (!action.currentUser) {
