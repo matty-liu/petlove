@@ -14,8 +14,9 @@ class ProfilePageHeader extends React.Component {
 
   updateFile(event) {
     let file = event.nativeEvent.target.files[0];
+    debugger
     let fileReader = new FileReader();
-    fileReader.onloadend = () => {
+    fileReader.onload = () => {
       this.setState({imageFile: file, imageUrl: fileReader.result})
     };
 
@@ -35,7 +36,11 @@ class ProfilePageHeader extends React.Component {
       <div className="profile-header">
         <div className="profile-header-thumbnail">
           <img src={this.state.imageUrl} className="profile-header-thumbnail-pic" />
-          <input type="file" id="profilepic-upload-button" className="profile-header-thumbnail-upload" onClick={this.updateFile} />
+          <input type="file"  className="profile-header-thumbnail-upload" />
+            <input className="profile-header-thumbnail-upload"
+              id="profilepic-upload-button"
+              type="file"
+              onChange={(e)=>this.updateFile(e)} />
           <label htmlFor="profilepic-upload-button" className="profile-header-thumbnail-upload-label">Add</label>
         </div>
         <div className="profile-header-text">

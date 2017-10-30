@@ -1,37 +1,31 @@
 import { connect } from 'react-redux';
 
 import HomePage from './home_page';
+import { getUsers } from '../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
   let loggedIn;
-  let imageUrl = "";
+  console.log(state)
+
   if (state.session.currentUser) {
-    loggedIn = true,
-    imageUrl = state.session.currentUser.image_url
+    loggedIn = true
   } else {
     loggedIn = false
   }
 
   return {
+    users: state.entities.users.values,
     loggedIn: loggedIn,
-    errors: state.errors.session,
-    imageUrl: imageUrl,
-    username: state.session.currentUser.username,
-    location: state.session.currentUser.location,
-    profile: state.session.currentUser.profile,
-    sex: state.session.currentUser.sex,
-    age_range_min: state.session.currentUser.age_range_min,
-    age_range_max: state.session.currentUser.age_range_max,
-    species: state.session.currentUser.species ,
-    orientation: state.session.currentUser.orientation ,
-    size: state.session.currentUser.size,
-    weight: state.session.currentUser.weight,
-    status: state.session.currentUser.status,
-    look_for: state.session.currentUser.look_for,
-    look_gender: state.session.currentUser.look_gender,
-    diet: state.session.currentUser.diet
+    errors: state.errors.session
+  }
+}
+
+
+function mapDispatchToProps(dispatch, ownProps) {
+  return {
+    getUsers: () => dispatch(getUsers())
   }
 
 }
 
-export default connect(mapStateToProps)(HomePage)
+export default connect(mapStateToProps,mapDispatchToProps)(HomePage)

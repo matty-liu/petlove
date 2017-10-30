@@ -5,17 +5,16 @@ export const RECEIVE_UPDATE_ERROR = "RECEIVE_UPDATE_ERROR"
 export const FETCH_ALL_USERS = "FETCH_ALL_USERS"
 
 
-export const fetchUsers = () => (dispatch) => {
-  return APIUtil
-    .fetchAllUsers()
-    .then((users) => dispatch(fetchAllUsers(users)))
-  }
-
-export const fetchAllUsers = () => dispatch => ({
+export const fetchAllUsers = (users) => ({
   type: FETCH_ALL_USERS,
-  users: users
+  users
 })
 
+export const getUsers = () => (dispatch) => {
+  return APIUtil
+  .getUsers()
+  .then((users) => dispatch(fetchAllUsers(users)))
+}
 
 export const receiveUpdateUser = currentUser => ({
   type: RECEIVE_UPDATE_USER,
