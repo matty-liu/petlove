@@ -1,0 +1,82 @@
+
+.modal-login {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-login-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 214px;
+  // with three top right bottom
+  // with four top right bottom left
+  padding: 10px 48px 40px;
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 15px;
+  box-sizing: content-box;
+}
+
+.modal-login-title {
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.modal-login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.modal-login-form-username {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.modal-login-form-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.modal-login-form-input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 9px;
+  // padding-right: 16px;
+  background: #fff;
+  border: 1px solid #ccd0d9;
+  color: #2a2f35;
+  // margin: 0 10px 10px 0;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 22px;
+  box-shadow: none;
+}
+
+.modal-login-form-button {
+  width: 100%;
+  margin: 20px 0;
+  height: 46px;
+  line-height: 46px;
+
+  background-color: #3260c7;
+  white-space: nowrap;
+  color: #fff;
+  text-align: center;
+
+  overflow: hidden;
+  border-radius: 3px;
+  border: none;
+  vertical-align: top;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-family: sans-serif;
+}

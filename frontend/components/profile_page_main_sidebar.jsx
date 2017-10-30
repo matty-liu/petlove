@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
-import loginModalStyle from './modal/login_modal.js'
+import editModalStyle from './modal/edit_modal.js'
 import EditFormContainer from './edit_form_container';
 
 class ProfilePageMainSidebar extends React.Component {
@@ -20,12 +20,12 @@ class ProfilePageMainSidebar extends React.Component {
   }
 
   onModalOpen() {
-    loginModalStyle.content.opacity = 100;
-    loginModalStyle.overlay.opacity = 100;
+    editModalStyle.content.opacity = 100;
+    editModalStyle.overlay.opacity = 100;
   }
 
   closeModal() {
-    loginModalStyle.overlay.opacity = 0;
+    editModalStyle.overlay.opacity = 0;
     this.setState({modalOpen: false});
   }
 
@@ -46,8 +46,8 @@ class ProfilePageMainSidebar extends React.Component {
           isOpen={this.state.modalOpen}
           onAfterOpen={this.onModalOpen}
           onRequestClose={this.closeModal}
-          style={loginModalStyle}>
-          <div className="modal-login">
+          style={editModalStyle}>
+          <div className="modal-edit1">
             <EditFormContainer closeModal={this.closeModal}/>
           </div>
         </Modal>

@@ -6,33 +6,31 @@ class HomePage extends React.Component {
     super(props)
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.props.getUsers()
   }
 
   render() {
-    console.log(this.props.users)
-    
 
     if (!this.props.loggedIn) {
       return (
         <Redirect to="/" />
       )
-    } else if (!this.props.users) {
-        return <div></div>
-    } else {
-        return (
+    } else if (this.props.users) {
+      return (
+        <div>
           <div>
-            <div>
-              <span>YOUR TOP MATCHES</span>
-              {this.props.users.map( (user) => {
-                return <li>{user.username}</li>
-              })
-            }
-            </div>
-            <div> QUESTIONS </div>
+            <span>YOUR TOP MATCHES</span>
+            {this.props.users.map((user,index) => {
+              return <li key={index}>{user.username}</li>
+            })
+          }
           </div>
-        )
+          <div> QUESTIONS </div>
+        </div>
+      )
+    } else {
+        return <div></div>
       }
     }
 

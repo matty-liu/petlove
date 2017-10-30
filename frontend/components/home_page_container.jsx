@@ -5,7 +5,6 @@ import { getUsers } from '../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
   let loggedIn;
-  console.log(state)
 
   if (state.session.currentUser) {
     loggedIn = true
@@ -17,7 +16,7 @@ function mapStateToProps(state, ownProps) {
   if (Object.keys(state.entities.users).length > 1) {
     users = Object.values(state.entities.users)
   }
-  
+
 
   return {
     users: users,

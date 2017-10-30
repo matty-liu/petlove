@@ -4,8 +4,6 @@ import ProfilePage from './profile_page';
 
 function mapStateToProps(state, ownProps) {
 
-  console.log(state)
-
   let loggedIn;
   if (state.session.currentUser) {
     loggedIn = true
