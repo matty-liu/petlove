@@ -1,7 +1,7 @@
 import { RECEIVE_UPDATE_USER, FETCH_ALL_USERS } from '../actions/users_actions';
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 
-const usersReducer = ( state = {user: null}, action ) => {
+const usersReducer = ( state = {}, action ) => {
   let newState;
   let user;
 
@@ -19,10 +19,10 @@ const usersReducer = ( state = {user: null}, action ) => {
         return newState;
       }
 
-    case RECEIVE_UPDATE_USER:
-      user = action.currentUser;
-      newState = { [user.id]: user };
-      return newState;
+    // case RECEIVE_UPDATE_USER:
+    //   user = action.currentUser;
+    //   newState = { [user.id]: user };
+    //   return newState;
 
     default:
       return state;

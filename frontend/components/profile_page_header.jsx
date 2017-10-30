@@ -14,7 +14,7 @@ class ProfilePageHeader extends React.Component {
 
   updateFile(event) {
     let file = event.nativeEvent.target.files[0];
-    debugger
+    
     let fileReader = new FileReader();
     fileReader.onload = () => {
       this.setState({imageFile: file, imageUrl: fileReader.result})

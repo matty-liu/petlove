@@ -13,13 +13,18 @@ function mapStateToProps(state, ownProps) {
     loggedIn = false
   }
 
+  let users;
+  if (Object.keys(state.entities.users).length > 1) {
+    users = Object.values(state.entities.users)
+  }
+  
+
   return {
-    users: state.entities.users.values,
+    users: users,
     loggedIn: loggedIn,
     errors: state.errors.session
   }
 }
-
 
 function mapDispatchToProps(dispatch, ownProps) {
   return {
