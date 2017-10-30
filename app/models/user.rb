@@ -33,6 +33,15 @@
 
 class User < ApplicationRecord
 
+  has_many :answers,
+    through: :question,
+    source: :answers
+
+  has_many :questions,
+    class_name: "Question",
+    primary_key: :id,
+    foreign_key: :user_id
+
   attr_reader :password
   after_initialize :ensure_session_token
 

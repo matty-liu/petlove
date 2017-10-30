@@ -52,19 +52,6 @@ class ProfilePageMainSidebar extends React.Component {
           </div>
         </Modal>
 
-        <button className="profile-content-sidebar-button1">
-          <table>
-            <tbody>
-              <tr className = "profile-content-sidebar-button1-row">
-                <td>I am a</td>
-                <td>{this.props.status}</td>
-                <td>{this.props.sex}</td>
-                <td>{this.props.species}</td>
-              </tr>
-            </tbody>
-          </table>
-        </button>
-
         <button className="profile-content-sidebar-button2">
           <table>
             <tbody>

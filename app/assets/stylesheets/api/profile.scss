@@ -15,6 +15,12 @@
 
 .profile-header-thumbnail {
   position: relative;
+
+  &:hover {
+    label {
+      opacity: 1;
+    }
+  }
 }
 
 .profile-header-thumbnail-pic {
@@ -32,46 +38,39 @@
   height: 0.1px;
   opacity: 0;
   overflow: hidden;
-
-  // background: transparent;
-  // position: absolute;
-  // border: none;
-  // padding: 0;
-  // vertical-align: top;
-
-  // white-space: nowrap;
-  // color: #fff;
-  // text-align: center;
-  // text-transform: none;
-  // border-radius: 3px;
-  // -webkit-transition-property: background-color,color,border;
-  // transition-property: background-color,color,border;
-  // -webkit-transition-duration: 75ms;
-  // transition-duration: 75ms;
-  // -webkit-transition-timing-function: ease;
-  // transition-timing-function: ease;
-
-  .profile-header-thumbnail-upload:hover {
+  &:hover {
     cursor: pointer;
   }
+
 }
 
 .profile-header-thumbnail-upload-label {
   position: absolute;
   width: 100px;
   height: 30px;
-  font-size: 1.25em;
-  font-weight: 700;
   color: white;
-  background-color: black;
+  background-color: #104da1;
   display: inline-block;
   text-align: center;
-  padding-top: 9px;
-  border-radius: 10%
+  padding-top: 12px;
+  border-radius: 10%;
+  opacity: 0;
+  top: 120px;
+  left: 42px;
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 16px;
+
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
 }
 
 .profile-header-thumbnail-upload-label:hover {
   cursor: pointer;
+  background-color: rgb(74, 114, 224);
 }
 
 .profile-header-text {
