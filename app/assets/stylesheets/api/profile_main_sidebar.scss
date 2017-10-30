@@ -1,0 +1,67 @@
+
+.profile-content-sidebar-button2-row {
+  font-size: 15px;
+}
+
+
+.profile-content-sidebar {
+  width: 320px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-content-sidebar1 {
+  display: flex;
+  cursor: pointer;
+  &:hover{
+    background: white;
+  }
+}
+
+.fa-address-card-o {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.profile-content-sidebar-details1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  height: 70px;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile-content-sidebar2 {
+  margin-top: 10px;
+  // background: white;
+  display: flex;
+  cursor: pointer;
+  &:hover{
+    background: white;
+  }
+}
+
+.profile-content-sidebar-details2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  height: 70px;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  &:hover{
+    background: white;
+  }
+}
+
+.fa-pencil {
+  color: green;
+
+  &:hover{
+    cursor: pointer;
+  }
+}

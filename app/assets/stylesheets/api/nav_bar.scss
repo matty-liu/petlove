@@ -56,3 +56,21 @@
 .navbar-greeting-logout-button:hover {
   background: rgb(0,200,212);
 }
+
+.fa-star {
+  margin: 5px;
+  color: rgb(154,182,247);
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.fa-comment {
+  margin: 5px;
+  color: rgb(154,182,247);
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}

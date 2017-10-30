@@ -38,32 +38,36 @@ class ProfilePageMainSidebar extends React.Component {
     return (
       <div className="profile-content-sidebar">
 
-        <div onClick={this.handleEdit}>
-          <span>I am a {this.props.status}, {this.props.sex}, {this.props.species}.</span>
+
+        <div onClick={this.handleEdit} className="profile-content-sidebar1">
+          <i className="fa fa-address-card-o"></i>
+          <div className="profile-content-sidebar-details1">
+            <span>{this.props.status}, {this.props.sex}, {this.props.species}.</span>
+            <br/>
+            <span>Edit relationship status, sex, species &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>
+          </div>
+
+          <Modal
+            isOpen={this.state.modalOpen}
+            onAfterOpen={this.onModalOpen}
+            onRequestClose={this.closeModal}
+            style={editModalStyle}>
+            <div className="modal-edit1">
+              <EditFormContainer closeModal={this.closeModal}/>
+            </div>
+          </Modal>
         </div>
 
-        <Modal
-          isOpen={this.state.modalOpen}
-          onAfterOpen={this.onModalOpen}
-          onRequestClose={this.closeModal}
-          style={editModalStyle}>
-          <div className="modal-edit1">
-            <EditFormContainer closeModal={this.closeModal}/>
+        <div onClick={this.handleEdit} className="profile-content-sidebar2">
+          <i className="fa fa-address-card-o"></i>
+          <div onClick={this.handleEdit} className="profile-content-sidebar-details2">
+            <span>Looking for {this.props.look_gender} {this.props.look_for}, between
+              {this.props.age_range_min}&nbsp; and {this.props.age_range_max} old, {this.props.look_for}</span>
+            <br/>
+            <span>Edit dating prefernces &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>
           </div>
-        </Modal>
+        </div>
 
-        <button className="profile-content-sidebar-button2">
-          <table>
-            <tbody>
-              <tr className="profile-content-sidebar-button2-row">
-                <td>Looking for someone between {this.props.age_range_min}&nbsp;
-                   and {this.props.age_range_max} old, {this.props.look_for}
-                  and {this.props.look_gender}
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </button>
       </div>
     )
   }

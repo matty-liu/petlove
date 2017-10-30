@@ -23,8 +23,8 @@ module.exports = {
     outline                    : 'none',
     padding                    : '20px',
 
-    width                      : '510px',
-    height                     : '620px',
+    width                      : '480px',
+    height                     : '550px',
     margin                     : '0 auto',
 
     opacity                    : '0',
