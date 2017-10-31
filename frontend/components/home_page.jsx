@@ -23,7 +23,7 @@ class HomePage extends React.Component {
             <div className="home-main-matches">
                 <div className="home-main-above-matches">
                   <div className="home-main-matches-title"> Your top matches </div>
-                  <input type="search" className="home-main-matches-search"></input>
+                  <input type="search" className="home-main-matches-search" placeholder="What are you into?"></input>
                 </div>
                 <div className="home-main-matches-thumbnail-container">
                   {this.props.users.map((user) => {

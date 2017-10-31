@@ -12,6 +12,8 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleUsername = this.handleUsername.bind(this)
     this.handlePassword = this.handlePassword.bind(this)
+
+    this.handleDemoLogin = this.handleDemoLogin.bind(this)
   };
 
   handleUsername(e) {
@@ -26,10 +28,22 @@ class SessionForm extends React.Component {
     e.preventDefault()
     const user = Object.assign({},this.state);
     this.props.processForm(user);
-
   }
 
+  handleDemoLogin(e) {
+    e.preventDefault()
+    const user = Object.assign({},this.state);
+    this.props.processForm({username: "demo", password: "password"});
+  }
+
+
   render() {
+    let errors;
+    if (this.props.errors) {
+      errors = this.props.errors.map( (error,index) => (
+        <li key={index}>{error}</li>
+      ))
+    };
     return (
       <div className="modal-login-inner">
         <h2 className="modal-login-title">{this.props.formType === 'signup' ? "Sign Up" : "Sign In"}</h2>
@@ -49,9 +63,10 @@ class SessionForm extends React.Component {
               className="modal-login-form-input"
               placeholder="Password"/>
             </label>
-          <p>{this.props.errors}</p>
+          <ul className="modal-login-error">{errors}</ul>
           <button className="modal-login-form-button">{this.props.formType === 'signup' ? "Sign Up" : "Sign In"}</button>
         </form>
+        <button className="modal-login-form-button demo-login" onClick={this.handleDemoLogin}>Demo Log In</button>
       </div>
     )
   }

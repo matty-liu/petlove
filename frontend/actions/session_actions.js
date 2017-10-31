@@ -11,7 +11,7 @@ export const receiveCurrentUser = currentUser => ({
 export const receiveSessionErrors = error => {
   return {
     type: RECEIVE_SESSION_ERRORS,
-    error: [error.responseText]
+    error: error.responseJSON
   }
 }
 // export const receiveSessionErrors = errors => ({
