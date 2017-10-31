@@ -4,8 +4,16 @@ import ProfilePageHeader from './profile_page_header';
 import { update, updatePic } from '../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
+
+  debugger
+  // if (parseInt(ownProps.match.params.id)) {
+  //   return {
+  //     id: parseInt(ownProps.match.params.id)
+  //   }
+  // }
+
   return {
-    errors: state.errors.session,
+    userId: ownProps.userId,
     imageUrl: state.session.currentUser.image_url,
     username: state.session.currentUser.username,
     location: state.session.currentUser.location,

@@ -6,6 +6,13 @@ export const getUsers = () => {
   })
 }
 
+// export const getUser = (userId) => {
+//   return $.ajax({
+//     method: "GET",
+//     url: `api/user/${userId}`,
+//   })
+// }
+
 export const update = (user) => {
   return $.ajax({
     method: "PATCH",
@@ -15,7 +22,7 @@ export const update = (user) => {
 };
 
 export const updatePic = (formData, userId) => {
-  
+
   return $.ajax({
     method: "PATCH",
     url: `api/users/${userId}`,

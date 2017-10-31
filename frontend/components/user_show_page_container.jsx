@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import ProfilePage from './profile_page';
+import UserShowPage from './user_show_page';
 
 function mapStateToProps(state, ownProps) {
 
@@ -10,7 +10,7 @@ function mapStateToProps(state, ownProps) {
   } else {
     loggedIn = false
   }
-  
+
   let userId = parseInt(ownProps.match.params.id)
   if (userId) {
     userId: userId;
@@ -26,8 +26,10 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch, ownProps) {
   return {
+    getUser: (userId) => dispatch(getUser(userId)),
     getUsers: () => dispatch(getUsers())
   }
+
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProfilePage)
+export default connect(mapStateToProps,mapDispatchToProps)(UserShowPage)

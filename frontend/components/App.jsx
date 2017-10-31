@@ -5,6 +5,7 @@ import NavBar from './nav_bar_container';
 import LandingPageContainer from './landing_page_container';
 import HomePageContainer from './home_page_container';
 import ProfilePageContainer from './profile_page_container';
+import UserShowPageContainer from './user_show_page_container';
 
 import { AuthRoute } from '../util/route_util';
 
@@ -23,6 +24,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={LandingPageContainer} />
           <AuthRoute exact path="/home" component={HomePageContainer} />
+          <AuthRoute exact path="/profile/:id" component={UserShowPageContainer} />
           <AuthRoute exact path="/profile" component={ProfilePageContainer} />
         </Switch>
       </div>

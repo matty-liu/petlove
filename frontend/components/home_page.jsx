@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect, withRouter } from 'react-router-dom'
+import { Link, Route, Redirect, withRouter } from 'react-router-dom'
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -9,8 +9,6 @@ class HomePage extends React.Component {
   componentWillMount() {
     this.props.getUsers()
   }
-
-  
 
   render() {
     console.log(this.props.users)
@@ -28,17 +26,19 @@ class HomePage extends React.Component {
                   <input type="search" className="home-main-matches-search"></input>
                 </div>
                 <div className="home-main-matches-thumbnail-container">
-                  {this.props.users.map((user,index) => {
+                  {this.props.users.map((user) => {
                     return (
-                      <div key={user.id}>
-                        <img
-                          src={user.image_url}
-                          className="home-main-matches-thumbnail"
-                          key={index} />
-                        <div className="home-main-matches-thumbnail-info">
-                          {user.username}
+                      <Link to={`profile/${user.id}`} key={user.id}>
+                        <div key={user.id} >
+                          <img
+                            src={user.image_url}
+                            className="home-main-matches-thumbnail"
+                            key={user.id}/>
+                          <div className="home-main-matches-thumbnail-info">
+                            {user.username}
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                   )
                   })}
                 </div>

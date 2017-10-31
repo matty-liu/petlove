@@ -7,7 +7,12 @@ import ProfilePageMainSidebar from './profile_page_main_sidebar_container';
 
 class ProfilePage extends React.Component {
 
+  componentWillMount() {
+    this.props.getUsers()
+  }
+
   render() {
+    debugger
     if (!this.props.loggedIn) {
       return (
         <Redirect to="/" />
@@ -15,7 +20,7 @@ class ProfilePage extends React.Component {
     } else {
       return (
         <div className="profile">
-          <ProfilePageHeader />
+          <ProfilePageHeader userId={this.props.userId} />
           <div className="profile-main">
             <div className="profile-main-about">
               <ProfilePageMainEssay />

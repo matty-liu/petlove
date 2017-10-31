@@ -50,19 +50,23 @@ class EditForm extends React.Component {
       <div className="modal-login-inner">
         <div>Basics</div>
         <form onSubmit={this.handleSubmit} >
-          <label>Orientation</label>
-          <select onChange={this.handleOrientation} defaultValue={this.props.orientation}>
-            <option value="Straight">Straight</option>
-            <option value="Gay">Gay</option>
-            <option value="Other">Other</option>
-          </select>
+          <div>
+            <label>Orientation</label>
+            <select onChange={this.handleOrientation} defaultValue={this.props.orientation}>
+              <option value="Straight">Straight</option>
+              <option value="Gay">Gay</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
           <br />
 
+        <div>
           <label>Sex</label>
           <select onChange={this.handleSex} defaultValue={this.props.sex}>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
+        </div>
           <br />
 
           <label>Species</label>
