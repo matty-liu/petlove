@@ -10,6 +10,8 @@ class HomePage extends React.Component {
     this.props.getUsers()
   }
 
+  
+
   render() {
     console.log(this.props.users)
     if (!this.props.loggedIn) {
@@ -28,19 +30,16 @@ class HomePage extends React.Component {
                 <div className="home-main-matches-thumbnail-container">
                   {this.props.users.map((user,index) => {
                     return (
-                      <div>
+                      <div key={user.id}>
                         <img
                           src={user.image_url}
                           className="home-main-matches-thumbnail"
                           key={index} />
-                        <div home-main-matches-thumbnail-info>
+                        <div className="home-main-matches-thumbnail-info">
                           {user.username}
                         </div>
                       </div>
                   )
-
-
-
                   })}
                 </div>
 

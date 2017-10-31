@@ -18,7 +18,7 @@ function mapDispatchToProps(dispatch, ownProps) {
 
   return {
     updatePic: (formData, userId) => (dispatch(updatePic(formData, userId))),
-    update: (formData) => (dispatch(update(formData)))
+    // update: (formData) => (dispatch(update(formData)))
   }
 }
 

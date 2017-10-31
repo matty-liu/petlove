@@ -5,7 +5,6 @@ class ProfilePageHeader extends React.Component {
     super(props)
 
     this.state = {
-      imageFile: null,
       imageUrl: this.props.imageUrl,
       userId: this.props.userId,
     }
@@ -32,29 +31,20 @@ class ProfilePageHeader extends React.Component {
 
     let fileReader = new FileReader();
     fileReader.onload = (file) => {
-      this.setState({imageFile: file, imageUrl: fileReader.result})
-
+      this.setState({imageUrl: fileReader.result})
     };
 
-    let userId = this.state.userId;
-    let imageFile = file;
-
-
+    let userId = this.state.userId
     if (file) {
       let formData = new FormData();
       formData.append("user[id]", userId)
       formData.append("user[image]", file)
-      console.log(formData)
-      
       this.props.updatePic(formData, userId)
     }
 
     if (file) {
-      this.setState({imageFile: file})
       fileReader.readAsDataURL(file)
     }
-
-
 
     // if (file) {
     //   fileReader.onload = (file,userId) => {

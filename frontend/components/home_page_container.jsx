@@ -17,7 +17,6 @@ function mapStateToProps(state, ownProps) {
     users = Object.values(state.entities.users)
   }
 
-
   return {
     users: users,
     loggedIn: loggedIn,
