@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import UserShowPageMainEssay from './user_show_page_main_essay';
+import UserShowPageMainSidebar from './user_show_page_main_sidebar';
 
 function mapStateToProps(state, ownProps) {
 
@@ -28,4 +28,4 @@ function mapStateToProps(state, ownProps) {
 
 }
 
-export default connect(mapStateToProps)(UserShowPageMainEssay)
+export default connect(mapStateToProps)(UserShowPageMainSidebar)

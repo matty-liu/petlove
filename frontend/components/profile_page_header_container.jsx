@@ -5,7 +5,7 @@ import { update, updatePic } from '../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
 
-  debugger
+  
   // if (parseInt(ownProps.match.params.id)) {
   //   return {
   //     id: parseInt(ownProps.match.params.id)

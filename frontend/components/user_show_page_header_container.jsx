@@ -5,7 +5,7 @@ import { update, updatePic } from '../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
 
-  debugger
+  
   if (Object.keys(state.entities.users).length === 0) {
     return {}
   } else {
