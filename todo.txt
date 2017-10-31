@@ -1,0 +1,14 @@
+
+Major
+
+Paperclip exporting image url to user in backend
+
+User submit image how to handle form
+
+
+
+Minor
+
+More elaborate signup form,
+Tab function on sign/sign out page stopped working.
+Issue with modal not fully closing on side bar edit modal.

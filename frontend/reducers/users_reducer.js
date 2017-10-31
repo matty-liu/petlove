@@ -19,10 +19,11 @@ const usersReducer = ( state = {}, action ) => {
         return newState;
       }
 
-    // case RECEIVE_UPDATE_USER:
-    //   user = action.currentUser;
-    //   newState = { [user.id]: user };
-    //   return newState;
+    case RECEIVE_UPDATE_USER:
+      debugger
+      user = action.currentUser;
+      newState = { [user.id]: user };
+      return newState;
 
     default:
       return state;

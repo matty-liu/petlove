@@ -7,29 +7,72 @@ class ProfilePageHeader extends React.Component {
     this.state = {
       imageFile: null,
       imageUrl: this.props.imageUrl,
+      userId: this.props.userId,
     }
 
     this.updateFile = this.updateFile.bind(this);
   }
 
+  // works for preview but can't upload photo
+  // updateFile(event) {
+  //   let file = event.nativeEvent.target.files[0];
+  //
+  //   let fileReader = new FileReader();
+  //   fileReader.onload = () => {
+  //     this.setState({imageFile: file, imageUrl: fileReader.result})
+  //   };
+  //
+  //   if (file) {
+  //     fileReader.readAsDataURL(file);
+  //   }
+  // };
+
   updateFile(event) {
     let file = event.nativeEvent.target.files[0];
-    
+
     let fileReader = new FileReader();
-    fileReader.onload = () => {
+    fileReader.onload = (file) => {
       this.setState({imageFile: file, imageUrl: fileReader.result})
+
     };
 
+    let userId = this.state.userId;
+    let imageFile = file;
+
+
     if (file) {
-      fileReader.readAsDataURL(file);
+      let formData = new FormData();
+      formData.append("user[id]", userId)
+      formData.append("user[image]", file)
+      console.log(formData)
+      debugger
+      this.props.updatePic(formData, userId)
     }
+
+    if (file) {
+      this.setState({imageFile: file})
+      fileReader.readAsDataURL(file)
+    }
+
+
+
+    // if (file) {
+    //   fileReader.onload = (file,userId) => {
+    //     let formData = new FormData();
+    //     formData.append("user[id]", userId)
+    //     formData.append("user[image]", file)
+    //     debugger
+    //     this.props.update(formData)
+    //   }
+    // }
   };
 
-  handleSubmit(event) {
-    let formData = new FormData();
-    formData.append(this.state.imageFile)
-    this.props.uploadPic(this.state.currentUser.id, formData)
-  };
+
+  // handleSubmit(event) {
+  //   let formData = new FormData();
+  //   formData.append(this.state.imageFile)
+  //   this.props.updatePic(this.props.userId, formData)
+  // };
 
   render() {
     return (
@@ -40,8 +83,11 @@ class ProfilePageHeader extends React.Component {
             <input className="profile-header-thumbnail-upload"
               id="profilepic-upload-button"
               type="file"
-              onChange={(e)=>this.updateFile(e)} />
-          <label htmlFor="profilepic-upload-button" className="profile-header-thumbnail-upload-label">Add</label>
+              onChange={this.updateFile} />
+
+          <label htmlFor="profilepic-upload-button"
+            className="profile-header-thumbnail-upload-label"
+            onChange={this.updateFile}>Add</label>
         </div>
         <div className="profile-header-text">
           <div className="profile-header-text-username">{this.props.username}</div>
@@ -52,5 +98,7 @@ class ProfilePageHeader extends React.Component {
   }
 
 }
+
+// (e)=>this.updateFile(e)
 
 export default ProfilePageHeader;

@@ -11,22 +11,44 @@ class HomePage extends React.Component {
   }
 
   render() {
-
+    console.log(this.props.users)
     if (!this.props.loggedIn) {
       return (
         <Redirect to="/" />
       )
     } else if (this.props.users) {
       return (
-        <div>
-          <div>
-            <span>YOUR TOP MATCHES</span>
-            {this.props.users.map((user,index) => {
-              return <li key={index}>{user.username}</li>
-            })
-          }
+        <div className="home">
+          <div className="home-main">
+            <div className="home-main-matches">
+                <div className="home-main-above-matches">
+                  <div className="home-main-matches-title"> Your top matches </div>
+                  <input type="search" className="home-main-matches-search"></input>
+                </div>
+                <div className="home-main-matches-thumbnail-container">
+                  {this.props.users.map((user,index) => {
+                    return (
+                      <div>
+                        <img
+                          src={user.image_url}
+                          className="home-main-matches-thumbnail"
+                          key={index} />
+                        <div home-main-matches-thumbnail-info>
+                          {user.username}
+                        </div>
+                      </div>
+                  )
+
+
+
+                  })}
+                </div>
+
+              </div>
           </div>
-          <div> QUESTIONS </div>
+          <div className="home-main-below">
+            <div className="home-main-questions"> QUESTIONS </div>
+          </div>
         </div>
       )
     } else {

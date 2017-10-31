@@ -44,7 +44,7 @@ class ProfilePageMainSidebar extends React.Component {
           <div className="profile-content-sidebar-details1">
             <span>{this.props.status}, {this.props.sex}, {this.props.species}.</span>
             <br/>
-            <span>Edit relationship status, sex, species &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>
+            <span className="profile-content-sidebar-edit-text">Edit relationship status, sex, species &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>
           </div>
 
           <Modal
@@ -64,7 +64,7 @@ class ProfilePageMainSidebar extends React.Component {
             <span>Looking for {this.props.look_gender} {this.props.look_for}, between
               {this.props.age_range_min}&nbsp; and {this.props.age_range_max} old, {this.props.look_for}</span>
             <br/>
-            <span>Edit dating prefernces &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>
+            <span className="profile-content-sidebar-edit-text">Edit dating prefernces &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>
           </div>
         </div>
 

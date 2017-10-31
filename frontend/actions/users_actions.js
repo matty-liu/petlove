@@ -20,6 +20,11 @@ export const receiveUpdateUser = currentUser => ({
   currentUser: currentUser,
 })
 
+export const receiveUpdatePicture = user => ({
+  type: RECEIVE_UPDATE_USER,
+  user: user,
+})
+
 export const receiveUpdateErrors = user => ({
   type: RECEIVE_UPDATE_ERROR,
   error: [error.responseText]
@@ -30,6 +35,16 @@ export const update = (user) => (dispatch) => {
     .update(user)
     .then(
       (user) => dispatch(receiveUpdateUser(user)),
+      (error) => dispatch(receiveUpdateError(error))
+    )
+}
+
+export const updatePic = (formData, userId) => (dispatch) => {
+  debugger
+  return APIUtil
+    .updatePic(formData, userId)
+    .then(
+      (user) => dispatch(receiveUpdatePicture(user)),
       (error) => dispatch(receiveUpdateError(error))
     )
 }

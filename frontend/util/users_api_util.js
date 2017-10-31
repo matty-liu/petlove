@@ -10,17 +10,18 @@ export const update = (user) => {
   return $.ajax({
     method: "PATCH",
     url: `api/users/${user.id}`,
-    data: { user }
+    data: { user },
   });
 };
 
-export const updatePic = (formData) => {
+export const updatePic = (formData, userId) => {
+  debugger
   return $.ajax({
     method: "PATCH",
-    url: `api/users/${user.id}`,
+    url: `api/users/${userId}`,
     dataType: "json",
     contentType: false,
-    processType: false,
+    processData: false,
     data: formData,
   })
 }
