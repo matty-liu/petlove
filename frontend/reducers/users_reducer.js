@@ -20,7 +20,7 @@ const usersReducer = ( state = {}, action ) => {
       }
 
     case RECEIVE_UPDATE_USER:
-      debugger
+      
       user = action.currentUser;
       newState = { [user.id]: user };
       return newState;

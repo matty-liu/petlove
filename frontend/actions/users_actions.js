@@ -40,7 +40,7 @@ export const update = (user) => (dispatch) => {
 }
 
 export const updatePic = (formData, userId) => (dispatch) => {
-  debugger
+
   return APIUtil
     .updatePic(formData, userId)
     .then(

@@ -45,7 +45,7 @@ class ProfilePageHeader extends React.Component {
       formData.append("user[id]", userId)
       formData.append("user[image]", file)
       console.log(formData)
-      debugger
+      
       this.props.updatePic(formData, userId)
     }
 
@@ -61,7 +61,7 @@ class ProfilePageHeader extends React.Component {
     //     let formData = new FormData();
     //     formData.append("user[id]", userId)
     //     formData.append("user[image]", file)
-    //     debugger
+    //
     //     this.props.update(formData)
     //   }
     // }
