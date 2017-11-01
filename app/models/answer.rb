@@ -12,16 +12,22 @@
 
 class Answer < ApplicationRecord
 
-  validates :answer, :question_id, :user_id, presence: true
+  validates :answer, :question_id, presence: true
 
   belongs_to :question,
     class_name: "Question",
     primary_key: :id,
     foreign_key: :question_id
 
-  # belongs_to :user,
-  #   class_name: "User",
-  #   primary_key: :id,
-  #   foreign_key: :user_id
+  has_many :responses,
+    class_name: "Response",
+    primary_key: :id,
+    foreign_key: :answer_id
+
+  has_many :users,
+    through: :responses,
+    source: :users
+
+
 
 end

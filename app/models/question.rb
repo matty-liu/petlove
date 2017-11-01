@@ -1,4 +1,4 @@
-# == Schema Information
+# Schema Information
 #
 # Table name: questions
 #
@@ -9,6 +9,8 @@
 #
 
 class Question < ApplicationRecord
+
+  validates :question, presence: true
 
   has_many :answers,
     class_name: "Answer",

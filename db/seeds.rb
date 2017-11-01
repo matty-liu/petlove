@@ -55,11 +55,32 @@
 #   size: "small", status: "single", weight: "light",
 #   profile: "I love traveling, and I must say my favorite location is hAmsterdam")
 
-Question.create!(question: "Are you okay with interspecies dating?")
-Question.create!(question: "Are you a morning person? Night person?")
-Question.create!(question: "What would you prefer to do in your free time?")
-Question.create!(question: "What do you think of vegetarians?")
-Question.create!(question: "Does size matter?")
+# Question.create!(question: "Are you okay with interspecies dating?")
+# Question.create!(question: "Are you a morning person? Night person?")
+# Question.create!(question: "What would you prefer to do in your free time?")
+# Question.create!(question: "What do you think of vegetarians?")
+# Question.create!(question: "Does size matter?")
+
+Answer.create(answer:"Yes", question_id: 1)
+Answer.create(answer:"No", question_id: 1)
+Answer.create(answer:"Indifferent", question_id: 1)
+
+Answer.create(answer:"Morning", question_id: 2)
+Answer.create(answer:"Night", question_id: 2)
+Answer.create(answer:"Anytime", question_id: 2)
+
+Answer.create(answer:"Eat", question_id: 3)
+Answer.create(answer:"Sleep", question_id: 3)
+Answer.create(answer:"Play", question_id: 3)
+
+Answer.create(answer:"Love Em", question_id: 4)
+Answer.create(answer:"Hate Em", question_id: 4)
+Answer.create(answer:"Doesn't matter to me", question_id: 4)
+
+Answer.create(answer:"Yes", question_id: 5)
+Answer.create(answer:"No", question_id: 5)
+Answer.create(answer:"Indifferent", question_id: 5)
+
 
 # orientation, straight, gay, bisexual
 # size, small medium big
