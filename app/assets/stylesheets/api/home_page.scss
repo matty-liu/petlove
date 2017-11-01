@@ -59,16 +59,11 @@
   overflow: scroll;
   margin-top: 10px;
   height: 255px;
-  width: 900px;
+  max-width: 900px;
 }
 
-.home-main-matches-thumbnail-container2 {
-
-  div {
-    &:hover {
-      color: rgb(74,114,224);
-    }
-  }
+.home-main-matches-thumbnail-container:nth-child(2) {
+  padding-left: 570px;
 }
 
 .home-main-matches-thumbnail {
