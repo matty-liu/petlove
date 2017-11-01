@@ -10,6 +10,10 @@ html, body {
     padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 // this is cruicial for resizing issues.
 // without the absolute position, nothign is fixed

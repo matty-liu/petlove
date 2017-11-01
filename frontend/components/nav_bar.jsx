@@ -71,9 +71,11 @@ class NavBar extends React.Component{
           <div className="navbar-greeting">
             <i className="fa fa-star" aria-hidden="true"></i>
             <i className="fa fa-comment" aria-hidden="true"></i>
-            <p className="navbar-greeting-text">
-              Welcome <Link to="/profile">{this.props.currentUser.username}</Link>
-            </p>
+            <Link to="/profile">
+              <div className="navbar-greeting-myprofile-button">
+                My Profile
+              </div>
+            </Link>
             <button onClick={this.handleLogout} className="navbar-greeting-logout-button">Logout</button>
           </div>
         </div>

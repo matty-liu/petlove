@@ -53,13 +53,34 @@
   background: #30b7c4;
 }
 
+.navbar-greeting-myprofile-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  height: 38px;
+  font-size: 16px;
+  padding: 0 14px;
+  border: 1px solid #30b7c4;
+  border-radius: 3px;
+  color: #fff;
+  background: #30b7c4;
+  font-family: sans-serif;
+}
+
 .navbar-greeting-logout-button:hover {
   background: rgb(0,200,212);
 }
 
+.navbar-greeting-myprofile-button:hover {
+  background: rgb(0,200,212);
+}
+
 .fa-star {
-  margin: 5px;
+  margin: 13px;
   color: rgb(154,182,247);
+  transform: scale(2,2);
   &:hover {
     color: white;
     cursor: pointer;
@@ -67,8 +88,9 @@
 }
 
 .fa-comment {
-  margin: 5px;
+  margin: 13px;
   color: rgb(154,182,247);
+  transform: scale(2,2);
   &:hover {
     color: white;
     cursor: pointer;
