@@ -6,57 +6,60 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.delete_all
+# User.delete_all
+#
+# User.create!(username: "Doggy", password: "password",
+#   sex: "male", birthday: "", location: "New York",
+#   species: "dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "friendship", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!")
+#
+# User.create!(username: "Kitty", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
+#   sex: "female", birthday: "", location: "New York",
+#   species: "cat", age_range_min: 21, age_range_max: 100,
+#   look_for: "friendship", look_gender: "does not matter",
+#   size: "small", status: "single", weight: "light",
+#   profile: "Loooking for someone to cuddle and play with!")
+#
+# User.create!(username: "Piggy", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
+#   sex: "male", birthday: "", location: "New York",
+#   species: "pig",  age_range_min: 21, age_range_max: 100,
+#   look_for: "friendship", look_gender: "does not matter",
+#   size: "small", status: "single", weight: "average",
+#   profile: "I enjoy getting dirty and rolling around in mud. I do this mainly to prevent myself from getting
+#   sunburned so please understand. I promise I'm fun to hang around with and please don't turn me into
+#   ham, or bacon")
+#
+# User.create!(username: "Owl", password: "password",
+#   species: "owl", first_name: "", last_name: "", email: "mail@mail.com",
+#   sex: "male", birthday: "", profile: "text me", location: "New York", age_range_min: 21, age_range_max: 100,
+#   look_for: "friendship", look_gender: "does not matter",
+#   size: "small", status: "single", weight: "light",
+#   profile: "I am an hoot owl. That is all. HOOT HOOT")
+#
+# User.create!(username: "Giraffi", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
+#   sex: "male", birthday: "", location: "New York",
+#   species: "giraffe", age_range_min: 21, age_range_max: 100,
+#   look_for: "friendship", look_gender: "does not matter",
+#   size: "big", status: "single", weight: "average",
+#   profile: "Just saying, I don't do drugs because I'm naturally high, I'll see myself out but please send
+#   me a message!")
+#
+# User.create!(username: "Hamsty", password: "password",
+#   first_name: "", last_name: "", email: "mail@mail.com",
+#   sex: "male", birthday: "", location: "New York",
+#   species: "hamster", age_range_min: 21, age_range_max: 100,
+#   look_for: "friendship", look_gender: "does not matter",
+#   size: "small", status: "single", weight: "light",
+#   profile: "I love traveling, and I must say my favorite location is hAmsterdam")
 
-User.create!(username: "Doggy", password: "password",
-  sex: "male", birthday: "", location: "New York",
-  species: "dog", age_range_min: 21, age_range_max: 100,
-  look_for: "friendship", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!")
-
-User.create!(username: "Kitty", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "female", birthday: "", location: "New York",
-  species: "cat", age_range_min: 21, age_range_max: 100,
-  look_for: "friendship", look_gender: "does not matter",
-  size: "small", status: "single", weight: "light",
-  profile: "Loooking for someone to cuddle and play with!")
-
-User.create!(username: "Piggy", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "male", birthday: "", location: "New York",
-  species: "pig",  age_range_min: 21, age_range_max: 100,
-  look_for: "friendship", look_gender: "does not matter",
-  size: "small", status: "single", weight: "average",
-  profile: "I enjoy getting dirty and rolling around in mud. I do this mainly to prevent myself from getting
-  sunburned so please understand. I promise I'm fun to hang around with and please don't turn me into
-  ham, or bacon")
-
-User.create!(username: "Owl", password: "password",
-  species: "owl", first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "male", birthday: "", profile: "text me", location: "New York", age_range_min: 21, age_range_max: 100,
-  look_for: "friendship", look_gender: "does not matter",
-  size: "small", status: "single", weight: "light",
-  profile: "I am an hoot owl. That is all. HOOT HOOT")
-
-User.create!(username: "Giraffi", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "male", birthday: "", location: "New York",
-  species: "giraffe", age_range_min: 21, age_range_max: 100,
-  look_for: "friendship", look_gender: "does not matter",
-  size: "big", status: "single", weight: "average",
-  profile: "Just saying, I don't do drugs because I'm naturally high, I'll see myself out but please send
-  me a message!")
-
-User.create!(username: "Hamsty", password: "password",
-  first_name: "", last_name: "", email: "mail@mail.com",
-  sex: "male", birthday: "", location: "New York",
-  species: "hamster", age_range_min: 21, age_range_max: 100,
-  look_for: "friendship", look_gender: "does not matter",
-  size: "small", status: "single", weight: "light",
-  profile: "I love traveling, and I must say my favorite location is hAmsterdam")
-
-
-
+Question.create!(question: "Are you okay with interspecies dating?")
+Question.create!(question: "Are you a morning person? Night person?")
+Question.create!(question: "What would you prefer to do in your free time?")
+Question.create!(question: "What do you think of vegetarians?")
+Question.create!(question: "Does size matter?")
 
 # orientation, straight, gay, bisexual
 # size, small medium big
