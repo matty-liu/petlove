@@ -28,17 +28,19 @@ class HomePage extends React.Component {
                 <div className="home-main-matches-thumbnail-container">
                   {this.props.users.map((user) => {
                     return (
-                      <Link to={`profile/${user.id}`} key={user.id}>
-                        <div key={user.id} >
-                          <img
-                            src={user.image_url}
-                            className="home-main-matches-thumbnail"
-                            key={user.id}/>
-                          <div className="home-main-matches-thumbnail-info">
-                            {user.username}
+                      <div className="home-main-matches-thumbnail-container2">
+                        <Link to={`profile/${user.id}`} key={user.id}>
+                          <div key={user.id} >
+                            <img
+                              src={user.image_url}
+                              className="home-main-matches-thumbnail"
+                              key={user.id}/>
+                            <div className="home-main-matches-thumbnail-info">
+                              {user.username}
+                            </div>
                           </div>
-                        </div>
-                      </Link>
+                        </Link>
+                      </div>
                   )
                   })}
                 </div>
@@ -46,7 +48,7 @@ class HomePage extends React.Component {
               </div>
           </div>
           <div className="home-main-below">
-            
+
           </div>
         </div>
       )

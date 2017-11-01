@@ -5,6 +5,8 @@ import ProfilePageHeader from './profile_page_header_container';
 import ProfilePageMainEssay from './profile_page_main_essay_container';
 import ProfilePageMainSidebar from './profile_page_main_sidebar_container';
 
+// import QuestionForm from './question_form_container';
+
 class ProfilePage extends React.Component {
 
   componentWillMount() {
@@ -21,12 +23,18 @@ class ProfilePage extends React.Component {
       return (
         <div className="profile">
           <ProfilePageHeader userId={this.props.userId} />
-          <div className="profile-main">
-            <div className="profile-main-about">
-              <ProfilePageMainEssay />
-              <ProfilePageMainSidebar />
+          <div className="profile-contain">
+            <div className="profile-main">
+              <div className="profile-main-about">
+                <ProfilePageMainEssay />
+                <ProfilePageMainSidebar />
+              </div>
+            </div>
+            <div className="profile-questions">
+              <div>Questions</div>
             </div>
           </div>
+
         </div>
       )
     }

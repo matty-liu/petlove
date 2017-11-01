@@ -33,7 +33,7 @@ class SessionForm extends React.Component {
   handleDemoLogin(e) {
     e.preventDefault()
     const user = Object.assign({},this.state);
-    this.props.processForm({username: "demo", password: "password"});
+    this.props.login({username: "demo", password: "password"});
   }
 
 
@@ -65,8 +65,8 @@ class SessionForm extends React.Component {
             </label>
           <ul className="modal-login-error">{errors}</ul>
           <button className="modal-login-form-button">{this.props.formType === 'signup' ? "Sign Up" : "Sign In"}</button>
+          <button className="modal-login-form-b`utton demo-login" onClick={this.handleDemoLogin}>Demo Log In</button>
         </form>
-        <button className="modal-login-form-button demo-login" onClick={this.handleDemoLogin}>Demo Log In</button>
       </div>
     )
   }
