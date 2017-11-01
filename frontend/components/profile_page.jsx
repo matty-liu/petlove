@@ -5,7 +5,7 @@ import ProfilePageHeader from './profile_page_header_container';
 import ProfilePageMainEssay from './profile_page_main_essay_container';
 import ProfilePageMainSidebar from './profile_page_main_sidebar_container';
 
-// import QuestionForm from './question_form_container';
+import QuestionFormContainer from './question_form_container';
 
 class ProfilePage extends React.Component {
 
@@ -22,6 +22,7 @@ class ProfilePage extends React.Component {
     } else {
       return (
         <div className="profile">
+
           <ProfilePageHeader userId={this.props.userId} />
           <div className="profile-contain">
             <div className="profile-main">
@@ -31,10 +32,10 @@ class ProfilePage extends React.Component {
               </div>
             </div>
             <div className="profile-questions">
-              <div>Questions</div>
+              <div className="profile-questions-match-title">Match Questions</div>
+              <QuestionFormContainer />
             </div>
           </div>
-
         </div>
       )
     }

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link, Route, Redirect, withRouter } from 'react-router-dom'
 
-// import QuestionForm from './'
-
 class HomePage extends React.Component {
   constructor(props) {
     super(props)
@@ -50,7 +48,6 @@ class HomePage extends React.Component {
               </div>
           </div>
           <div className="home-main-below">
-
           </div>
         </div>
       )

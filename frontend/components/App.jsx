@@ -32,9 +32,9 @@ const App = () => {
       <div className="footer">
 
         <div className="footer-logos">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i className="fa fa-facebook" aria-hidden="true"></i>
+          <i className="fa fa-twitter" aria-hidden="true"></i>
+          <i className="fa fa-instagram" aria-hidden="true"></i>
         </div>
 
         <div className="footer-references">
