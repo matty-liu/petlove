@@ -65,7 +65,7 @@ class SessionForm extends React.Component {
             </label>
           <ul className="modal-login-error">{errors}</ul>
           <button className="modal-login-form-button">{this.props.formType === 'signup' ? "Sign Up" : "Sign In"}</button>
-          <button className="modal-login-form-b`utton demo-login" onClick={this.handleDemoLogin}>Demo Log In</button>
+          <button className="modal-login-form-button demo-login" onClick={this.handleDemoLogin}>Demo Log In</button>
         </form>
       </div>
     )

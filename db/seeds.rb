@@ -54,13 +54,13 @@
 #   look_for: "friendship", look_gender: "does not matter",
 #   size: "small", status: "single", weight: "light",
 #   profile: "I love traveling, and I must say my favorite location is hAmsterdam")
-
+#
 # Question.create!(question: "Are you okay with interspecies dating?")
 # Question.create!(question: "Are you a morning person? Night person?")
 # Question.create!(question: "What would you prefer to do in your free time?")
 # Question.create!(question: "What do you think of vegetarians?")
 # Question.create!(question: "Does size matter?")
-
+#
 # Answer.create(answer:"Yes", question_id: 1)
 # Answer.create(answer:"No", question_id: 1)
 # Answer.create(answer:"Indifferent", question_id: 1)
@@ -80,7 +80,7 @@
 # Answer.create(answer:"Yes", question_id: 5)
 # Answer.create(answer:"No", question_id: 5)
 # Answer.create(answer:"Indifferent", question_id: 5)
-
+#
 # Response.create(user_id: 16, answer_id:1)
 # Response.create(user_id: 17, answer_id:1)
 # Response.create(user_id: 20, answer_id:2)
