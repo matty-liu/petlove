@@ -6,11 +6,13 @@ class Api::ResponsesController < ApplicationController
 
     @answers.each do |answer|
       Response.create(user_id: current_user.id, answer_id: answer.id)
-    if @response.save
-      render :create
-    else
-      render json @response.errors.full_messages, status: 400;
+      if @response.save
+        render :create
+      else
+        render json @response.errors.full_messages, status: 400;
+      end
     end
+
   end
 
   private
