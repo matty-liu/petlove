@@ -29,7 +29,28 @@ const App = () => {
         </Switch>
       </div>
 
-      <div className="footer-temp"></div>
+      <div className="footer">
+
+        <div className="footer-logos">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+
+        <div className="footer-references">
+          <a href="" className="references-link">Apps</a>
+          <a href="" className="references-link">Press</a>
+          <a href="" className="references-link">Ad Choices</a>
+          <a href="" className="references-link">About</a>
+          <a href="" className="references-link">Careers</a>
+          <a href="" className="references-link">Support</a>
+          <a href="" className="references-link">Privacy Policy</a>
+          <a href="" className="references-link">Terms and Conditions</a>
+          <a href="" className="references-link">Dating Safety Tips</a>
+        </div>
+
+        <div className="footer-name">petLove 2017</div>
+      </div>
 
   </div>
   )

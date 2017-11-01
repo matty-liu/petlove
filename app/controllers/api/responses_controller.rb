@@ -1,9 +1,13 @@
 class Api::ResponsesController < ApplicationController
 
   def create
-    @response = Response.new(response_params)
+
+    @answers = params[answers]
+
+    @answers.each do |answer|
+      Response.create(user_id: current_user.id, answer_id: answer.id)
     if @response.save
-      render :show
+      render :create
     else
       render json @response.errors.full_messages, status: 400;
     end
@@ -11,7 +15,7 @@ class Api::ResponsesController < ApplicationController
 
   private
   def response_params
-    params.require(:response).permit(:user_id,:answer_id)
+    params.require(:response).permit(:answer_id)
   end
 
 end

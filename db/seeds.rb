@@ -61,25 +61,29 @@
 # Question.create!(question: "What do you think of vegetarians?")
 # Question.create!(question: "Does size matter?")
 
-Answer.create(answer:"Yes", question_id: 1)
-Answer.create(answer:"No", question_id: 1)
-Answer.create(answer:"Indifferent", question_id: 1)
+# Answer.create(answer:"Yes", question_id: 1)
+# Answer.create(answer:"No", question_id: 1)
+# Answer.create(answer:"Indifferent", question_id: 1)
+#
+# Answer.create(answer:"Morning", question_id: 2)
+# Answer.create(answer:"Night", question_id: 2)
+# Answer.create(answer:"Anytime", question_id: 2)
+#
+# Answer.create(answer:"Eat", question_id: 3)
+# Answer.create(answer:"Sleep", question_id: 3)
+# Answer.create(answer:"Play", question_id: 3)
+#
+# Answer.create(answer:"Love Em", question_id: 4)
+# Answer.create(answer:"Hate Em", question_id: 4)
+# Answer.create(answer:"Doesn't matter to me", question_id: 4)
+#
+# Answer.create(answer:"Yes", question_id: 5)
+# Answer.create(answer:"No", question_id: 5)
+# Answer.create(answer:"Indifferent", question_id: 5)
 
-Answer.create(answer:"Morning", question_id: 2)
-Answer.create(answer:"Night", question_id: 2)
-Answer.create(answer:"Anytime", question_id: 2)
-
-Answer.create(answer:"Eat", question_id: 3)
-Answer.create(answer:"Sleep", question_id: 3)
-Answer.create(answer:"Play", question_id: 3)
-
-Answer.create(answer:"Love Em", question_id: 4)
-Answer.create(answer:"Hate Em", question_id: 4)
-Answer.create(answer:"Doesn't matter to me", question_id: 4)
-
-Answer.create(answer:"Yes", question_id: 5)
-Answer.create(answer:"No", question_id: 5)
-Answer.create(answer:"Indifferent", question_id: 5)
+# Response.create(user_id: 16, answer_id:1)
+# Response.create(user_id: 17, answer_id:1)
+# Response.create(user_id: 20, answer_id:2)
 
 
 # orientation, straight, gay, bisexual

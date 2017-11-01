@@ -46,7 +46,7 @@ class HomePage extends React.Component {
               </div>
           </div>
           <div className="home-main-below">
-            <div className="home-main-questions"> QUESTIONS </div>
+            
           </div>
         </div>
       )

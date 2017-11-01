@@ -38,7 +38,7 @@ class User < ApplicationRecord
     foreign_key: :user_id
 
   has_many :answers,
-    through: :responses
+    through: :responses,
     source: :answer
 
   # has_many :answers,
