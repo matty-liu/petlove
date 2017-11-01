@@ -98,6 +98,11 @@
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
   height: 30px;
+
+  .li {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .modal-login-form-button {
@@ -105,6 +110,7 @@
   margin: 15px 0;
   height: 46px;
   line-height: 46px;
+  margin-top: 20px;
 
   background-color: #3260c7;
   white-space: nowrap;
