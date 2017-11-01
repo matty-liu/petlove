@@ -73,7 +73,7 @@ class NavBar extends React.Component{
             <i className="fa fa-comment" aria-hidden="true"></i>
             <Link to="/profile">
               <div className="navbar-greeting-myprofile-button">
-                My Profile
+                <span>My Profile</span>
               </div>
             </Link>
             <button onClick={this.handleLogout} className="navbar-greeting-logout-button">Logout</button>
