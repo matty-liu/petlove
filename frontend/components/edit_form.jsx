@@ -28,7 +28,7 @@ class EditForm extends React.Component {
       size: this.props.size,
       weight: this.props.weight,
       age_range_min: this.props.age_range_min,
-      age_range_max: this.props.age_range_max,
+      look_for: this.props.look_for,
     }
 
     this.handleSex = this.handleSex.bind(this)
@@ -37,7 +37,7 @@ class EditForm extends React.Component {
     this.handleSize = this.handleSize.bind(this)
     this.handleWeight = this.handleWeight.bind(this)
     this.handleAgeRangeMin = this.handleAgeRangeMin.bind(this)
-    this.handleAgeRangeMax = this.handleAgeRangeMax.bind(this)
+    this.handleLookFor = this.handleLookFor.bind(this)
 
     this.handleSubmit = this.handleSubmit.bind(this)
   };
@@ -57,11 +57,11 @@ class EditForm extends React.Component {
   handleWeight(e) {
     this.setState({weight: e.target.value})
   }
+  handleLookFor(e) {
+    this.setState({look_for: e.target.value})
+  }
   handleAgeRangeMin(e) {
     this.setState({age_range_min: e.target.value})
-  }
-  handleAgeRangeMax(e) {
-    this.setState({age_range_max: e.target.value})
   }
 
   handleSubmit(e) {
@@ -77,7 +77,7 @@ class EditForm extends React.Component {
         <div className="modal-edit-title">Basics</div>
         <form onSubmit={this.handleSubmit} className="modal-edit-form">
 
-          <label>I am a</label> <br/>
+          <label>I am a...</label> <br/>
           <div className="modal-edit-form-first3">
             <div>
               <select onChange={this.handleOrientation} defaultValue={this.props.orientation}>
@@ -104,6 +104,20 @@ class EditForm extends React.Component {
               <option value="Other">Other</option>
             </select>
           </div>
+
+          <label>I am looking for...</label> <br/>
+          <div className="modal-edit-form-next2">
+            <div>
+              <select onChange={this.handleOrientation} defaultValue={this.props.look_for}>
+                <option value="Relationship">Relationship</option>
+                <option value="Friendship">Friendship</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+          </div>
+
+
 
 
           <br />
