@@ -125,9 +125,6 @@ class EditForm extends React.Component {
 
           <textarea className="modal-edit-textarea">{this.props.profile}</textarea>
 
-
-
-
           <br />
           <button type="submit" className="save-changes">Save Changes</button>
           <p>{this.props.errors}</p>

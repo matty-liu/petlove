@@ -1,7 +1,10 @@
-
-export const submitSurvey = () => {
-  return $.ajax({
-    method: "POST",
-    url: "api/responses",
-  });
-};
+// 
+// export const submitSurvey = (answers) => {
+//   return $.ajax({
+//     method: "POST",
+//     url: "api/responses",
+//     data = answers
+//   });
+// };
+//
+// []

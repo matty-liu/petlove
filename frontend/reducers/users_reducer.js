@@ -21,7 +21,7 @@ const usersReducer = ( state = {}, action ) => {
 
     case RECEIVE_UPDATE_USER:
       user = action.user;
-      debugger
+      
       newState = Object.assign({}, state, {[action.currentUser.id]: action.currentUser});
 
       return newState;

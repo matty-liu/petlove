@@ -1,14 +1,20 @@
 import { connect } from 'react-redux';
 
-import { submitAnswer } from '../util/response_api_util'
+import { update } from '../actions/users_actions';
 import QuestionForm from './question_form';
-// import { submit } from '../actions/questions_actions';
-//
-// function mapStateToProps(state, ownProps) {
-// }
-//
-function mapDispatchToProps(dispatch, ownProps) {
-  processForm: (user) => dispatch(login(user))
+
+// let user = state.entities.users[ownProps.userId]
+function mapStateToProps(state, ownProps) {
+
+  return {
+    id: state.session.currentUser.id
+  }
 }
 
-export default connect(null,null)(QuestionForm)
+function mapDispatchToProps(dispatch, ownProps) {
+  return {
+    update: (user) => dispatch(update(user))
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(QuestionForm)
