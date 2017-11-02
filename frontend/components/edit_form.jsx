@@ -29,6 +29,7 @@ class EditForm extends React.Component {
       weight: this.props.weight,
       age_range_min: this.props.age_range_min,
       look_for: this.props.look_for,
+      profile: this.props.profile,
     }
 
     this.handleSex = this.handleSex.bind(this)
@@ -38,6 +39,7 @@ class EditForm extends React.Component {
     this.handleWeight = this.handleWeight.bind(this)
     this.handleAgeRangeMin = this.handleAgeRangeMin.bind(this)
     this.handleLookFor = this.handleLookFor.bind(this)
+    this.handleProfile = this.handleProfile.bind(this)
 
     this.handleSubmit = this.handleSubmit.bind(this)
   };
@@ -63,6 +65,10 @@ class EditForm extends React.Component {
   handleAgeRangeMin(e) {
     this.setState({age_range_min: e.target.value})
   }
+  handleProfile(e) {
+    this.setState({profile: e.target.value})
+  }
+
 
   handleSubmit(e) {
     e.preventDefault()
@@ -77,7 +83,7 @@ class EditForm extends React.Component {
         <div className="modal-edit-title">Basics</div>
         <form onSubmit={this.handleSubmit} className="modal-edit-form">
 
-          <label>I am a...</label> <br/>
+          <label>I am a...</label>
           <div className="modal-edit-form-first3">
             <div>
               <select onChange={this.handleOrientation} defaultValue={this.props.orientation}>
@@ -105,17 +111,20 @@ class EditForm extends React.Component {
             </select>
           </div>
 
-          <label>I am looking for...</label> <br/>
-          <div className="modal-edit-form-next2">
+          <label>I am looking for...</label>
+          <div className="modal-edit-form-next1">
             <div>
-              <select onChange={this.handleOrientation} defaultValue={this.props.look_for}>
+              <select onChange={this.handleLookFor} defaultValue={this.props.look_for}>
                 <option value="Relationship">Relationship</option>
                 <option value="Friendship">Friendship</option>
                 <option value="Other">Other</option>
               </select>
             </div>
-
           </div>
+
+          <textarea className="modal-edit-textarea">{this.props.profile}</textarea>
+
+          <textarea className="modal-edit-textarea">{this.props.profile}</textarea>
 
 
 

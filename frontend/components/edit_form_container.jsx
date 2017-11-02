@@ -17,6 +17,7 @@ function mapStateToProps(state, ownProps) {
     look_for: state.session.currentUser.look_for,
     look_gender: state.session.currentUser.look_gender,
     diet: state.session.currentUser.diet,
+    profile: state.session.currentUser.profile,
     closeModal: ownProps.closeModal
   }
 }
