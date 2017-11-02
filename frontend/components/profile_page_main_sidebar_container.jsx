@@ -15,7 +15,7 @@ function mapStateToProps(state, ownProps) {
     age_range_min: state.session.currentUser.age_range_min,
     age_range_max: state.session.currentUser.age_range_max,
     species: state.session.currentUser.species ,
-    orientation: state.session.currentUser.orientation ,
+    orientation: state.session.currentUser.orientation,
     size: state.session.currentUser.size,
     weight: state.session.currentUser.weight,
     status: state.session.currentUser.status,

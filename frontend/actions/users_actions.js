@@ -15,10 +15,13 @@ export const getUsers = () => (dispatch) => {
   .then((users) => dispatch(fetchAllUsers(users)))
 }
 
-export const receiveUpdateUser = currentUser => ({
-  type: RECEIVE_UPDATE_USER,
-  currentUser: currentUser,
-})
+export const receiveUpdateUser = user => {
+
+  return {
+    type: RECEIVE_UPDATE_USER,
+    user: user,
+  }
+}
 
 export const receiveUpdatePicture = user => ({
   type: RECEIVE_UPDATE_USER,
@@ -31,6 +34,7 @@ export const receiveUpdateErrors = user => ({
 })
 
 export const update = (user) => (dispatch) => {
+
   return APIUtil
     .update(user)
     .then(

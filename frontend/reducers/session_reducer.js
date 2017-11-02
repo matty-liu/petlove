@@ -5,15 +5,15 @@ const sessionReducer = ( state = {currentUser: null}, action ) => {
   let newState;
   switch (action.type) {
 
-    // case RECEIVE_UPDATE_USER:
-    //   
-    //   if (!action.currentUser) {
-    //     return { currentUser: null}
-    //   } else {
-    //     const user = action.currentUser;
-    //     newState = { currentUser: user };
-    //     return newState;
-    //   }
+    case RECEIVE_UPDATE_USER:
+      
+      if (action.user) {
+        const user = action.user;
+        newState = { currentUser: user };
+        return newState;
+      } else {
+        return { currentUser: null}
+      }
     // what was i thinking??
 
     case RECEIVE_CURRENT_USER:
