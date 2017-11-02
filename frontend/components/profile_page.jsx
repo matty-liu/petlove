@@ -31,9 +31,11 @@ class ProfilePage extends React.Component {
                 <ProfilePageMainSidebar />
               </div>
             </div>
-            <div className="profile-questions">
-              <div className="profile-questions-match-title">Match Questions</div>
-              <QuestionFormContainer />
+            <div className="profile-main-questions">
+              <div className="profile-question-main">
+                <div className="profile-questions-match-title">Match Questions</div>
+                <QuestionFormContainer />
+              </div>
             </div>
           </div>
         </div>

@@ -1,25 +1,76 @@
 
 .profile-questions {
-  width: 1000px;
+  width: 750px;
 
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.profile-main-questions {
+  display: flex;
+  padding-bottom: 60px;
+  height: auto;
+  width: 1000px;
+  padding-left: 60px;
+  padding-right: 60px;
   margin-left: auto;
   margin-right: auto;
 }
 
-
 .profile-questions-container {
   display:flex;
   flex-direction: column;
+  background-color: white;
+  font-size: 18px;
+  box-shadow: 0 0 1em lightgray;
+  border-radius: 5px;
+  width: 500px;
 }
 
-.profile-questions {
+.profile-question {
   display:flex;
   flex-direction: column;
+  padding: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 20px;
+
+}
+
+.profile-question-answerS {
+  margin: 10px;
 }
 
 .profile-questions-match-title {
   font-size: 19px;
+  background-color: rgba(243, 245, 250, 1);
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile-question {
+  background-color: white;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile-question-answer {
+  line-height: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile-question-answer-radioanswer {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.radio-button {
+  height: 15px;
+	width: 15px;
+  color: blue;
 }

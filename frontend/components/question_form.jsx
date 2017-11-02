@@ -10,69 +10,92 @@ class QuestionForm extends React.Component {
   render() {
     return (
       <form className="profile-questions-form">
-        <div className="profiles-questions-container">
+        <div className="profile-questions-container">
 
           <div className="profile-question">
-            "Are you a morning person? Night person?"
-            <br/>
-            <input type="radio" id="question1" />
-            <label htmlFor="question1">Morning</label>
-            <br/>
-            <input type="radio" id="question1" />
-            <label htmlFor="question1">Night</label>
-            <br/>
-            <input type="radio" id="question1" />
-            <label htmlFor="question1">Anytime</label>
+            <span>Are you a morning person? Night person?</span>
+            <div className="profile-question-answerS">
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question1" className="radio-button" name="q1"/>
+                <div className="profile-question-answer" htmlFor="question1">&nbsp;&nbsp;Morning</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question1" className="radio-button" name="q1"/>
+                <div className="profile-question-answer" htmlFor="question1">&nbsp;&nbsp;Night</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question1" className="radio-button" name="q1"/>
+                <div className="profile-question-answer" htmlFor="question1">&nbsp;&nbsp;Anytime</div> <br/>
+              </div>
+            </div>
           </div>
 
           <div className="profile-question">
-            "What would you prefer to do in your free time?"
-            <br/>
-            <input type="radio" id="question2" />
-            <label htmlFor="question2">Eat</label>
-            <br/>
-            <input type="radio" id="question2" />
-            <label htmlFor="question2">Sleep</label>
-            <br/>
-            <input type="radio" id="question2" />
-            <label htmlFor="question2">Play</label>
+            <span>What would you prefer to do in your free time?</span>
+            <div className="profile-question-answerS">
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question2" className="radio-button" name="q2"/>
+                <div className="profile-question-answer" htmlFor="question2">&nbsp;&nbsp;Eat</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question2" className="radio-button" name="q2"/>
+                <div className="profile-question-answer" htmlFor="question2">&nbsp;&nbsp;Sleep</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question2" className="radio-button" name="q2"/>
+                <div className="profile-question-answer" htmlFor="question2">&nbsp;&nbsp;Play</div> <br/>
+              </div>
+            </div>
           </div>
 
           <div className="profile-question profile-question4">
-            "What do you think of vegetarians?"
-            <br/>
-            <input type="radio" id="question4" />
-            <label htmlFor="question4">Love Em</label>
-            <br/>
-            <input type="radio" id="question4" />
-            <label htmlFor="question4">Hate Em</label>
-            <br/>
-            <input type="radio" id="question4" />
-            <label htmlFor="question4">Doesn't matter to me</label>
+            <span>What do you think of vegetarians?</span>
+            <div className="profile-question-answerS">
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question4" className="radio-button" name="q4"/>
+                <div className="profile-question-answer" htmlFor="question4">&nbsp;&nbsp;Love Em</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question4" className="radio-button" name="q4"/>
+                <div className="profile-question-answer" htmlFor="question4">&nbsp;&nbsp;Hate Em</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question4" className="radio-button" name="q4"/>
+                <div className="profile-question-answer" htmlFor="question4">&nbsp;&nbsp;Doesn't matter to me</div> <br/>
+              </div>
+            </div>
           </div>
 
           <div className="profile-question profile-question3">
-            "Are you okay with interspecies dating?"
-            <br/>
-            <input type="radio" id="question3" />
-            <label htmlFor="question3">Yes</label>
-            <br/>
-            <input type="radio" id="question3" />
-            <label htmlFor="question3">No</label>
+            <span>Are you okay with interspecies dating?</span>
+            <div className="profile-question-answerS">
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question3" className="radio-button" name="q3"/>
+                <div className="profile-question-answer" htmlFor="question3">&nbsp;&nbsp;Yes</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question3" className="radio-button" name="q3"/>
+                <div className="profile-question-answer" htmlFor="question3">&nbsp;&nbsp;No</div> <br/>
+              </div>
+            </div>
           </div>
 
           <div className="profile-question profile-question5">
-            "Does size matter?"
-            <br/>
-            <input type="radio" id="question5" />
-            <label htmlFor="question5">Yes</label>
-            <br/>
-            <input type="radio" id="question5" />
-            <label htmlFor="question5">No</label>
-            <br/>
-            <input type="radio" id="question5" />
-            <label htmlFor="question5">Indifferent</label>
-            <br/>
+            <span>Does size matter?</span>
+            <div className="profile-question-answerS">
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question5" className="radio-button" name="q5"/>
+                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;Yes</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question5" className="radio-button" name="q5"/>
+                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;No</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input type="radio" id="question5" className="radio-button" name="q5"/>
+                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;Indifferent</div> <br/>
+              </div>
+            </div>
           </div>
 
         </div>
