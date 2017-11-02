@@ -23,24 +23,24 @@ class QuestionForm extends React.Component {
   }
 
   handleInputOnClick1(event) {
-    const compatibility_value = this.state.compatibility
-    this.setState({compatibility: compatibility_value+parseInt(event.target.value)})
+    const compatibility_value = this.state.compatibility_value
+    this.setState({compatibility_value: compatibility_value+parseInt(event.target.value)})
   }
   handleInputOnClick2(event) {
-    const compatibility_value = this.state.compatibility
-    this.setState({compatibility: compatibility_value+parseInt(event.target.value)})
+    const compatibility_value = this.state.compatibility_value
+    this.setState({compatibility_value: compatibility_value+parseInt(event.target.value)})
   }
   handleInputOnClick3(event) {
-    const compatibility_value = this.state.compatibility
-    this.setState({compatibility: compatibility_value+parseInt(event.target.value)})
+    const compatibility_value = this.state.compatibility_value
+    this.setState({compatibility_value: compatibility_value+parseInt(event.target.value)})
   }
   handleInputOnClick4(event) {
-    const compatibility_value = this.state.compatibility
-    this.setState({compatibility: compatibility_value+parseInt(event.target.value)})
+    const compatibility_value = this.state.compatibility_value
+    this.setState({compatibility_value: compatibility_value+parseInt(event.target.value)})
   }
   handleInputOnClick5(event) {
-    const compatibility_value = this.state.compatibility
-    this.setState({compatibility: compatibility_value+parseInt(event.target.value)})
+    const compatibility_value = this.state.compatibility_value
+    this.setState({compatibility_value: compatibility_value+parseInt(event.target.value)})
   }
 
   closeForm() {
@@ -48,9 +48,9 @@ class QuestionForm extends React.Component {
   }
 
   handleSubmit(event) {
-
     event.preventDefault()
     const user = Object.assign({},this.state)
+    debugger
     this.props.update(user)
     this.closeForm()
   }

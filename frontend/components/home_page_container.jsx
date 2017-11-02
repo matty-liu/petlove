@@ -29,7 +29,7 @@ function mapStateToProps(state, ownProps) {
         return Math.abs(user.compatibility_value-compatibility_value) < 20;
       }
     })
-    debugger
+    
   } else {
     userMatches = users
   }
