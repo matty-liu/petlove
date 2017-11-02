@@ -87,7 +87,7 @@ class EditForm extends React.Component {
           <div className="modal-edit-form-first3">
             <div>
               <select onChange={this.handleOrientation} defaultValue={this.props.orientation}>
-                <option disabled selected value> -- select an option -- </option>
+                <option disabled selected value> -select- </option>
                 <option value="Straight">Straight</option>
                 <option value="Gay">Gay</option>
                 <option value="Other">Other</option>
@@ -96,14 +96,14 @@ class EditForm extends React.Component {
 
             <div>
               <select onChange={this.handleSex} defaultValue={this.props.sex}>
-                <option disabled selected value> -- select your sex -- </option>
+                <option disabled selected value> -select- </option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
               </select>
             </div>
 
             <select onChange={this.handleSpecies} defaultValue={this.props.species}>
-              <option disabled selected value> -- select a species -- </option>
+              <option disabled selected value> -select- </option>
               <option value="Dog">Dog</option>
               <option value="Cat">Cat</option>
               <option value="Horse">Horse</option>
@@ -118,11 +118,10 @@ class EditForm extends React.Component {
           <div className="modal-edit-form-next1">
             <div>
               <select onChange={this.handleLookFor} defaultValue={this.props.look_for}>
-                <option disabled selected value> -- select an option -- </option>
-                <option value="Relationship">Relationship</option>
-                <option value="Friendship">Friendship</option>
-                <option value="Friendship">Dinner</option>
-                <option value="Other">Other</option>
+                <option disabled selected value> -select- </option>
+                <option value="Relationship">a relationship</option>
+                <option value="Friendship">a friend</option>
+                <option value="Friendship">dinner</option>
               </select>
             </div>
           </div>
