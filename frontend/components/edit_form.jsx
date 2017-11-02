@@ -69,7 +69,6 @@ class EditForm extends React.Component {
     this.setState({profile: e.target.value})
   }
 
-
   handleSubmit(e) {
     e.preventDefault()
     const user = Object.assign({},this.state);
@@ -122,7 +121,7 @@ class EditForm extends React.Component {
             </div>
           </div>
 
-          <textarea className="modal-edit-textarea">{this.props.profile}</textarea>
+          <textarea className="modal-edit-textarea" onChange={this.handleProfile}>{this.props.profile}</textarea>
 
           <textarea className="modal-edit-textarea">{this.props.profile}</textarea>
 

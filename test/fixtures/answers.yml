@@ -2,11 +2,12 @@
 #
 # Table name: answers
 #
-#  id          :integer          not null, primary key
-#  answer      :string           not null
-#  question_id :integer          not null
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
+#  id            :integer          not null, primary key
+#  answer        :string           not null
+#  question_id   :integer          not null
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#  compatibility :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
