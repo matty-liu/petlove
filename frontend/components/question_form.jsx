@@ -8,7 +8,8 @@ class QuestionForm extends React.Component {
 
     this.state = {
       compatibility_value: 50,
-      id: this.props.id
+      id: this.props.id,
+      formOpen: true
     }
 
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -17,6 +18,7 @@ class QuestionForm extends React.Component {
     this.handleInputOnClick3 = this.handleInputOnClick3.bind(this)
     this.handleInputOnClick4 = this.handleInputOnClick4.bind(this)
     this.handleInputOnClick5 = this.handleInputOnClick5.bind(this)
+    this.closeForm = this.closeForm.bind(this)
 
   }
 
@@ -41,12 +43,16 @@ class QuestionForm extends React.Component {
     this.setState({compatibility: compatibility_value+parseInt(event.target.value)})
   }
 
+  closeForm() {
+    this.setState({formOpen:false})
+  }
+
   handleSubmit(event) {
     debugger
     event.preventDefault()
     const user = Object.assign({},this.state)
     this.props.update(user)
-
+    this.closeForm()
   }
 
   // componentWillMount() {
@@ -60,6 +66,7 @@ class QuestionForm extends React.Component {
   // </select>
 
   render() {
+    if (this.state.formOpen) {
     return (
       <form className="profile-questions-form" onSubmit={this.handleSubmit}>
         <div className="profile-questions-container">
@@ -154,8 +161,10 @@ class QuestionForm extends React.Component {
         <button>Save changes</button>
       </form>
     )
+  } else {
+    return <div></div>
+    }
   }
-
 }
 
 export default QuestionForm;

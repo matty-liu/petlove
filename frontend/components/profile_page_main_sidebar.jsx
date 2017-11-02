@@ -14,6 +14,7 @@ class ProfilePageMainSidebar extends React.Component {
       status: this.props.status,
       sex: this.props.sex,
       species: this.props.species,
+      orientation: this.props.orientation
     }
 
     // if (this.props.status !== "") {
@@ -50,7 +51,7 @@ class ProfilePageMainSidebar extends React.Component {
           <i className="fa fa-address-card-o"></i>
           <div className="profile-content-sidebar-details1">
             <span>
-              {(this.props.status === "") ? `${this.props.status}` : `${this.props.status}, `}
+              {(this.props.orientation === "") ? `${this.props.orientation}` : `${this.props.orientation}, `}
               {(this.props.sex === "") ? `${this.props.sex}` : `${this.props.sex}, `}
               {(this.props.species === "") ? `${this.props.species}` : `${this.props.species} `}
             </span>
