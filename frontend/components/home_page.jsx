@@ -18,7 +18,6 @@ class HomePage extends React.Component {
 
 
   render() {
-
     if (!this.props.loggedIn) {
       return (
         <Redirect to="/" />

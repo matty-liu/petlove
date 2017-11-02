@@ -81,7 +81,7 @@ class ProfilePageHeader extends React.Component {
         </div>
         <div className="profile-header-text">
           <div className="profile-header-text-username">{this.props.username}</div>
-          <div className="profile-header-text-location">{this.props.location}</div>
+          <div className="profile-header-text-location">New York</div>
         </div>
       </div>
     )

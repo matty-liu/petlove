@@ -17,8 +17,25 @@ function mapStateToProps(state, ownProps) {
     users = Object.values(state.entities.users)
   }
 
+
+  let userMatches;
+  let userId = state.session.currentUser.id
+  if (state.entities.users[state.session.currentUser.id]) {
+    (state.entities.users[state.session.currentUser.id]).compatibility_value
+    let compatibility_value = ((state.entities.users[state.session.currentUser.id]).compatibility_value)
+    userMatches = users.filter( (user) => {
+      if (userId === user.id) {
+      } else {
+        return Math.abs(user.compatibility_value-compatibility_value) < 20;
+      }
+    })
+    debugger
+  } else {
+    userMatches = users
+  }
+
   return {
-    users: users,
+    users: userMatches,
     loggedIn: loggedIn,
     errors: state.errors.session
   }
