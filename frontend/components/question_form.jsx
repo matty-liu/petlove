@@ -48,7 +48,7 @@ class QuestionForm extends React.Component {
   }
 
   handleSubmit(event) {
-    debugger
+
     event.preventDefault()
     const user = Object.assign({},this.state)
     this.props.update(user)
