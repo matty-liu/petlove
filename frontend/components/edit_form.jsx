@@ -130,7 +130,7 @@ class EditForm extends React.Component {
 
 
           <br />
-          <button type="submit">Save Changes</button>
+          <button type="submit" className="save-changes">Save Changes</button>
           <p>{this.props.errors}</p>
 
         </form>

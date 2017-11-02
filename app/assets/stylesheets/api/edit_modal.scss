@@ -3,6 +3,8 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 .modal-edit-title {
@@ -52,6 +54,10 @@
     white-space: nowrap;
     width: 120px;
   }
+
+  textarea {
+    margin: 6px;
+  }
 }
 
 .modal-edit-form-first3 {
@@ -64,7 +70,6 @@
 	border: 3px solid #cccccc;
 	padding: 5px;
 	font-family: Tahoma, sans-serif;
-	background-image: url(bg.gif);
 	background-position: bottom right;
 	background-repeat: no-repeat;
   resize: none;

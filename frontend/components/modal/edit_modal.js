@@ -13,7 +13,7 @@ module.exports = {
   },
   content : {
     position                   : 'absolute',
-    top                        : '30px',
+    top                        : '60px',
     bottom                     : '50px',
     border                     : '1px solid #ccc',
     background                 : '#f3f5f9',
@@ -24,7 +24,7 @@ module.exports = {
     padding                    : '0',
 
     width                      : '480px',
-    height                     : '550px',
+    height                     : '600px',
     margin                     : '0 auto',
 
     opacity                    : '0',

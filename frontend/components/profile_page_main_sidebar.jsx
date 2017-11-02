@@ -49,7 +49,11 @@ class ProfilePageMainSidebar extends React.Component {
         <div onClick={this.handleEdit} className="profile-content-sidebar1">
           <i className="fa fa-address-card-o"></i>
           <div className="profile-content-sidebar-details1">
-            <span>{`${this.props.status}, `}{`${this.props.sex}, `}{`${this.props.species}`}.</span>
+            <span>
+              {(this.props.status === "") ? `${this.props.status}` : `${this.props.status}, `}
+              {(this.props.sex === "") ? `${this.props.sex}` : `${this.props.sex}, `}
+              {(this.props.species === "") ? `${this.props.species}` : `${this.props.species} `}
+            </span>
             <br/>
             <span className="profile-content-sidebar-edit-text">Edit relationship status, sex, species &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>
           </div>
@@ -68,8 +72,7 @@ class ProfilePageMainSidebar extends React.Component {
         <div onClick={this.handleEdit} className="profile-content-sidebar2">
           <i className="fa fa-address-card-o"></i>
           <div onClick={this.handleEdit} className="profile-content-sidebar-details2">
-            <span>Looking for {this.props.look_for}, someone between&nbsp;
-              {this.props.age_range_min}&nbsp;and {this.props.age_range_max} old</span>
+            <span>Looking for {this.props.look_for}</span>
             <br/>
             <span className="profile-content-sidebar-edit-text">Edit dating prefernces &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>
           </div>
