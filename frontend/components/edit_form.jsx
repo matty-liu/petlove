@@ -30,6 +30,7 @@ class EditForm extends React.Component {
       age_range_min: this.props.age_range_min,
       look_for: this.props.look_for,
       profile: this.props.profile,
+      profile2: this.props.profile2
     }
 
     this.handleSex = this.handleSex.bind(this)
@@ -40,6 +41,7 @@ class EditForm extends React.Component {
     this.handleAgeRangeMin = this.handleAgeRangeMin.bind(this)
     this.handleLookFor = this.handleLookFor.bind(this)
     this.handleProfile = this.handleProfile.bind(this)
+    this.handleProfileTwo = this.handleProfileTwo.bind(this)
 
     this.handleSubmit = this.handleSubmit.bind(this)
   };
@@ -68,11 +70,14 @@ class EditForm extends React.Component {
   handleProfile(e) {
     this.setState({profile: e.target.value})
   }
+  handleProfileTwo(e) {
+    this.setState({profile2: e.target.value})
+  }
 
   handleSubmit(e) {
     e.preventDefault()
     const user = Object.assign({},this.state);
-
+    
     this.props.update(user);
     this.props.closeModal()
   }
@@ -126,9 +131,9 @@ class EditForm extends React.Component {
             </div>
           </div>
 
-          <textarea className="modal-edit-textarea" onChange={this.handleProfile}>{this.props.profile}</textarea>
+          <textarea className="modal-edit-textarea" onChange={this.handleProfile} defaultValue={this.props.profile}></textarea>
 
-          <textarea className="modal-edit-textarea">{this.props.profile}</textarea>
+          <textarea className="modal-edit-textarea" onChange={this.handleProfileTwo} defaultValue={this.props.profile2}></textarea>
 
           <br />
           <button type="submit" className="save-changes">Save Changes</button>

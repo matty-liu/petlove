@@ -4,6 +4,7 @@ import EditForm from './edit_form';
 import { update } from '../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
+  
   return {
     errors: state.errors.session,
     sex: state.session.currentUser.sex,
@@ -18,6 +19,7 @@ function mapStateToProps(state, ownProps) {
     look_gender: state.session.currentUser.look_gender,
     diet: state.session.currentUser.diet,
     profile: state.session.currentUser.profile,
+    profile2: state.session.currentUser.profile2,
     closeModal: ownProps.closeModal
   }
 }

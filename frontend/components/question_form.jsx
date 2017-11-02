@@ -50,7 +50,7 @@ class QuestionForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault()
     const user = Object.assign({},this.state)
-    debugger
+
     this.props.update(user)
     this.closeForm()
   }

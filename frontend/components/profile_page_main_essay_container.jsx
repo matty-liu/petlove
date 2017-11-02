@@ -9,6 +9,7 @@ function mapStateToProps(state, ownProps) {
     username: state.session.currentUser.username,
     location: state.session.currentUser.location,
     profile: state.session.currentUser.profile,
+    profile2: state.session.currentUser.profile2,
     sex: state.session.currentUser.sex,
     age_range_min: state.session.currentUser.age_range_min,
     age_range_max: state.session.currentUser.age_range_max,
