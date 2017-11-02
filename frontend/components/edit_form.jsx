@@ -1,3 +1,19 @@
+// <label>Size</label>
+// <select onChange={this.handleSize} defaultValue={this.props.size}>
+//   <option value="Small">Small</option>
+//   <option value="Medium">Medium</option>
+//   <option value="Large">Large</option>
+// </select>
+// <br />
+//
+// <label>Weight</label>
+// <select onChange={this.handleWeight} defaultValue={this.props.weight}>
+//   <option value="Light">Light</option>
+//   <option value="Average">Average</option>
+//   <option value="Heavy">Heavy</option>
+// </select>
+// <br />
+
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
@@ -11,6 +27,8 @@ class EditForm extends React.Component {
       species: this.props.species,
       size: this.props.size,
       weight: this.props.weight,
+      age_range_min: this.props.age_range_min,
+      age_range_max: this.props.age_range_max,
     }
 
     this.handleSex = this.handleSex.bind(this)
@@ -18,6 +36,8 @@ class EditForm extends React.Component {
     this.handleSpecies = this.handleSpecies.bind(this)
     this.handleSize = this.handleSize.bind(this)
     this.handleWeight = this.handleWeight.bind(this)
+    this.handleAgeRangeMin = this.handleAgeRangeMin.bind(this)
+    this.handleAgeRangeMax = this.handleAgeRangeMax.bind(this)
 
     this.handleSubmit = this.handleSubmit.bind(this)
   };
@@ -36,6 +56,12 @@ class EditForm extends React.Component {
   }
   handleWeight(e) {
     this.setState({weight: e.target.value})
+  }
+  handleAgeRangeMin(e) {
+    this.setState({age_range_min: e.target.value})
+  }
+  handleAgeRangeMax(e) {
+    this.setState({age_range_max: e.target.value})
   }
 
   handleSubmit(e) {
@@ -79,21 +105,6 @@ class EditForm extends React.Component {
             </select>
           </div>
 
-          <label>Size</label>
-          <select onChange={this.handleSize} defaultValue={this.props.size}>
-            <option value="Small">Small</option>
-            <option value="Medium">Medium</option>
-            <option value="Large">Large</option>
-          </select>
-          <br />
-
-          <label>Weight</label>
-          <select onChange={this.handleWeight} defaultValue={this.props.weight}>
-            <option value="Light">Light</option>
-            <option value="Average">Average</option>
-            <option value="Heavy">Heavy</option>
-          </select>
-          <br />
 
           <br />
           <button type="submit">Save Changes</button>
