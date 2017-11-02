@@ -42,7 +42,7 @@ class ProfilePageMainSidebar extends React.Component {
   }
 
   render() {
-    
+
     return (
       <div className="profile-content-sidebar">
 
