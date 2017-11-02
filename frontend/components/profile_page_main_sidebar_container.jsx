@@ -4,7 +4,7 @@ import ProfilePageMainSidebar from './profile_page_main_sidebar';
 
 function mapStateToProps(state, ownProps) {
 
-
+  // orientation: state.entities.users.orientation ,
 
   return {
     errors: state.errors.session,

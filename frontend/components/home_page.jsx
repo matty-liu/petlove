@@ -4,14 +4,21 @@ import { Link, Route, Redirect, withRouter } from 'react-router-dom'
 class HomePage extends React.Component {
   constructor(props) {
     super(props)
+
   }
 
   componentWillMount() {
     this.props.getUsers()
   }
 
+  filterUser() {
+    this.props.users
+  }
+
+
+
   render() {
-    console.log(this.props.users)
+
     if (!this.props.loggedIn) {
       return (
         <Redirect to="/" />

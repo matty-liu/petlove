@@ -13,6 +13,7 @@
 #   species: "dog", age_range_min: 21, age_range_max: 100,
 #   look_for: "friendship", look_gender: "does not matter",
 #   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 50;
 #   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
 #   and someone to play with!")
 #
@@ -21,6 +22,7 @@
 #   species: "cat", age_range_min: 21, age_range_max: 100,
 #   look_for: "friendship", look_gender: "does not matter",
 #   size: "small", status: "single", weight: "light",
+#   orientation:"Single", compatibility_value: 50;
 #   profile: "Loooking for someone to cuddle and play with!")
 #
 # User.create!(username: "Piggy", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
@@ -28,6 +30,7 @@
 #   species: "pig",  age_range_min: 21, age_range_max: 100,
 #   look_for: "friendship", look_gender: "does not matter",
 #   size: "small", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 50;
 #   profile: "I enjoy getting dirty and rolling around in mud. I do this mainly to prevent myself from getting
 #   sunburned so please understand. I promise I'm fun to hang around with and please don't turn me into
 #   ham, or bacon")
@@ -37,6 +40,7 @@
 #   sex: "male", birthday: "", profile: "text me", location: "New York", age_range_min: 21, age_range_max: 100,
 #   look_for: "friendship", look_gender: "does not matter",
 #   size: "small", status: "single", weight: "light",
+#   orientation:"Single", compatibility_value: 50;
 #   profile: "I am an hoot owl. That is all. HOOT HOOT")
 #
 # User.create!(username: "Giraffi", password: "password", first_name: "", last_name: "", email: "mail@mail.com",
@@ -44,6 +48,7 @@
 #   species: "giraffe", age_range_min: 21, age_range_max: 100,
 #   look_for: "friendship", look_gender: "does not matter",
 #   size: "big", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 50;
 #   profile: "Just saying, I don't do drugs because I'm naturally high, I'll see myself out but please send
 #   me a message!")
 #
@@ -53,6 +58,7 @@
 #   species: "hamster", age_range_min: 21, age_range_max: 100,
 #   look_for: "friendship", look_gender: "does not matter",
 #   size: "small", status: "single", weight: "light",
+#   orientation:"Single", compatibility_value: 50;
 #   profile: "I love traveling, and I must say my favorite location is hAmsterdam")
 #
 # Question.create!(question: "Are you okay with interspecies dating?")
@@ -87,7 +93,6 @@
 # Response.create(user_id: 16, answer_id:1)
 # Response.create(user_id: 17, answer_id:1)
 # Response.create(user_id: 20, answer_id:2)
-
 
 # orientation, straight, gay, bisexual
 # size, small medium big
