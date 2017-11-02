@@ -1,4 +1,15 @@
 
+.modal-edit {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.modal-edit-title {
+  width: 100%;
+  background: white;
+}
+
 .modal-login {
   display: flex;
   justify-content: center;

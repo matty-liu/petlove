@@ -99,6 +99,7 @@ class QuestionForm extends React.Component {
           </div>
 
         </div>
+        <button>Save changes</button>
       </form>
     )
   }

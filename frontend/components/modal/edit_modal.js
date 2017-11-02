@@ -21,7 +21,7 @@ module.exports = {
     WebkitOverflowScrolling    : 'touch',
     borderRadius               : '4px',
     outline                    : 'none',
-    padding                    : '20px',
+    padding                    : '0',
 
     width                      : '480px',
     height                     : '550px',

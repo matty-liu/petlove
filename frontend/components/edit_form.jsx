@@ -47,8 +47,8 @@ class EditForm extends React.Component {
 
   render() {
     return (
-      <div className="modal-login-inner">
-        <div>Basics</div>
+      <div className="modal-edit">
+        <div className="modal-edit-title">Basics</div>
         <form onSubmit={this.handleSubmit} >
           <div>
             <label>Orientation</label>
