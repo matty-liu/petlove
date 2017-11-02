@@ -8,7 +8,17 @@
 .modal-edit-title {
   width: 100%;
   background: white;
+  padding: 18px;
 }
+
+.modal-edit-form {
+  margin: 26px;
+}
+
+.modal-edit-form-first3 {
+  display: flex;
+}
+
 
 .modal-login {
   display: flex;

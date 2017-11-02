@@ -49,37 +49,35 @@ class EditForm extends React.Component {
     return (
       <div className="modal-edit">
         <div className="modal-edit-title">Basics</div>
-        <form onSubmit={this.handleSubmit} >
-          <div>
-            <label>Orientation</label>
-            <select onChange={this.handleOrientation} defaultValue={this.props.orientation}>
-              <option value="Straight">Straight</option>
-              <option value="Gay">Gay</option>
+        <form onSubmit={this.handleSubmit} className="modal-edit-form">
+
+          <label>I am a</label> <br/>
+          <div className="modal-edit-form-first3">
+            <div>
+              <select onChange={this.handleOrientation} defaultValue={this.props.orientation}>
+                <option value="Straight">Straight</option>
+                <option value="Gay">Gay</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <select onChange={this.handleSex} defaultValue={this.props.sex}>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+
+            <select onChange={this.handleSpecies} defaultValue={this.props.species}>
+              <option value="Dog">Dog</option>
+              <option value="Cat">Cat</option>
+              <option value="Horse">Horse</option>
+              <option value="Pig">Pig</option>
+              <option value="Bird">Bird</option>
+              <option value="Goat">Goat</option>
               <option value="Other">Other</option>
             </select>
           </div>
-          <br />
-
-        <div>
-          <label>Sex</label>
-          <select onChange={this.handleSex} defaultValue={this.props.sex}>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-        </div>
-          <br />
-
-          <label>Species</label>
-          <select onChange={this.handleSpecies} defaultValue={this.props.species}>
-            <option value="Dog">Dog</option>
-            <option value="Cat">Cat</option>
-            <option value="Horse">Horse</option>
-            <option value="Pig">Pig</option>
-            <option value="Bird">Bird</option>
-            <option value="Goat">Goat</option>
-            <option value="Other">Other</option>
-          </select>
-          <br />
 
           <label>Size</label>
           <select onChange={this.handleSize} defaultValue={this.props.size}>
