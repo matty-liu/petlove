@@ -105,7 +105,7 @@
 
 .profile-main {
   width: auto;
-  height: 450px;
+  height: auto;
   background-color: rgba(243, 245, 250, 1);
   display: flex;
   justify-content: center;
@@ -206,6 +206,9 @@
   background: white;
 }
 
-
+.profile-main-questions {
+  display: flex;
+  margin-left: 100px;
+}
 
 //
