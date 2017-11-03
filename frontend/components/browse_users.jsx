@@ -22,7 +22,7 @@ class UsersPage extends React.Component {
   }
 
   handleSearch(e) {
-    debugger
+
     this.setState({searchField: e.target.value})
   }
 
@@ -75,7 +75,7 @@ class UsersPage extends React.Component {
                         </Link>
                       </div>
                     )}
-                  )}
+                  ).reverse()}
                 </div>
 
               </div>
