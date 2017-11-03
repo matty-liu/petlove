@@ -61,8 +61,11 @@ class HomePage extends React.Component {
                               src={user.image_url}
                               className="home-main-matches-thumbnail"
                               key={user.id}/>
-                            <div className="home-main-matches-thumbnail-info">
+                            <div className="home-main-matches-thumbnail-username">
                               {user.username}
+                            </div>
+                            <div className="home-main-matches-thumbnail-matchpercent">
+                              {`${91-Math.abs(user.compatibility_value-this.props.userCompatibilityValue)}% Match`}
                             </div>
                           </div>
                         </Link>

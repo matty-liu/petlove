@@ -51,9 +51,9 @@ class ProfilePageMainSidebar extends React.Component {
           <i className="fa fa-address-card-o"></i>
           <div className="profile-content-sidebar-details1">
             <span>
-              {(this.props.orientation === "") ? `${this.props.orientation}` : `${this.props.orientation}, `}
-              {(this.props.sex === "") ? `${this.props.sex}` : `${this.props.sex}, `}
-              {(this.props.species === "") ? `${this.props.species}` : `${this.props.species} `}
+              {(this.props.orientation === null) ? `` : `${this.props.orientation}, `}
+              {(this.props.sex === null) ? `` : `${this.props.sex}, `}
+              {(this.props.species === null) ? `` : `${this.props.species}`}
             </span>
             <br/>
             <span className="profile-content-sidebar-edit-text">Edit relationship status, sex, species &nbsp;<i className="fa fa-pencil" aria-hidden="true"></i></span>

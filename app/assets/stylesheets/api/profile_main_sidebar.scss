@@ -16,6 +16,8 @@
   cursor: pointer;
   &:hover{
     background: white;
+    box-shadow: 0 0 1em lightgrey;
+    transition-timing-function: ease-out;
   }
 }
 
@@ -47,6 +49,8 @@
   cursor: pointer;
   &:hover{
     background: white;
+    box-shadow: 0 0 1em lightgrey;
+    transition-timing-function: ease-out;
   }
 }
 

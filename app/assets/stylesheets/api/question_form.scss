@@ -26,7 +26,7 @@
   font-size: 18px;
   box-shadow: 0 0 1em lightgray;
   border-radius: 5px;
-  width: 700px;
+  width: 600px;
 }
 
 .profile-question {
@@ -73,4 +73,47 @@
   height: 15px;
 	width: 15px;
   color: blue;
+  &:hover {
+
+  }
+}
+
+.question-form-disappear {
+  -webkit-transition: opacity 3s ease-in-out;
+ -moz-transition: opacity 3s ease-in-out;
+ -ms-transition: opacity 3s ease-in-out;
+ -o-transition: opacity 3s ease-in-out;
+  opacity: 1;
+}
+
+.submit-answers {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  vertical-align: top;
+  width: 120px;
+  height: 42px;
+  line-height: 41px;
+  font-size: 15px;
+  white-space: nowrap;
+  color: white;
+  background-color: rgb(51,84,206);
+  text-align: center;
+  text-transform: none;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-transition-property: background-color,color,border;
+  transition-property: background-color,color,border;
+  -webkit-transition-duration: 75ms;
+  transition-duration: 75ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+
+.right-align-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }

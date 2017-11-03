@@ -45,6 +45,7 @@ class QuestionForm extends React.Component {
 
   closeForm() {
     this.setState({formOpen:false})
+
   }
 
   handleSubmit(event) {
@@ -52,18 +53,13 @@ class QuestionForm extends React.Component {
     const user = Object.assign({},this.state)
 
     this.props.update(user)
+
+
+
     this.closeForm()
+
+
   }
-
-  // componentWillMount() {
-  //   this.props.getUsers()
-  // }
-
-  // <select id="ddlViewBy">
-  //   <option value="1">test1</option>
-  //   <option value="2" selected="selected">test2</option>
-  //   <option value="3">test3</option>
-  // </select>
 
   render() {
     if (this.state.formOpen) {
@@ -72,7 +68,7 @@ class QuestionForm extends React.Component {
         <div className="profile-questions-container">
 
           <div className="profile-question">
-            <span>Are you a morning person? Night person?</span>
+            <span>Do you prefer the morning or night?</span>
             <div className="profile-question-answerS">
               <div className="profile-question-answer-radioanswer">
                 <input onClick={this.handleInputOnClick1} type="radio" id="question1" className="radio-button" name="q1" value="10"/>
@@ -112,15 +108,33 @@ class QuestionForm extends React.Component {
             <div className="profile-question-answerS">
               <div className="profile-question-answer-radioanswer">
                 <input onClick={this.handleInputOnClick4} type="radio" id="question4" className="radio-button" name="q4" value="10"/>
-                <div className="profile-question-answer" htmlFor="question4">&nbsp;&nbsp;Love Em</div> <br/>
+                <div className="profile-question-answer" htmlFor="question4">&nbsp;&nbsp;Love em</div> <br/>
               </div>
               <div className="profile-question-answer-radioanswer">
                 <input onClick={this.handleInputOnClick4} type="radio" id="question4" className="radio-button" name="q4" value="-5"/>
-                <div className="profile-question-answer" htmlFor="question4">&nbsp;&nbsp;Hate Em</div> <br/>
+                <div className="profile-question-answer" htmlFor="question4">&nbsp;&nbsp;Hate em</div> <br/>
               </div>
               <div className="profile-question-answer-radioanswer">
                 <input onClick={this.handleInputOnClick4} type="radio" id="question4" className="radio-button" name="q4" value="-10"/>
                 <div className="profile-question-answer" htmlFor="question4">&nbsp;&nbsp;I eat them</div> <br/>
+              </div>
+            </div>
+          </div>
+
+          <div className="profile-question profile-question5">
+            <span>Do you play well with others?</span>
+            <div className="profile-question-answerS">
+              <div className="profile-question-answer-radioanswer">
+                <input onClick={this.handleInputOnClick5} type="radio" id="question5" className="radio-button" name="q5" value="-10"/>
+                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;Of course!</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input onClick={this.handleInputOnClick5} type="radio" id="question5" className="radio-button" name="q5" value="10"/>
+                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;No</div> <br/>
+              </div>
+              <div className="profile-question-answer-radioanswer">
+                <input onClick={this.handleInputOnClick5} type="radio" id="question5" className="radio-button" name="q5" value="5"/>
+                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;Indifferent</div> <br/>
               </div>
             </div>
           </div>
@@ -139,26 +153,11 @@ class QuestionForm extends React.Component {
             </div>
           </div>
 
-          <div className="profile-question profile-question5">
-            <span>Does size matter?</span>
-            <div className="profile-question-answerS">
-              <div className="profile-question-answer-radioanswer">
-                <input onClick={this.handleInputOnClick5} type="radio" id="question5" className="radio-button" name="q5" value="-10"/>
-                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;Yes</div> <br/>
-              </div>
-              <div className="profile-question-answer-radioanswer">
-                <input onClick={this.handleInputOnClick5} type="radio" id="question5" className="radio-button" name="q5" value="10"/>
-                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;No</div> <br/>
-              </div>
-              <div className="profile-question-answer-radioanswer">
-                <input onClick={this.handleInputOnClick5} type="radio" id="question5" className="radio-button" name="q5" value="5"/>
-                <div className="profile-question-answer" htmlFor="question5">&nbsp;&nbsp;Indifferent</div> <br/>
-              </div>
-            </div>
+          <div className="right-align-button">
+            <button className="submit-answers">Answer</button>
           </div>
-
         </div>
-        <button>Save changes</button>
+
       </form>
     )
   } else {

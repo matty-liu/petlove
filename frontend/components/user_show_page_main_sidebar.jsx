@@ -10,7 +10,11 @@ class UserShowPageMainSidebar extends React.Component {
       <div className="profile-content-sidebar">
         <div className="profile-content-sidebar1">
           <div className="profile-content-sidebar-details1">
-            <span>{this.props.orientation}, {this.props.sex}, {this.props.species}.</span>
+            <span>
+              {(this.props.orientation === null) ? `` : `${this.props.orientation}, `}
+              {(this.props.sex === null) ? `` : `${this.props.sex}, `}
+              {(this.props.species === null) ? `` : `${this.props.species}`}
+            </span>
             <br/>
             <span className="profile-content-sidebar-edit-text"></span>
           </div>

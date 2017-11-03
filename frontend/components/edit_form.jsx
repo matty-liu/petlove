@@ -131,12 +131,20 @@ class EditForm extends React.Component {
             </div>
           </div>
 
-          <textarea className="modal-edit-textarea" onChange={this.handleProfile} defaultValue={this.props.profile}></textarea>
+          <textarea className="modal-edit-textarea"
+            onChange={this.handleProfile}
+            defaultValue={this.props.profile}
+            placeholder="My self summary"></textarea>
 
-          <textarea className="modal-edit-textarea" onChange={this.handleProfileTwo} defaultValue={this.props.profile2}></textarea>
+          <textarea className="modal-edit-textarea"
+            onChange={this.handleProfileTwo}
+            defaultValue={this.props.profile2}
+            placeholder="You should message me if..."></textarea>
 
           <br />
-          <button type="submit" className="save-changes">Save Changes</button>
+          <div className="center-button">
+            <button type="submit" className="save-changes">Save Changes</button>
+          </div>
           <p>{this.props.errors}</p>
 
         </form>

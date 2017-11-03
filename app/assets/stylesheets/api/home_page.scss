@@ -46,7 +46,7 @@
 
 .home-main-matches-title {
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 600;
   font-family: "Roboto";
   color: white;
   display: flex;
@@ -73,21 +73,22 @@
   border-radius: 5px;
   transition: all .2s ease-in-out;
   object-fit: cover;
-  
+
   &:hover {
     cursor: pointer;
     transform: scale(1.05);
   }
-
 }
 
-.home-main-matches-thumbnail-info {
+.home-main-matches-thumbnail-username {
   color: white;
   padding-left: 15px;
   padding-top: 1px;
   &:hover {
     color: rgb(74,114,224);
   }
+  font-family: "Roboto";
+  font-weight: 100;
 }
 
 .home-main-below {
@@ -98,4 +99,12 @@
 
 .home-main-questions {
   color: black;
+}
+
+.home-main-matches-thumbnail-matchpercent {
+  color: rgb(74,114,224);
+  padding-left: 15px;
+  padding-top: 1px;
+  font-family: "Roboto";
+  font-weight: 300;
 }
