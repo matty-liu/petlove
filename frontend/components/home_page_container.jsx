@@ -17,7 +17,6 @@ function mapStateToProps(state, ownProps) {
     users = Object.values(state.entities.users)
   }
 
-
   let userMatches;
   let userId = state.session.currentUser.id
   if (state.entities.users[state.session.currentUser.id]) {
@@ -29,13 +28,15 @@ function mapStateToProps(state, ownProps) {
         return Math.abs(user.compatibility_value-compatibility_value) < 20;
       }
     })
-    
+
   } else {
     userMatches = users
   }
 
   return {
-    users: userMatches,
+    users: users,
+    userMatches: userMatches,
+    userId: state.session.currentUser.id,
     loggedIn: loggedIn,
     errors: state.errors.session
   }

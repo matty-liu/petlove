@@ -77,7 +77,7 @@ class EditForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     const user = Object.assign({},this.state);
-    
+
     this.props.update(user);
     this.props.closeModal()
   }
@@ -124,9 +124,9 @@ class EditForm extends React.Component {
             <div>
               <select onChange={this.handleLookFor} defaultValue={this.props.look_for}>
                 <option disabled selected value> -select- </option>
-                <option value="Relationship">a relationship</option>
-                <option value="Friendship">a friend</option>
-                <option value="Friendship">dinner</option>
+                <option value="a relationship.">a relationship</option>
+                <option value="a friend.">a friend</option>
+                <option value="dinner.">dinner</option>
               </select>
             </div>
           </div>

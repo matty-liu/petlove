@@ -5,6 +5,10 @@ class HomePage extends React.Component {
   constructor(props) {
     super(props)
 
+    this.state = {
+      searchField: ""
+    }
+
   }
 
   componentWillMount() {
@@ -15,9 +19,26 @@ class HomePage extends React.Component {
     this.props.users
   }
 
-
+  handleSearch(e) {
+    this.setState({searchField:e.target.value})
+  }
 
   render() {
+    let renderUsers;
+    if (this.props.userMatches) {
+      renderUsers = this.props.userMatches
+    } else {
+      renderUsers = this.props.users
+    }
+
+    let filteredUsers = this.props.users.filter( (user) => {
+      return user.username.toLowerCase().indexOf(
+        this.state.searchField.toLowerCase()) !== -1
+    }
+
+    )
+
+
     if (!this.props.loggedIn) {
       return (
         <Redirect to="/" />
@@ -29,12 +50,36 @@ class HomePage extends React.Component {
             <div className="home-main-matches">
                 <div className="home-main-above-matches">
                   <div className="home-main-matches-title"> Your top matches </div>
-                  <input type="search" className="home-main-matches-search" placeholder="What are you into?"></input>
+
+
+                  <input type="search"
+                    className="home-main-matches-search"
+                    placeholder="What are you into?"
+                    onChange={this.handleSearch}></input>
+
+
+                    {renderUsers.map((user) => {
+                      return (
+                        <div className="home-main-matches-thumbnail-container2" key={user.id}>
+                          <Link to={`profile/${user.id}`} key={user.id}>
+                            <div key={user.id} >
+                              <img
+                                src={user.image_url}
+                                className="home-main-matches-thumbnail"
+                                key={user.id}/>
+                              <div className="home-main-matches-thumbnail-info">
+                                {user.username}
+                              </div>
+                            </div>
+                          </Link>
+                        </div>
+                      )
+                    }
                 </div>
                 <div className="home-main-matches-thumbnail-container">
-                  {this.props.users.map((user) => {
+                  {renderUsers.map((user) => {
                     return (
-                      <div className="home-main-matches-thumbnail-container2">
+                      <div className="home-main-matches-thumbnail-container2" key={user.id}>
                         <Link to={`profile/${user.id}`} key={user.id}>
                           <div key={user.id} >
                             <img
