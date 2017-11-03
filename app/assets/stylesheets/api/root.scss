@@ -24,7 +24,8 @@ a {
 #root {
   display: flex;
   position: absolute;
-  min-width: 900px;
-  width: 100%;
+  min-width: 100vw;
+  height: 100vh;
   justify-content: center;
+  align-items: center;
 }

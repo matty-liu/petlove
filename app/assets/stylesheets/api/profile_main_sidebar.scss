@@ -5,7 +5,7 @@
 
 
 .profile-content-sidebar {
-  min-height: 236px;
+  min-height: 310px;
   width: 320px;
   align-items: flex-start;
   display: flex;
@@ -43,6 +43,16 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.show-content-sidebar-details1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  height: 70px;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .profile-content-sidebar2 {
   margin-top: 10px;
   // background: white;
@@ -53,6 +63,12 @@
     box-shadow: 0 0 1em lightgrey;
     transition-timing-function: ease-out;
   }
+}
+
+.show-content-sidebar2 {
+  margin-top: 10px;
+  // background: white;
+  display: flex;
 }
 
 .profile-content-sidebar-details2 {
@@ -67,6 +83,15 @@
   &:hover{
     background: white;
   }
+}
+.show-content-sidebar-details2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  height: 70px;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .fa-pencil {

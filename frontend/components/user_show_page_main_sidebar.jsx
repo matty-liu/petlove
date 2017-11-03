@@ -8,8 +8,8 @@ class UserShowPageMainSidebar extends React.Component {
 
     return (
       <div className="profile-content-sidebar">
-        <div className="profile-content-sidebar1">
-          <div className="profile-content-sidebar-details1">
+        <div className="show-content-sidebar1">
+          <div className="show-content-sidebar-details1">
             <span>
               {(this.props.orientation === null) ? `` : `${this.props.orientation}, `}
               {(this.props.sex === null) ? `` : `${this.props.sex}, `}
@@ -20,8 +20,8 @@ class UserShowPageMainSidebar extends React.Component {
           </div>
         </div>
 
-        <div className="profile-content-sidebar2">
-          <div onClick={this.handleEdit} className="profile-content-sidebar-details2">
+        <div className="show-content-sidebar2">
+          <div onClick={this.handleEdit} className="show-content-sidebar-details2">
             <span>Looking for {this.props.look_for}</span>
             <br/>
             <span className="profile-content-sidebar-edit-text"></span>

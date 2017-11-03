@@ -168,43 +168,56 @@
 }
 //
 
-.profile-content-sidebar {
-  width: 320px;
-}
+// .profile-content-sidebar-button1 {
+//   background: transparent;
+//   width: 336px;
+//   height: 100px;
+//   cursor: pointer;
+//   border: 0;
+//   padding: 0;
+//   border-radius: 3px;
+//   transition: background-color 100ms linear,box-shadow 100ms linear;
+//   -webkit-transition: background-color 100ms linear,box-shadow 100ms linear;
+//   -moz-transition: background-color 100ms linear,box-shadow 100ms linear;
+// }
 
-.profile-content-sidebar-button1 {
-  background: transparent;
-  width: 336px;
-  height: 100px;
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  border-radius: 3px;
-  transition: background-color 100ms linear,box-shadow 100ms linear;
-  -webkit-transition: background-color 100ms linear,box-shadow 100ms linear;
-  -moz-transition: background-color 100ms linear,box-shadow 100ms linear;
-}
+// .show-content-sidebar-button1 {
+//   background: transparent;
+//   width: 336px;
+//   height: 100px;
+//   border: 0;
+//   padding: 0;
+//   border-radius: 3px;
+// }
 
-.profile-content-sidebar-button1:hover {
-  background: white;
-}
+// .profile-content-sidebar-button1:hover {
+//   background: white;
+// }
 
-.profile-content-sidebar-button2 {
-  background: transparent;
-  width: 336px;
-  height: 100px;
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  border-radius: 3px;
-  transition: background-color 100ms linear,box-shadow 100ms linear;
-  -webkit-transition: background-color 100ms linear,box-shadow 100ms linear;
-  -moz-transition: background-color 100ms linear,box-shadow 100ms linear;
-}
-
-.profile-content-sidebar-button2:hover {
-  background: white;
-}
+// .profile-content-sidebar-button2 {
+//   background: transparent;
+//   width: 336px;
+//   height: 100px;
+//   cursor: pointer;
+//   border: 0;
+//   padding: 0;
+//   border-radius: 3px;
+//   transition: background-color 100ms linear,box-shadow 100ms linear;
+//   -webkit-transition: background-color 100ms linear,box-shadow 100ms linear;
+//   -moz-transition: background-color 100ms linear,box-shadow 100ms linear;
+// }
+// .show-content-sidebar-button2 {
+//   background: transparent;
+//   width: 336px;
+//   height: 100px;
+//   border: 0;
+//   padding: 0;
+//   border-radius: 3px;
+// }
+//
+// .profile-content-sidebar-button2:hover {
+//   background: white;
+// }
 
 .profile-main-questions {
   display: flex;
