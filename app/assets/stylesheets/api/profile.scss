@@ -46,8 +46,11 @@
   &:hover {
     cursor: pointer;
   }
-
 }
+
+.profile-header-thumbnail-upload::-webkit-scrollbar {
+    display: none;
+  }
 
 .profile-header-thumbnail-upload-label {
   position: absolute;
