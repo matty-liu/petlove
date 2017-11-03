@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import HomePage from './home_page';
+import UsersPage from './browse_users';
 import { getUsers } from '../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
@@ -18,10 +18,12 @@ function mapStateToProps(state, ownProps) {
   }
 
   let userMatches;
+  let compatibility_value;
   let userId = state.session.currentUser.id
   if (state.entities.users[state.session.currentUser.id]) {
     (state.entities.users[state.session.currentUser.id]).compatibility_value
-    let compatibility_value = ((state.entities.users[state.session.currentUser.id]).compatibility_value)
+    compatibility_value = ((state.entities.users[state.session.currentUser.id]).compatibility_value)
+
     userMatches = users.filter( (user) => {
       if (userId === user.id) {
       } else {
@@ -37,6 +39,7 @@ function mapStateToProps(state, ownProps) {
     users: users,
     userMatches: userMatches,
     userId: state.session.currentUser.id,
+    userCompatibilityValue: compatibility_value,
     loggedIn: loggedIn,
     errors: state.errors.session
   }
@@ -49,4 +52,4 @@ function mapDispatchToProps(dispatch, ownProps) {
 
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(HomePage)
+export default connect(mapStateToProps,mapDispatchToProps)(UsersPage)

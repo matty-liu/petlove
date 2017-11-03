@@ -47,7 +47,7 @@ class HomePage extends React.Component {
 
                   <input type="search"
                     className="home-main-matches-search"
-                    placeholder="What are you into?"
+                    placeholder="Who are you into?"
                     onChange={this.handleSearch}></input>
 
                 </div>

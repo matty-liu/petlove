@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Route, Redirect, withRouter } from 'react-router-dom'
 
-class HomePage extends React.Component {
+class UsersPage extends React.Component {
   constructor(props) {
     super(props)
 
@@ -27,12 +27,7 @@ class HomePage extends React.Component {
   }
 
   render() {
-    let renderUsers;
-    if (this.props.userMatches) {
-      renderUsers = this.props.userMatches
-    } else {
-      renderUsers = this.props.users
-    }
+    let renderUsers = this.props.users
 
     let filteredUsers = [];
     if (this.props.users) {
@@ -51,19 +46,13 @@ class HomePage extends React.Component {
           <div className="home-main">
             <div className="home-main-matches">
                 <div className="home-main-above-matches">
-                  <div className="home-main-matches-title"> Your top matches </div>
+                  <div className="home-main-matches-title"> Your matches </div>
 
 
                   <input type="search"
                     className="home-main-matches-search"
-                    placeholder="What are you into?"
+                    placeholder="Who are you into?"
                     onChange={this.handleSearch}></input>
-
-
-                  {filteredUsers.map((user) => {
-                    return <div>{user.username}</div>
-                  })}
-
 
                 </div>
                 <div className="home-main-matches-thumbnail-container">
@@ -76,8 +65,11 @@ class HomePage extends React.Component {
                               src={user.image_url}
                               className="home-main-matches-thumbnail"
                               key={user.id}/>
-                            <div className="home-main-matches-thumbnail-info">
+                            <div className="home-main-matches-thumbnail-username">
                               {user.username}
+                            </div>
+                            <div className="home-main-matches-thumbnail-matchpercent">
+                              {`${91-Math.abs(user.compatibility_value-this.props.userCompatibilityValue)}% Match`}
                             </div>
                           </div>
                         </Link>
@@ -101,4 +93,4 @@ class HomePage extends React.Component {
 
 
 
-export default HomePage;
+export default UsersPage;

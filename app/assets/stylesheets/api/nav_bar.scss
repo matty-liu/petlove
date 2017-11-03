@@ -5,11 +5,30 @@
   background-color: #104da1;
   justify-content: space-between;
   width: auto;
+  min-height: 55px;
+  max-height: 55px;
   padding-top: 10px;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(157,186,242,0.25);
   z-index: 1;
   opacity: 0.99;
+}
+
+.navbar-main-left {
+  display: flex;
+  align-items: center;
+
+  span {
+    padding-top: 5px;
+    padding-left: 20px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(154,182,247);
+    &:hover{
+      color: white;
+    }
+  }
 }
 
 .navbar-main-title {
@@ -42,10 +61,11 @@
 }
 
 .navbar-greeting-logout-button {
-  margin: 5px;
+  margin: 8px;
   cursor: pointer;
   height: 40px;
   font-size: 16px;
+  font-weight: 300;
   padding: 0 14px;
   border: 1px solid #30b7c4;
   border-radius: 3px;
@@ -57,10 +77,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px;
+  margin: 8px;
   cursor: pointer;
   height: 38px;
   font-size: 16px;
+  font-weight: 300;
   padding: 0 14px;
   border: 1px solid #30b7c4;
   border-radius: 3px;
@@ -82,7 +103,7 @@
 }
 
 .fa-star {
-  margin: 13px;
+  margin: 18px;
   color: rgb(154,182,247);
   transform: scale(2,2);
   &:hover {
@@ -92,7 +113,7 @@
 }
 
 .fa-comment {
-  margin: 13px;
+  margin: 18px;
   color: rgb(154,182,247);
   transform: scale(2,2);
   &:hover {

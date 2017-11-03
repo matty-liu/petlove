@@ -1,6 +1,7 @@
 .footer {
+  position: sticky;
   width: auto;
-  height: 120px;
+  min-height: 120px;
   background-color: rgb(74,114,224);
   display: flex;
   flex-direction: column;

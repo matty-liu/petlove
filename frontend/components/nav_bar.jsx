@@ -67,7 +67,18 @@ class NavBar extends React.Component{
     if (this.props.currentUser) {
       return(
         <div className="navbar-main">
-          <div className="navbar-main-title" onClick={this.handleLogoClick}>{'petLo<3'}</div>
+          <div className="navbar-main-left">
+            <div className="navbar-main-title" onClick={this.handleLogoClick}>
+              {'petLo<3'}
+            </div>
+            <div>
+              <Link to="/users">
+                <div className="navbar-browse">
+                  <span>Browse Matches</span>
+                </div>
+              </Link>
+            </div>
+          </div>
           <div className="navbar-greeting">
             <i className="fa fa-star" aria-hidden="true"></i>
             <i className="fa fa-comment" aria-hidden="true"></i>
