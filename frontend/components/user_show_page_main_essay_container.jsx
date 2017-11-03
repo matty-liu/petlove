@@ -12,6 +12,7 @@ function mapStateToProps(state, ownProps) {
       username: user.username,
       location: user.location,
       profile: user.profile,
+      profile2: user.profile2,
       sex: user.sex,
       age_range_min: user.age_range_min,
       age_range_max: user.age_range_max,

@@ -1,0 +1,8 @@
+
+
+
+petLove (petLo<3)
+
+petLove is a webapp to help people connect their pets with other pets for play dates. Based on a set of personality questions, we can match users with appropriate pets. petLove uses Ruby on Rails and PostgreSQL on the backend, and React/Redux to handle state on the frontend.
+
+https://pet1ov3.herokuapp.com/#/home
