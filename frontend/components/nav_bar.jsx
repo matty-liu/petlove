@@ -25,7 +25,6 @@ class NavBar extends React.Component{
     this.handleLogout = this.handleLogout.bind(this);
 
     this.handleLogoClick = this.handleLogoClick.bind(this);
-    this.handleUsernameClick = this.handleUsernameClick.bind(this);
   }
 
   onModalOpen() {
@@ -56,9 +55,10 @@ class NavBar extends React.Component{
     this.setState({home:true})
   }
 
-  handleUsernameClick(e) {
-
-  }
+  // incomplete feature
+  // place between navbar greeting and link to when messageing and likes are compelte
+  // <i className="fa fa-star" aria-hidden="true"></i>
+  // <i className="fa fa-comment" aria-hidden="true"></i>
 
   render() {
     if (this.state.home) {
@@ -80,8 +80,7 @@ class NavBar extends React.Component{
             </div>
           </div>
           <div className="navbar-greeting">
-            <i className="fa fa-star" aria-hidden="true"></i>
-            <i className="fa fa-comment" aria-hidden="true"></i>
+
             <Link to="/profile">
               <div className="navbar-greeting-myprofile-button">
                 <span>My Profile</span>
