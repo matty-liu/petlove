@@ -22,6 +22,7 @@
     "npm": "2.1.x"
   },
   "scripts": {
+    "build-production": "webpack -p --define process.env.NODE_ENV='\"production\"' --progress --colors",
     "postinstall": "webpack"
   }
 }
