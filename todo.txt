@@ -10,5 +10,11 @@ User submit image how to handle form
 Minor
 
 More elaborate signup form,
-Tab function on sign/sign out page stopped working.
+
 Issue with modal not fully closing on side bar edit modal.
+
+NOTE
+Tab function on sign-in/sign-out page not working. Further investigation
+leads me to believe the tabbing feature is caused by using react modal.
+Currently deciding to roll out my own modal so I have full understanding of
+what the modal is listening to.
