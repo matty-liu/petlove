@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 
 import NavBar from './nav_bar_container';
 import LandingPageContainer from './landing_page_container';
@@ -13,13 +13,10 @@ import { AuthRoute } from '../util/route_util';
 const App = () => {
 
   // incomplete feature place above footername when developed
-
+  // <i className="fa fa-facebook" aria-hidden="true"></i>
+  // <i className="fa fa-twitter" aria-hidden="true"></i>
+  // <i className="fa fa-instagram" aria-hidden="true"></i>
   //
-  //   <div className="footer-logos">
-  //     <i className="fa fa-facebook" aria-hidden="true"></i>
-  //     <i className="fa fa-twitter" aria-hidden="true"></i>
-  //     <i className="fa fa-instagram" aria-hidden="true"></i>
-  //   </div>
   //
   //   <div className="footer-references">
   //     <a href="" className="references-link">Apps</a>
@@ -53,6 +50,26 @@ const App = () => {
       </div>
 
       <div className="footer">
+
+        <div className="footer-logos">
+          <i className="fa fa-github" aria-hidden="true" onClick={() => {
+              window.location = "https://github.com/mattylooloo";
+            }}></i>
+          <i className="fa fa-linkedin-square" aria-hidden="true" onClick={() => {
+              window.location = "https://www.linkedin.com/in/matthew-liuu";
+            }}></i>
+        </div>
+
+          <div className="footer-references">
+            <a href="" className="references-link">About</a>
+            <a className="references-link" onClick={ () => {
+                window.location = "https://github.com/mattylooloo";
+              }}>Github</a>
+            <a className="references-link" onClick={ () => {
+                window.location = "https://www.linkedin.com/in/matthew-liuu";
+              }}>LinkedIn</a>
+          </div>
+
         <div className="footer-name">petLove 2017</div>
       </div>
 
