@@ -51,6 +51,7 @@ class SessionForm extends React.Component {
           <br />
           <label className="modal-login-form-username">
             <input type="text"
+
               value={this.state.username}
               onChange={this.handleUsername}
               className="modal-login-form-input"
@@ -58,6 +59,7 @@ class SessionForm extends React.Component {
             </label>
             <label className="modal-login-form-password">
             <input type="password"
+
               value={this.state.password}
               onChange={this.handlePassword}
               className="modal-login-form-input"
@@ -71,5 +73,7 @@ class SessionForm extends React.Component {
     )
   }
 }
+
+
 
 export default withRouter(SessionForm);

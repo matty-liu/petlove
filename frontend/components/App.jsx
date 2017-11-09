@@ -58,6 +58,8 @@ const App = () => {
           <i className="fa fa-linkedin-square" aria-hidden="true" onClick={() => {
               window.location = "https://www.linkedin.com/in/matthew-liuu";
             }}></i>
+
+          <a class="fa fa-envelope" aria-hidden="true" href="mailto:mattkliu@gmail.com"></a>
         </div>
 
           <div className="footer-references">
@@ -68,6 +70,9 @@ const App = () => {
             <a className="references-link" onClick={ () => {
                 window.location = "https://www.linkedin.com/in/matthew-liuu";
               }}>LinkedIn</a>
+            <a className="references-link" onClick={ () => {
+                window.location = "https://www.linkedin.com/in/matthew-liuu";
+              }}>Contact</a>
           </div>
 
         <div className="footer-name">petLove 2017</div>

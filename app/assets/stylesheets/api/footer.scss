@@ -25,9 +25,20 @@
       color: rgb(9,68,167);
       cursor: pointer;
     }
+  }
+
+  a {
+    color: black;
+    transform: scale(1.5,1.5);
+    margin: 10px;
+    margin-bottom: 0;
+    &:hover {
+      color: rgb(9,68,167);
+      cursor: pointer;
+    }
+  }
 
   padding-bottom: 5px;
-  }
 }
 
 .footer-references {
