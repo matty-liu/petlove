@@ -65,7 +65,7 @@ const App = () => {
           <div className="footer-references">
             <a href="" className="references-link">About</a>
             <a className="references-link" onClick={ () => {
-                window.location = "https://github.com/mattylooloo";
+                window.location = "https://github.com/matty-liu";
               }}>Github</a>
             <a className="references-link" onClick={ () => {
                 window.location = "https://www.linkedin.com/in/matthew-liuu";
