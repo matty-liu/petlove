@@ -34,9 +34,9 @@ const App = () => {
       <div className="footer">
 
         <div className="footer-logos">
-          <a class="fa fa-github" aria-hidden="true" href="https://github.com/matty-liu"></a>
-          <a class="fa fa-linkedin-square" aria-hidden="true" href="https://www.linkedin.com/in/matthew-liuu"></a>
-          <a class="fa fa-envelope" aria-hidden="true" href="mailto:mattkliu@gmail.com"></a>
+          <a className="fa fa-github" aria-hidden="true" href="https://github.com/matty-liu"></a>
+          <a className="fa fa-linkedin-square" aria-hidden="true" href="https://www.linkedin.com/in/matthew-liuu"></a>
+          <a className="fa fa-envelope" aria-hidden="true" href="mailto:mattkliu@gmail.com"></a>
         </div>
 
           <div className="footer-references">
