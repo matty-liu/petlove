@@ -12,24 +12,6 @@ import { AuthRoute } from '../util/route_util';
 
 const App = () => {
 
-  // incomplete feature place above footername when developed
-  // <i className="fa fa-facebook" aria-hidden="true"></i>
-  // <i className="fa fa-twitter" aria-hidden="true"></i>
-  // <i className="fa fa-instagram" aria-hidden="true"></i>
-  //
-  //
-  //   <div className="footer-references">
-  //     <a href="" className="references-link">Apps</a>
-  //     <a href="" className="references-link">Press</a>
-  //     <a href="" className="references-link">Ad Choices</a>
-  //     <a href="" className="references-link">About</a>
-  //     <a href="" className="references-link">Careers</a>
-  //     <a href="" className="references-link">Support</a>
-  //     <a href="" className="references-link">Privacy Policy</a>
-  //     <a href="" className="references-link">Terms and Conditions</a>
-  //     <a href="" className="references-link">Dating Safety Tips</a>
-  //   </div>
-
   return (
     <div className="page">
 
@@ -52,27 +34,16 @@ const App = () => {
       <div className="footer">
 
         <div className="footer-logos">
-          <i className="fa fa-github" aria-hidden="true" onClick={() => {
-              window.location = "https://github.com/mattylooloo";
-            }}></i>
-          <i className="fa fa-linkedin-square" aria-hidden="true" onClick={() => {
-              window.location = "https://www.linkedin.com/in/matthew-liuu";
-            }}></i>
-
+          <a class="fa fa-github" aria-hidden="true" href="https://github.com/matty-liu"></a>
+          <a class="fa fa-linkedin-square" aria-hidden="true" href="https://www.linkedin.com/in/matthew-liuu"></a>
           <a class="fa fa-envelope" aria-hidden="true" href="mailto:mattkliu@gmail.com"></a>
         </div>
 
           <div className="footer-references">
-            <a href="" className="references-link">About</a>
-            <a className="references-link" onClick={ () => {
-                window.location = "https://github.com/matty-liu";
-              }}>Github</a>
-            <a className="references-link" onClick={ () => {
-                window.location = "https://www.linkedin.com/in/matthew-liuu";
-              }}>LinkedIn</a>
-            <a className="references-link" onClick={ () => {
-                window.location = "https://www.linkedin.com/in/matthew-liuu";
-              }}>Contact</a>
+            <a href="http://mattyliu.com/" className="references-link">About Me</a>
+            <a className="references-link" href="https://github.com/matty-liu">Github</a>
+            <a className="references-link" href="https://www.linkedin.com/in/matthew-liuu">LinkedIn</a>
+            <a className="references-link" href="mailto:mattkliu@gmail.com">E-Mail</a>
           </div>
 
         <div className="footer-name">petLove 2017</div>

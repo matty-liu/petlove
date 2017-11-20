@@ -12,7 +12,7 @@ petLove is a webapp to help people connect their pets with other pets for play d
 ### User Matching
 User matching is based on how users answer a set of personality question. Users start off with a compatibility score of 50 (scale is between 1-100) and based on how they answer those question will it change their compatibility score. By using a join table, between answer_id, and user_id, we can develop a compatibility score onto the user.
 
-```
+```jsx
 {filteredUsers.map((user) => {
   return (
     <div className="home-main-matches-thumbnail-container2" key={user.id}>
@@ -45,7 +45,7 @@ Developing the back end for how we would generate a match was a huge challenege.
 
 Based on what matches returns from the user slice of state, we can do a quick search to filter users by their username on the front end.
 
-```
+```js
 let filteredUsers = [];
 if (this.props.users) {
   filteredUsers = renderUsers.filter((user)=> {
