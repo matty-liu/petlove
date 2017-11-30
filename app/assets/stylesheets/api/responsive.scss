@@ -1,0 +1,69 @@
+/*above 1160*/
+// @media screen and (min-width: 1250px) {
+//
+//   body {
+//     display: flex;
+//     flex-direction: row;
+//   }
+//
+//   .left {
+//     width: 45%;
+//     margin: 40px;
+//
+//     display: flex;
+//     flex-direction: column;
+//   }
+//
+//   .left-title {
+//     top: 0;
+//     display: flex;
+//     font-size: 40px;
+//     font-weight: bold;
+//     justify-content: center;
+//     margin-bottom: 30px;
+//   }
+//
+// }
+
+/*between 640 and 1160*/
+// @media screen and
+//   (max-width: 1250px) and
+//   (min-width: 950px) {
+//
+//   body {
+//     display: flex;
+//     flex-direction: row;
+//   }
+//
+//   .left {
+//     width: 45%;
+//     margin: 20px;
+//
+//     display: flex;
+//     flex-direction: column;
+//   }
+//
+//   .left-title {
+//     top: 0;
+//     display: flex;
+//     font-size: 32px;
+//     font-weight: bold;
+//     justify-content: center;
+//     margin-bottom: 20px;
+//   }
+//
+// }
+
+/*below 640 for mobile*/
+@media screen and (max-width: 950px) {
+
+  #root {
+      display: flex;
+      position: absolute;
+      min-width: 100%;
+      height: 100vh;
+      justify-content: none;
+  }
+
+
+}

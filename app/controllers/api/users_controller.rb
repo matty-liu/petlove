@@ -32,6 +32,7 @@ class Api::UsersController < ApplicationController
   private
 
   def user_params
+    debugger
     params.require(:user).permit(:username, :password, :first_name,
       :last_name, :birthday, :profile, :location, :sex, :birthday,
       :profile, :profile2, :location,
