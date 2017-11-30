@@ -222,18 +222,18 @@
 #   daffy.save!
 #   wile.save!
 
-dog3 = User.create!(username: "Doge", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 60,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
-dog3.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/doge.jpg"
+# dog3 = User.create!(username: "Doge", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 60,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+# dog3.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/doge.jpg"
 
 dog4 = User.create!(username: "Buddy", password: "password",
-  sex: "Male", birthday: "", locagtion: "New York",
+  sex: "Male", birthday: "", location: "New York",
   species: "Dog", age_range_min: 21, age_range_max: 100,
   look_for: "a friend", look_gender: "does not matter",
   size: "medium", status: "single", weight: "average",
