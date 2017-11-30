@@ -233,7 +233,7 @@ dog3 = User.create!(username: "Doge", password: "password",
 dog3.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/doge.jpg"
 
 dog4 = User.create!(username: "Buddy", password: "password",
-  sex: "Male", birthday: "", location: "New York",
+  sex: "Male", birthday: "", locagtion: "New York",
   species: "Dog", age_range_min: 21, age_range_max: 100,
   look_for: "a friend", look_gender: "does not matter",
   size: "medium", status: "single", weight: "average",
