@@ -232,94 +232,116 @@
 #   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 # dog3.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/doge.jpg"
 
-dog4 = User.create!(username: "Buddy", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 72,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+# dog4 = User.create!(username: "Buddy", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 72,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog4.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Air-Bud-Director-Charles-Martin-Smith-Doesnt-Like.jpg"
+#
+#   dog5 = User.create!(username: "Barkley Sir Charles", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 41,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog5.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/sir-charles-barkley-icecream.jpg"
+#
+#   dog6 = User.create!(username: "MenswareDog", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 38,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog6.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/menswaredog.jpeg"
+#
+#   dog7 = User.create!(username: "Beethoven", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 50,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog7.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/beethoven+dog.jpg"
+#
+#   dog8 = User.create!(username: "Tramp", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 35,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog8.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Tramp325.jpg"
+#
+#   dog9 = User.create!(username: "Milo", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 41,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog9.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/milo.jpg"
+#
+#   dog10 = User.create!(username: "Bolt", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 68,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog10.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Bolt_profile.jpg"
+#
+#   dog11 = User.create!(username: "Hooch", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 51,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog11.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/hooch.jpg"
+#
+#   dog12 = User.create!(username: "Slink", password: "password",
+#   sex: "Male", birthday: "", location: "New York",
+#   species: "Dog", age_range_min: 21, age_range_max: 100,
+#   look_for: "a friend", look_gender: "does not matter",
+#   size: "medium", status: "single", weight: "average",
+#   orientation:"Single", compatibility_value: 24,
+#   profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
+#   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
+#   dog12.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Toy-Story-3-Slinky-Dog.jpg"
+
+dog3 = User.find_by(username: "Doge")
+dog4 = User.find_by(username: "Buddy")
+dog5 = User.find_by(username: "Barkley Sir Charles")
+dog6 = User.find_by(username: "MenswareDog")
+dog7 = User.find_by(username: "Beethoven")
+dog8 = User.find_by(username: "Tramp")
+dog9 = User.find_by(username: "Milo")
+dog10 = User.find_by(username: "Bolt")
+dog11 = User.find_by(username: "Hooch")
+dog12 = User.find_by(username: "Slink")
+
+dog3.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/doge.jpg"
 dog4.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Air-Bud-Director-Charles-Martin-Smith-Doesnt-Like.jpg"
-
-dog5 = User.create!(username: "Barkley Sir Charles", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 41,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 dog5.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/sir-charles-barkley-icecream.jpg"
-
-dog6 = User.create!(username: "MenswareDog", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 38,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 dog6.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/menswaredog.jpeg"
-
-dog7 = User.create!(username: "Beethoven", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 50,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 dog7.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/beethoven+dog.jpg"
-
-dog8 = User.create!(username: "Tramp", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 35,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 dog8.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Tramp325.jpg"
-
-dog9 = User.create!(username: "Milo", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 41,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 dog9.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/milo.jpg"
-
-dog10 = User.create!(username: "Bolt", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 68,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 dog10.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Bolt_profile.jpg"
-
-dog11 = User.create!(username: "Hooch", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 51,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 dog11.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/hooch.jpg"
-
-dog12 = User.create!(username: "Slink", password: "password",
-  sex: "Male", birthday: "", location: "New York",
-  species: "Dog", age_range_min: 21, age_range_max: 100,
-  look_for: "a friend", look_gender: "does not matter",
-  size: "medium", status: "single", weight: "average",
-  orientation:"Single", compatibility_value: 24,
-  profile: "Love people, playing around, running around, eating, sleeping Looking for long walks on the beach
-  and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 dog12.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Toy-Story-3-Slinky-Dog.jpg"
 
 dog3.save!
