@@ -52,26 +52,26 @@ class HomePage extends React.Component {
 
                 </div>
                 <div className="home-main-matches-thumbnail-container">
-                  {filteredUsers.map((user) => {
-                    return (
-                      <div className="home-main-matches-thumbnail-container2" key={user.id}>
-                        <Link to={`profile/${user.id}`} key={user.id}>
-                          <div key={user.id} >
-                            <img
-                              src={user.image_url}
-                              className="home-main-matches-thumbnail"
-                              key={user.id}/>
-                            <div className="home-main-matches-thumbnail-username">
-                              {user.username}
+                    {filteredUsers.map((user) => {
+                      return (
+                        <div className="home-main-matches-thumbnail-container2" key={user.id}>
+                          <Link to={`profile/${user.id}`} key={user.id}>
+                            <div key={user.id} >
+                              <img
+                                src={user.image_url}
+                                className="home-main-matches-thumbnail"
+                                key={user.id}/>
+                              <div className="home-main-matches-thumbnail-username">
+                                {user.username}
+                              </div>
+                              <div className="home-main-matches-thumbnail-matchpercent">
+                                {`${91-Math.abs(user.compatibility_value-this.props.userCompatibilityValue)}% Match`}
+                              </div>
                             </div>
-                            <div className="home-main-matches-thumbnail-matchpercent">
-                              {`${91-Math.abs(user.compatibility_value-this.props.userCompatibilityValue)}% Match`}
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
+                          </Link>
+                        </div>
+                      )}
                     )}
-                  )}
                 </div>
 
               </div>
