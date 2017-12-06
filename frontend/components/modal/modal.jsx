@@ -9,10 +9,6 @@ class Modal extends React.Component {
     }
   }
 
-  openModal() {
-    this.setState({modalOpen: true})
-  }
-
   closeModal() {
     this.setState({modalOpen: false});
   }
@@ -22,7 +18,6 @@ class Modal extends React.Component {
   }
 
   render() {
-
 
     if (this.state.modalOpen === false)
       return null

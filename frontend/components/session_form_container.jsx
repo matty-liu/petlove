@@ -13,7 +13,6 @@ function mapStateToProps(state, ownProps) {
   }
 
   let formType;
-  // if (ownProps.location.pathname === '/login')
   if (ownProps.login) {
     formType = 'login';
   } else {
@@ -29,7 +28,6 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch, ownProps) {
 
-  // if (ownProps.location.pathname === '/login') {
   if (ownProps.login) {
     return {
       processForm: (user) => dispatch(login(user)),

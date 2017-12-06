@@ -66,7 +66,7 @@ class Greeting extends React.Component{
         <div className="header-main">
           <h1 className="header-main-title">{'petLo<3'}</h1>
           <Modal modalOpen={this.state.modalOpen}>
-            <SessionFormContainer />
+            <SessionFormContainer login={this.state.login}/>
           </Modal>
           <div className="header-main-greeting">
             <button className="header-main-greeting-login" onClick={this.handleSignup}><span>Sign Up</span></button>
