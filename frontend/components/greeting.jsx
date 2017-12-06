@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
 
-import loginModalStyle from './modal/login_modal.js'
+import Modal from './modal/modal.jsx';
+import loginModalStyle from './modal/login_modal.js';
 import SessionFormContainer from './session_form_container';
 
 import { Link } from 'react-router-dom';
@@ -16,7 +16,8 @@ class Greeting extends React.Component{
       login: false
     }
 
-    this.onModalOpen = this.onModalOpen.bind(this);
+    // this.onModalOpen = this.onModalOpen.bind(this);
+    this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
 
     this.handleLogin = this.handleLogin.bind(this);
@@ -24,24 +25,25 @@ class Greeting extends React.Component{
     this.handleLogout = this.handleLogout.bind(this);
   }
 
-  onModalOpen() {
-    loginModalStyle.content.opacity = 100;
-    loginModalStyle.overlay.opacity = 100;
+  // onModalOpen() {
+  //   loginModalStyle.content.opacity = 100;
+  //   loginModalStyle.overlay.opacity = 100;
+  // }
+
+  openModal() {
+    this.setState({modalOpen: true})
   }
 
   closeModal() {
-    loginModalStyle.overlay.opacity = 0;
     this.setState({modalOpen: false});
   }
 
   handleLogin(e) {
     this.setState({login: true, modalOpen: true});
-    // window.location = '/#/login';
   }
 
   handleSignup(e) {
     this.setState({login: false, modalOpen: true});
-    // window.location = '/#/signup';
   }
 
   handleLogout(e) {
@@ -63,21 +65,13 @@ class Greeting extends React.Component{
       return (
         <div className="header-main">
           <h1 className="header-main-title">{'petLo<3'}</h1>
+          <Modal modalOpen={this.state.modalOpen}>
+            <SessionFormContainer />
+          </Modal>
           <div className="header-main-greeting">
             <button className="header-main-greeting-login" onClick={this.handleSignup}><span>Sign Up</span></button>
             <button className="header-main-greeting-login" onClick={this.handleLogin}><span>Sign In</span></button>
-
-            <Modal
-              isOpen={this.state.modalOpen}
-              onAfterOpen={this.onModalOpen}
-              onRequestClose={this.closeModal}
-              style={loginModalStyle}>
-              <div className="modal-login">
-                <SessionFormContainer login={this.state.login}/>
-              </div>
-            </Modal>
           </div>
-
         </div>
       );
     }

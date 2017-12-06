@@ -20,8 +20,7 @@ const Landing = () => {
 
       <Route exact path="/" component={LandingPageContainer} />
 
-      <div className="footer-temp">
-      </div>
+      <div className="footer-temp"></div>
 
     </div>
   )

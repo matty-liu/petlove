@@ -8,6 +8,8 @@ import ProfilePageContainer from './profile_page_container';
 import UserShowPageContainer from './user_show_page_container';
 import UsersPageContainer from './browse_users_container';
 
+import Modal from './modal/modal.jsx';
+
 import { AuthRoute } from '../util/route_util';
 
 const App = () => {

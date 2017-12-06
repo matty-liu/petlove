@@ -48,7 +48,6 @@ class UsersPage extends React.Component {
                 <div className="home-main-above-matches">
                   <div className="home-main-matches-title"> Your matches </div>
 
-
                   <input type="search"
                     className="home-main-matches-search"
                     placeholder="Who are you into?"
