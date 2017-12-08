@@ -6,7 +6,7 @@ const sessionReducer = ( state = {currentUser: null}, action ) => {
   switch (action.type) {
 
     case RECEIVE_UPDATE_USER:
-      
+
       if (action.user) {
         const user = action.user;
         newState = { currentUser: user };
