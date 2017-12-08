@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SessionFormContainer from '../session_form_container';
+
 class Modal extends React.Component {
   constructor(props) {
     super(props);
@@ -15,30 +17,31 @@ class Modal extends React.Component {
 
   render() {
 
-
     if (this.props.modalOpen === false) {
       return null
-    }
-    else {
+    } else {
       let modalStyle = {
-        position: 'fixed',
+        position: 'absolute',
         zIndex: '9999',
-        background: '#fff'
+        top: '25%',
       }
 
       let backdropStyle = {
         position: 'fixed',
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
         top: '0px',
         left: '0px',
         zIndex: '9998',
         background: 'rgba(0, 0, 0, 0.3)'
       }
 
+      debugger
       return (
-        <div>
-          <div style={modalStyle}>{this.props.children}</div>
+        <div className="modal">
+          <div style={modalStyle}>
+            <SessionFormContainer />
+          </div>
           <div style={backdropStyle} onClick={(e) => this.closeModal(e)}></div>
         </div>
       )
