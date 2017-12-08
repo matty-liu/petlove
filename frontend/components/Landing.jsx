@@ -9,8 +9,7 @@ import { AuthRoute } from '../util/route_util';
 const Landing = () => {
 
   return (
-
-    <div className="body-top">
+    <div className="landing-body">
 
       <script>
         { document.body.style.backgroundColor = "#4fc5d0" }
