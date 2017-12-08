@@ -3,15 +3,19 @@ import { connect } from 'react-redux';
 import Greeting from './greeting';
 import { logout } from '../actions/session_actions';
 
+import { openModal } from '../actions/modal_action'
+
 function mapStateToProps(state, ownProps) {
+
   return {
-    currentUser: state.session.currentUser
+    currentUser: state.session.currentUser,
   };
 }
 
 function mapDispatchToProps(dispatch, ownProps) {
   return {
-    logout: () => dispatch(logout())
+    logout: () => dispatch(logout()),
+    openModal: () => dispatch(openModal()),
   };
 
 }

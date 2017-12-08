@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.getUsers = getUsers;
 
-  Modal.setAppElement(document.body);
-
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
 });

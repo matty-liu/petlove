@@ -8,13 +8,18 @@ import Landing from './Landing';
 import HomePageContainer from './home_page_container';
 import { AuthRoute } from '../util/route_util';
 
+import RootModal from './modal/modal_container';
+
 const Root = ({ store }) => (
   <Provider store={ store }>
     <HashRouter>
-      <Switch>
-        <Route exact path="/" component={Landing} />
-        <AuthRoute path="/" component={App} />
-      </Switch>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <AuthRoute path="/" component={App} />
+        </Switch>
+        <RootModal />
+      </div>
     </HashRouter>
   </Provider>
 );
