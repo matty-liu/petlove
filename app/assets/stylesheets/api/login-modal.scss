@@ -1,30 +1,4 @@
 
-// .login-modal-content {
-//   position: fixed;
-//   top: 0px;
-//   left: 0px;
-//   right: 0px;
-//   bottom: 0px;
-//   background-color: rgba(17, 17, 17, 0.7);
-// }
-//
-// .login-modal-overlay {
-//   position: absolute;
-//   top: 50px;
-//   left: 40px;
-//   right: 40px;
-//   bottom: 130px;
-//   border: 1px solid rgb(204, 204, 204);
-//   background: rgb(255, 255, 255);
-//   overflow: auto;
-//   border-radius: 4px;
-//   outline: none;
-//   padding: 20px;
-//   width: 310px;
-//   height: 437px;
-//   margin: 0px auto;
-// }
-
 .modal-login {
   display: flex;
   justify-content: center;
@@ -34,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 214px;
+  max-width: 295px;
   // with three top right bottom
   // with four top right bottom left
   padding: 10px 48px 40px;

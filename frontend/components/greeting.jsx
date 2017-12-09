@@ -11,22 +11,17 @@ class Greeting extends React.Component{
   constructor(props) {
     super(props);
 
-    this.state = {
-      login: false
-    }
-
     this.handleLogin = this.handleLogin.bind(this);
     this.handleSignup = this.handleSignup.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
   }
 
   handleLogin(e) {
-    this.props.openModal()
-    // this.setState({login: true};
+    this.props.openModal({modalType: 'login'})
   }
 
   handleSignup(e) {
-    this.setState({login: false});
+    this.props.openModal({modalType: 'signup'});
   }
 
   handleLogout(e) {

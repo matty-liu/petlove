@@ -6,7 +6,8 @@ import { openModal, closeModal } from '../../actions/modal_action'
 function mapStateToProps(state, ownProps) {
 
   return {
-    modalOpen: state.ui.modal.modalOpen
+    modalOpen: state.ui.modal.modalOpen,
+    modalType: state.ui.modal.modalType
   }
 
 }

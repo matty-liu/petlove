@@ -11,6 +11,7 @@ class HomePage extends React.Component {
   }
 
   componentWillMount() {
+    this.props.closeModal()
     this.props.getUsers()
   }
 
