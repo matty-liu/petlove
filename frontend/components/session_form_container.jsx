@@ -4,7 +4,7 @@ import SessionForm from './session_form';
 import { signup, login } from '../actions/session_actions';
 
 function mapStateToProps(state, ownProps) {
-
+  
   let loggedIn;
   if (state.session.currentUser) {
     loggedIn = true;
