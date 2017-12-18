@@ -5,6 +5,13 @@ import SessionFormContainer from '../session_form_container';
 class Modal extends React.Component {
   constructor(props) {
     super(props);
+
+  this.handleCloseModal = this.handleCloseModal.bind(this)
+  }
+
+  handleCloseModal(e) {
+    e.target.parentElement.style.animation = "fadeout 0.3s ease-out";
+    setTimeout( () => this.props.closeModal(), 250)
   }
 
   render() {
@@ -14,7 +21,7 @@ class Modal extends React.Component {
     } else if (this.props.modalType === 'login') {
       return (
         <div className="modal">
-          <div className="modal-overlay" onClick={() => this.props.closeModal()}></div>
+          <div className="modal-overlay" onClick={this.handleCloseModal}></div>
           <div className="modal-content">
             <SessionFormContainer login={true} />
           </div>
@@ -23,7 +30,7 @@ class Modal extends React.Component {
     } else if (this.props.modalType === 'signup') {
       return (
         <div className="modal">
-          <div className="modal-overlay" onClick={() => this.props.closeModal()}></div>
+          <div className="modal-overlay" onClick={this.handleCloseModal}></div>
           <div className="modal-content">
             <SessionFormContainer login={false} />
           </div>

@@ -27,6 +27,7 @@ class UsersPage extends React.Component {
   }
 
   render() {
+    debugger
     let renderUsers = this.props.users
 
     let filteredUsers = [];
