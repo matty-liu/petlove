@@ -4,13 +4,12 @@
   flex-direction: column;
   align-items: center;
 
-  width: 310px;
-  max-width: 310px;
+  width: 215px;
   height: 435px;
   max-height: 435px;
   // with three top right bottom
   // with four top right bottom left
-  padding: 28px 0px 17px;
+  padding: 28px 48px 40px;
   font-size: 15px;
   line-height: 15px;
   box-sizing: content-box;
@@ -22,7 +21,6 @@
   line-height: 36px;
 
   margin: 0 0 20px;
-  width: 100%;
 
   font-family: sans-serif;
   font-weight: normal;
@@ -31,67 +29,68 @@
 .modal-content-login-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family: sans-serif;
 
+  width: 100%;
 }
 
-.modal-login-form-username {
-  margin: 0;
-}
-
-.modal-login-form-password {
-  margin: 0;
-}
-
-.modal-login-form-input {
-  padding: 9px;
-  background: #fff;
-  border: 1px solid #ccd0d9;
-  color: #2a2f35;
-  // margin: 0 10px 10px 0;
-  border-radius: 3px;
-  font-size: 15px;
-  line-height: 22px;
-  box-shadow: none;
-}
-
-.modal-login-form-input-error {
-  padding: 9px;
-  padding-right: 16px;
-  background: #fff;
-  border: 1px solid #f95133;
-  color: #2a2f35;
-  // margin: 0 10px 10px 0;
-  border-radius: 3px;
-  font-size: 15px;
-  line-height: 22px;
-  box-shadow: none;
-}
-
-.modal-login-error {
+.modal-login-form-inputs {
   display: flex;
   flex-direction: column;
-  width: auto;
-  font-size: 12px;
-  color: red;
-  list-style: none;
-  height: 30px;
+  position: static;
 
-  .li {
-    display: flex;
-    justify-content: center;
+  input {
+    padding: 9px;
+    padding-right: 30px;
+    margin-bottom: 12px;
+    background: #fff;
+    color: #2a2f35;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 22px;
+    box-shadow: none;
+  }
+
+  input::placeholder {
+    color: #D9DCE1;
+  }
+
+  .exclamation1 {
+    color: red;
+    position: absolute;
+    top: 97px;
+    right: 63px;
+    font-size: 19px;
+  }
+  .exclamation2 {
+    color: red;
+    position: absolute;
+    top: 150px;
+    right: 63px;
+    font-size: 19px;
   }
 }
 
+.modal-login-form-input {
+  border: 1px solid #ccd0d9;
+}
 
+.modal-login-form-input-error {
+  border: 1px solid #f95133;
+}
+
+.modal-login-form-errortext {
+  font-size: 14px;
+  color: red;
+  margin-left: 1px;
+  animation: slideInDown 0.2s ease-in;
+}
 
 .modal-login-form-button {
   width: 100%;
-  margin: 15px 0;
   height: 46px;
   line-height: 46px;
-  margin-top: 20px;
+  margin-top: 10px;
 
   background-color: #3260c7;
   white-space: nowrap;
@@ -107,9 +106,7 @@
 
   font-size: 14px;
   font-family: sans-serif;
-
 }
 
 .modal-login-form-button.demo-login {
-  margin-top: 0;
 }

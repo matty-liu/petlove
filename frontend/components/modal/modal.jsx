@@ -36,6 +36,8 @@ class Modal extends React.Component {
           </div>
         </div>
       )
+    } else {
+      return null
     }
 
   }
