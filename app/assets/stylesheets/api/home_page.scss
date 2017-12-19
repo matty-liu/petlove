@@ -17,18 +17,22 @@
   height: 40px;
   z-index: 2;
   -webkit-appearance: none;
-  background-color: #fff;
+  background-color: lightgrey;
   border: 1px solid #ccd0d9;
   color: #2a2f35;
-  -webkit-rtl-ordering: logical;
-  user-select: text;
-  cursor: auto;
+
   padding: 1px;
   border-radius: 5px;
   padding-left: 12px;
   padding-right: 28px;
   font-size: 17px;
   font-weight: 100;
+
+  &:hover, &:focus {
+    background-color: white;
+    cursor: auto;
+  }
+
 }
 
 

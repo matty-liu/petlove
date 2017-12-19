@@ -10,8 +10,13 @@
 }
 
 .header-main-title {
+  display: flex;
+  align-items: center;
+
   margin-left: 5px;
   top: 50%;
+
+  font-size: 27px;
   font-family: 'Lemon';
   color: white;
 }
@@ -19,6 +24,10 @@
 .header-main-greeting {
   display: flex;
   align-items: center;
+
+  button:hover{
+    background-color: #63ccd5;
+  }
 }
 
 .header-greeting {
