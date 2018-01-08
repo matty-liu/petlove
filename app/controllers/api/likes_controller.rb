@@ -1,7 +1,12 @@
 class Api::LikesController < ApplicationController
 
   def index
-    @likes = current_user.likees.all
+    @likes = current_user.likee_likes
+    if @likes
+      render "api/likes/index"
+    else
+      render json @likes.errors.full_messages, status: 422
+    end
   end
 
   def create
@@ -35,7 +40,7 @@ class Api::LikesController < ApplicationController
   private
 
   def like_params
-    params.require(:like).permit(:liker_id,:likee_id)
+    params.require(:like).permit(:liker_id,:likee_id, :like)
   end
 
 end
