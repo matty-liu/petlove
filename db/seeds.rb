@@ -322,46 +322,45 @@
 #   and someone to play with!", profile2: "If you are looking for someone to play catch with!")
 #   dog12.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Toy-Story-3-Slinky-Dog.jpg"
 
-dog3 = User.find_by(username: "Doge")
-dog4 = User.find_by(username: "Buddy")
-dog5 = User.find_by(username: "Barkley Sir Charles")
-dog6 = User.find_by(username: "MenswareDog")
-dog7 = User.find_by(username: "Beethoven")
-dog8 = User.find_by(username: "Tramp")
-dog9 = User.find_by(username: "Milo")
-dog10 = User.find_by(username: "Bolt")
-dog11 = User.find_by(username: "Hooch")
-dog12 = User.find_by(username: "Slink")
-
-dog3.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/doge.jpg"
-dog4.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Air-Bud-Director-Charles-Martin-Smith-Doesnt-Like.jpg"
-dog5.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/sir-charles-barkley-icecream.jpg"
-dog6.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/menswaredog.jpeg"
-dog7.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/beethoven+dog.jpg"
-dog8.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Tramp325.jpg"
-dog9.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/milo.jpg"
-dog10.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Bolt_profile.jpg"
-dog11.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/hooch.jpg"
-dog12.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Toy-Story-3-Slinky-Dog.jpg"
-
-dog3.save!
-dog4.save!
-dog5.save!
-dog6.save!
-dog7.save!
-dog8.save!
-dog9.save!
-dog10.save!
-dog11.save!
-dog12.save!
+# dog3 = User.find_by(username: "Doge")
+# dog4 = User.find_by(username: "Buddy")
+# dog5 = User.find_by(username: "Barkley Sir Charles")
+# dog6 = User.find_by(username: "MenswareDog")
+# dog7 = User.find_by(username: "Beethoven")
+# dog8 = User.find_by(username: "Tramp")
+# dog9 = User.find_by(username: "Milo")
+# dog10 = User.find_by(username: "Bolt")
+# dog11 = User.find_by(username: "Hooch")
+# dog12 = User.find_by(username: "Slink")
+#
+# dog3.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/doge.jpg"
+# dog4.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Air-Bud-Director-Charles-Martin-Smith-Doesnt-Like.jpg"
+# dog5.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/sir-charles-barkley-icecream.jpg"
+# dog6.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/menswaredog.jpeg"
+# dog7.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/beethoven+dog.jpg"
+# dog8.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Tramp325.jpg"
+# dog9.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/milo.jpg"
+# dog10.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Bolt_profile.jpg"
+# dog11.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/hooch.jpg"
+# dog12.image = "https://s3.us-east-2.amazonaws.com/petlove-pro/users/images/000/000/seeds_images/Toy-Story-3-Slinky-Dog.jpg"
+#
+# dog3.save!
+# dog4.save!
+# dog5.save!
+# dog6.save!
+# dog7.save!
+# dog8.save!
+# dog9.save!
+# dog10.save!
+# dog11.save!
+# dog12.save!
 
 # Question.create!(question: "Are you okay with interspecies dating?")
 # Question.create!(question: "Are you a morning person? Night person?")
 # Question.create!(question: "What would you prefer to do in your free time?")
 # Question.create!(question: "What do you think of vegetarians?")
 # Question.create!(question: "Does size matter?")
-
-
+#
 # Answer.delete_all
 #
 # Answer.create(answer:"Yes", question_id: 1, compatibility: 10)
