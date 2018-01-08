@@ -68,21 +68,25 @@ class User < ApplicationRecord
   # a user has_many likers means that he/she has many users who like me
   # a user has_many likees mean that he/she has many users who they like
 
-  has_many :likers, # people who like me
-    through: :liker_likes,
-    source: :liker
 
   has_many :liker_likes,
     foreign_key: :likee_id,
     class_name: "Like"
 
-  has_many :likees, # people who I like
-    through: :likee_likes,
-    source: :likee,
+  has_many :likers, # people who like me
+    through: :liker_likes,
+    source: :liker
+
 
   has_many :likee_likes,
     foreign_key: :liker_id,
     class_name: "Like"
+
+  has_many :likees, # people who I like
+    through: :likee_likes,
+    source: :likee
+
+
 
 
   attr_reader :password
