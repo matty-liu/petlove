@@ -57,7 +57,7 @@ class NavBar extends React.Component{
 
   // incomplete feature
   // place between navbar greeting and link to when messageing and likes are compelte
-  // <i className="fa fa-star" aria-hidden="true"></i>
+
   // <i className="fa fa-comment" aria-hidden="true"></i>
 
   render() {
@@ -81,11 +81,16 @@ class NavBar extends React.Component{
           </div>
           <div className="navbar-greeting">
 
+            <Link to="/likes">
+              <i className="fa fa-star" aria-hidden="true"></i>
+            </Link>
+
             <Link to="/profile">
               <div className="navbar-greeting-myprofile-button">
                 <span>My Profile</span>
               </div>
             </Link>
+
             <button onClick={this.handleLogout} className="navbar-greeting-logout-button">Logout</button>
           </div>
         </div>
