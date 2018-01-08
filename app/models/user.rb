@@ -60,7 +60,8 @@ class User < ApplicationRecord
 
   # This is confusing because when I set up the association, I will say,
 
-  # a user has_many likers. (does likers refer to myself, or the person who like me?)
+  # a user has_many likers. (does likers refer to the user(self),
+  #                           or users who has like me thus they are the likers?)
   # a user has_many likees. (same issue as before)
 
   # For clarification:
@@ -82,8 +83,6 @@ class User < ApplicationRecord
   has_many :likee_likes,
     foreign_key: :liker_id,
     class_name: "Like"
-
-
 
 
   attr_reader :password
