@@ -30,6 +30,7 @@
 #  look_gender         :string
 #  diet                :string
 #  compatibility_value :integer
+#  profile2            :text
 #
 
 class User < ApplicationRecord
