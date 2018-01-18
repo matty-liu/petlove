@@ -7,7 +7,7 @@ import HomePageContainer from './home_page_container';
 import ProfilePageContainer from './profile_page_container';
 import UserShowPageContainer from './user_show_page_container';
 import UsersPageContainer from './browse_users_container';
-import LikesPageContainer from './browse_users_container';
+import LikesPageContainer from './likes/likes_page_container';
 
 import { AuthRoute } from '../util/route_util';
 

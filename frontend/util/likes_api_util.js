@@ -1,4 +1,3 @@
-
 export const getLikes = () => {
   return $.ajax({
     method: "GET",
