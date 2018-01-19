@@ -18,7 +18,35 @@
   margin-right: auto;
 }
 
-.profile-header-thumbnail {
+.profile-header-left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  color: white;
+  font-family: 'Lato';
+  font-weight: 100;
+
+  .profile-header-left-text {
+    padding-left: 20px;
+    padding-bottom: 30px;
+
+    .profile-header-left-text-username {
+      margin: 5px;
+      font-size: 35px;
+    }
+
+    .profile-header-left-text-location {
+      margin: 5px;
+      font-size: 17px;
+    }
+  }
+
+}
+
+.profile-header-left-thumbnail {
+  position: relative;
+  bottom: -35px;
 
   &:hover {
     label {
@@ -26,9 +54,7 @@
     }
   }
 
-  .profile-header-thumbnail-pic {
-    float: left;
-    position: absolute;
+  .profile-header-left-thumbnail-pic {
     width: 180px;
     height: 180px;
     border-radius: 100%;
@@ -36,7 +62,7 @@
     object-fit: cover;
   }
 
-  .profile-header-thumbnail-upload {
+  .profile-header-left-thumbnail-upload {
     z-index: -1;
     width: 0.1px;
     height: 0.1px;
@@ -47,11 +73,11 @@
     }
   }
 
-  .profile-header-thumbnail-upload::-webkit-scrollbar {
+  .profile-header-left-thumbnail-upload::-webkit-scrollbar {
     display: none;
   }
 
-  .profile-header-thumbnail-upload-label {
+  .profile-header-left-thumbnail-upload-label {
     position: absolute;
     width: 100px;
     height: 30px;
@@ -74,33 +100,9 @@
     }
   }
 
-  .profile-header-thumbnail-upload-label:hover {
+  .profile-header-left-thumbnail-upload-label:hover {
     cursor: pointer;
     background-color: rgb(74, 114, 224);
-  }
-}
-
-
-.profile-header-text {
-  position: relative;
-
-  display: flex;
-  // flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  color: white;
-  font-family: 'Lato';
-  font-weight: 100;
-
-  .profile-header-text-username {
-    margin: 5px;
-    font-size: 35px;
-  }
-
-  .profile-header-text-location {
-    margin: 5px;
-    font-size: 17px;
   }
 }
 
@@ -108,7 +110,6 @@
   display: flex;
   color: white;
   align-items: flex-end;
-
 
   .profile-header-buttons-pass {
     display: flex;

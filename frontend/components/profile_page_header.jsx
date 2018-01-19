@@ -67,21 +67,21 @@ class ProfilePageHeader extends React.Component {
   render() {
     return (
       <div className="profile-header">
-        <div className="profile-header-thumbnail">
-          <img src={this.state.imageUrl} className="profile-header-thumbnail-pic" />
-          <input type="file"  className="profile-header-thumbnail-upload" />
-            <input className="profile-header-thumbnail-upload"
+        <div className="profile-header-left-thumbnail">
+          <img src={this.state.imageUrl} className="profile-header-left-thumbnail-pic" />
+          <input type="file"  className="profile-header-left-thumbnail-upload" />
+            <input className="profile-header-left-thumbnail-upload"
               id="profilepic-upload-button"
               type="file"
               onChange={this.updateFile} />
 
           <label htmlFor="profilepic-upload-button"
-            className="profile-header-thumbnail-upload-label"
+            className="profile-header-left-thumbnail-upload-label"
             onChange={this.updateFile}>Add</label>
         </div>
-        <div className="profile-header-text">
-          <div className="profile-header-text-username">{this.props.username}</div>
-          <div className="profile-header-text-location">New York</div>
+        <div className="profile-header-left">
+          <div className="profile-header-left-text-thumbnail">{this.props.username}</div>
+          <div className="profile-header-left-text-location">New York</div>
         </div>
       </div>
     )

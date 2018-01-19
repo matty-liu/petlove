@@ -11,12 +11,14 @@ class UserShowPageHeader extends React.Component {
     if (this.props.username) {
       return (
         <div className="profile-header">
-          <div className="profile-header-text">
-            <div className="profile-header-thumbnail">
-              <img src={this.props.imageUrl} className="profile-header-thumbnail-pic" />
-              </div>
-            <div className="profile-header-text-username">{this.props.username}</div>
-            <div className="profile-header-text-location">New York</div>
+          <div className="profile-header-left">
+            <div className="profile-header-left-thumbnail">
+              <img src={this.props.imageUrl} className="profile-header-left-thumbnail-pic" />
+            </div>
+            <div className="profile-header-left-text">
+              <div className="profile-header-left-text-username">{this.props.username}</div>
+              <div className="profile-header-left-text-location">New York</div>
+            </div>
           </div>
           <div className="profile-header-buttons">
             <div className="profile-header-buttons-pass">Pass</div>
