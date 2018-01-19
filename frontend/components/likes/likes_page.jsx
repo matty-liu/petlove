@@ -11,7 +11,6 @@ class LikesPage extends React.Component {
   }
 
   render() {
-    debugger
     return(
       <div>Likes!</div>
     )
