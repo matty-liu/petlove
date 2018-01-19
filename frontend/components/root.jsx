@@ -12,7 +12,7 @@ import RootModal from './modal/modal_container';
 const Root = ({ store }) => (
   <Provider store={ store }>
     <HashRouter>
-      <div className="body-page">
+      <div>
         <Switch>
           <Route exact path="/" component={Landing} />
           <AuthRoute path="/" component={App} />

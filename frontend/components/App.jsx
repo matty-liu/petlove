@@ -22,7 +22,7 @@ const App = () => {
 
       <NavBar className="navbar"/>
 
-      <div className="app-content">
+      <div className="content">
         <Switch>
           <Route exact path="/" component={LandingPageContainer} />
           <AuthRoute exact path="/home" component={HomePageContainer} />

@@ -1,0 +1,123 @@
+.navbar-main {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #104da1;
+  justify-content: space-between;
+  width: auto;
+  min-height: 55px;
+  max-height: 55px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(157,186,242,0.25);
+  z-index: 1;
+  opacity: 0.99;
+}
+
+.navbar-main-left {
+  display: flex;
+  align-items: center;
+
+  span {
+    padding-top: 5px;
+    padding-left: 20px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(154,182,247);
+    &:hover{
+      color: white;
+    }
+  }
+}
+
+.navbar-main-title {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  font-family: 'Lemon';
+  color: #104da1;
+  cursor: pointer;
+
+  font-size: 25px;
+  text-shadow: -2px -2px #FFFFFF, 2px 2px #FFFFFF, -2px 2px #FFFFFF, 2px -2px #FFFFFF;
+}
+
+.navbar-main-greeting {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-right: 40px;
+
+  .fa-star {
+    margin: 18px;
+    color: rgb(154,182,247);
+    transform: scale(2,2);
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .fa-comment {
+    margin: 18px;
+    color: rgb(154,182,247);
+    transform: scale(2,2);
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-greeting-text {
+    margin: 5px;
+  }
+
+  .navbar-greeting-logout-button {
+    margin: 8px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 14px;
+    border: 1px solid #30b7c4;
+    border-radius: 3px;
+    color: #fff;
+    background: #30b7c4;
+  }
+
+  .navbar-greeting-myprofile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    cursor: pointer;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 14px;
+    border: 1px solid #30b7c4;
+    border-radius: 3px;
+    color: #fff;
+    background: #30b7c4;
+    font-family: sans-serif;
+
+    span {
+      padding-top: 2px;
+    }
+  }
+
+  .navbar-greeting-logout-button:hover {
+    background: rgb(0,200,212);
+  }
+
+  .navbar-greeting-myprofile-button:hover {
+    background: rgb(0,200,212);
+  }
+}

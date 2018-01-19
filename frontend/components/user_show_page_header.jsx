@@ -21,8 +21,14 @@ class UserShowPageHeader extends React.Component {
             </div>
           </div>
           <div className="profile-header-buttons">
-            <button className="profile-header-buttons-pass">Pass</button>
-            <button className="profile-header-buttons-like">Like</button>
+            <button className="profile-header-buttons-pass">
+              <span class="fa fa-times" aria-hidden="true"></span>
+              <span>Pass</span>
+            </button>
+            <button className="profile-header-buttons-like">
+              <span class="fa fa-star" aria-hidden="true"></span>
+              <span>Like</span>
+            </button>
           </div>
         </div>
       )
