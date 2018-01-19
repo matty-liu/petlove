@@ -111,19 +111,17 @@
   align-items: flex-end;
 
   button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    width: 150px;
+    height: 45px;
     margin-bottom: 33px;
     margin-left: 10px;
 
-    color: white;
-    width: 150px;
-    height: 45px;
-    border: 1px solid white;
+    color: #9ab6f7;
+    border: 1px solid #9ab6f7;
     &:hover {
       cursor: pointer;
+      color: white;
+      border-color: white;
     }
   }
 }
