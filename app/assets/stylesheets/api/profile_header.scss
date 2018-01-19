@@ -108,13 +108,17 @@
 
 .profile-header-buttons{
   display: flex;
-  color: white;
   align-items: flex-end;
 
-  .profile-header-buttons-pass {
+  button {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 33px;
+    margin-left: 10px;
+
+    color: white;
     width: 150px;
     height: 45px;
     border: 1px solid white;
@@ -122,17 +126,4 @@
       cursor: pointer;
     }
   }
-
-  .profile-header-buttons-like {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 45px;
-    border: 1px solid white;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
 }
