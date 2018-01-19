@@ -3,11 +3,10 @@
   font-size: 15px;
 }
 
-
 .profile-content-sidebar {
   min-height: 310px;
   width: 320px;
-  align-items: flex-start;
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  // padding: 20px;
   height: 70px;
   width: 300px;
   font-family: 'Roboto', sans-serif;
@@ -55,7 +54,7 @@
 
 .profile-content-sidebar2 {
   margin-top: 10px;
-  // background: white;
+  background: white;
   display: flex;
   cursor: pointer;
   &:hover{
@@ -67,8 +66,9 @@
 
 .show-content-sidebar2 {
   margin-top: 10px;
-  // background: white;
+  background: white;
   display: flex;
+  border: 1px solid #ccd0d9;
 }
 
 .profile-content-sidebar-details2 {
@@ -88,7 +88,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  // padding: 20px;
   height: 70px;
   width: 300px;
   font-family: 'Roboto', sans-serif;

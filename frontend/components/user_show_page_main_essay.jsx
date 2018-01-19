@@ -6,19 +6,14 @@ class UserShowPageMainEssay extends React.Component {
 
     return (
       <div className="profile-main-essay">
-        <div className="profile-main-essay-cont1">
-          <span className="profile-main-essay-cont1-summary">My self summary</span>
-          <div className="profile-main-essay-cont1-summary-text">
-            {this.props.profile}
-          </div>
-
+        <h2 className="profile-main-essay-title">My self summary</h2>
+        <div className="profile-main-essay-summary">
+          {this.props.profile}
         </div>
 
-        <div className="profile-main-essay-cont2">
-          <span className="profile-main-essay-cont1-summary">You should send me a message if...</span>
-          <div className="profile-main-essay-cont1-summary-text">
-            {this.props.profile2}
-          </div>
+        <h2 className="profile-main-essay-title">You should send me a message if...</h2>
+        <div className="profile-main-essay-summary">
+          {this.props.profile2}
         </div>
       </div>
     )

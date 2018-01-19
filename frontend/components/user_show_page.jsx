@@ -22,7 +22,7 @@ class UserShowPage extends React.Component {
       )
     } else {
       return (
-      <div>
+      <div className="profile">
         <UserShowPageHeader userId={this.props.userId} />
           <div className="profile-main">
             <div className="profile-main-about">

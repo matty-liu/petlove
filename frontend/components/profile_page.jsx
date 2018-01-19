@@ -22,7 +22,6 @@ class ProfilePage extends React.Component {
     } else {
       return (
         <div className="profile">
-
           <ProfilePageHeader userId={this.props.userId} />
           <div className="profile-contain">
             <div className="profile-main">

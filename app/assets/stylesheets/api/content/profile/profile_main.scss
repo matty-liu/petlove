@@ -1,0 +1,44 @@
+.profile-main {
+  background-color: rgba(243, 245, 250, 1);
+}
+
+.profile-main-about {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: rgba(243, 245, 250, 1);
+  height: 100%;
+  max-width: 940px;
+
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  height: auto;
+
+}
+
+.profile-main-essay {
+  width: 510px;
+  height: auto;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 50px;
+}
+
+.profile-main-essay-title {
+  font-weight: bold;
+  padding-bottom: 10px
+}
+
+.profile-main-essay-summary {
+  font-weight: 200;
+  margin-bottom: 10px;
+  line-height: 23px;
+}
+
+.profile-main-questions {
+  display: flex;
+  margin-left: 100px;
+}
