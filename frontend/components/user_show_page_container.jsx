@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-
 import UserShowPage from './user_show_page';
 
 function mapStateToProps(state, ownProps) {
@@ -25,9 +24,10 @@ function mapStateToProps(state, ownProps) {
 }
 
 function mapDispatchToProps(dispatch, ownProps) {
+  
   return {
     getUser: (userId) => dispatch(getUser(userId)),
-    getUsers: () => dispatch(getUsers())
+    getUsers: () => dispatch(getUsers()),
   }
 
 }
