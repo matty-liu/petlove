@@ -7,10 +7,6 @@ import UserShowPageMainSidebar from './user_show_page_main_sidebar_container';
 
 class UserShowPage extends React.Component {
 
-  // componentWillMount() {
-  //   this.props.getUser(this.props.match.params.id)
-  // }
-
   componentWillMount() {
     this.props.getUsers()
   }
