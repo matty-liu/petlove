@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import UserShowPageHeader from './user_show_page_header';
 import { update, updatePic } from '../actions/users_actions';
 
+import { likeUser } from '../actions/likes_action'
+
 function mapStateToProps(state, ownProps) {
 
-  
   if (Object.keys(state.entities.users).length === 0) {
     return {}
   } else {
@@ -21,7 +22,8 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch, ownProps) {
   return {
-    getUsers: () => dispatch(getUsers())
+    getUsers: () => dispatch(getUsers()),
+    likeUser: (userId) => dispatch(likeUser(userId)),
   }
 }
 
