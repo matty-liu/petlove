@@ -10,7 +10,7 @@ function mapStateToProps(state, ownProps) {
   } else {
     loggedIn = false
   }
-  
+
   let userId = parseInt(ownProps.match.params.id)
   if (userId) {
     userId: userId;
@@ -25,9 +25,6 @@ function mapStateToProps(state, ownProps) {
 }
 
 function mapDispatchToProps(dispatch, ownProps) {
-  return {
-    getUsers: () => dispatch(getUsers())
-  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProfilePage)

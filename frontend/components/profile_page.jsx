@@ -9,10 +9,6 @@ import QuestionFormContainer from './question_form_container';
 
 class ProfilePage extends React.Component {
 
-  componentWillMount() {
-    this.props.getUsers()
-  }
-
   render() {
 
     if (!this.props.loggedIn) {
