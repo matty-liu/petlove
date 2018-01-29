@@ -25,6 +25,7 @@ function mapStateToProps(state, ownProps) {
 }
 
 function mapDispatchToProps(dispatch, ownProps) {
+  return {}
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProfilePage)
