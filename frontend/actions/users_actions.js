@@ -3,16 +3,28 @@ import * as APIUtil from '../util/users_api_util';
 export const RECEIVE_UPDATE_USER = "RECEIVE_UPDATE_USER"
 export const RECEIVE_UPDATE_ERROR = "RECEIVE_UPDATE_ERROR"
 export const FETCH_ALL_USERS = "FETCH_ALL_USERS"
+export const FETCH_USER = "FETCH_USER"
 
 export const fetchAllUsers = (users) => ({
   type: FETCH_ALL_USERS,
   users
 })
 
+export const fetchUser = (user) => ({
+  type: FETCH_ALL_USERS,
+  users: user,
+})
+
 export const getUsers = () => (dispatch) => {
   return APIUtil
   .getUsers()
   .then((users) => dispatch(fetchAllUsers(users)))
+}
+
+export const getUser = (userId) => (dispatch) => {
+  return APIUtil
+  .getUsers()
+  .then((user) => dispatch(fetchUser(user)))
 }
 
 export const receiveUpdateUser = user => {
