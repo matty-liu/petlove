@@ -7,6 +7,10 @@ class UserShowPageHeader extends React.Component {
     this.likeUser = this.likeUser.bind(this)
   }
 
+  componentWillMount() {
+    this.props.getLike(this.props.userId)
+  }
+
   likeUser(e) {
     e.preventDefault()
     this.props.likeUser(this.props.userId)

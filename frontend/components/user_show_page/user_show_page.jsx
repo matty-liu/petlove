@@ -8,7 +8,9 @@ import UserShowPageMainSidebar from './user_show_page_main_sidebar_container';
 class UserShowPage extends React.Component {
 
   componentWillMount() {
-    this.props.getUsers()
+    // this.props.getUsers()
+    debugger
+    this.props.getUser(parseInt(this.props.match.params["id"]))
   }
 
   render() {
