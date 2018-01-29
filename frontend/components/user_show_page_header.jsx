@@ -4,6 +4,12 @@ class UserShowPageHeader extends React.Component {
   constructor(props) {
     super(props)
 
+    this.likeUser = this.likeUser.bind(this)
+  }
+
+  likeUser(e) {
+    e.preventDefault()
+    this.props.likeUser(this.props.userId)
   }
 
   render() {
@@ -22,11 +28,11 @@ class UserShowPageHeader extends React.Component {
           </div>
           <div className="profile-header-buttons">
             <button className="profile-header-buttons-pass">
-              <span class="fa fa-times" aria-hidden="true"></span>
+              <span className="fa fa-times" aria-hidden="true"></span>
               <span>Pass</span>
             </button>
-            <button className="profile-header-buttons-like">
-              <span class="fa fa-star" aria-hidden="true"></span>
+            <button className="profile-header-buttons-like" onClick={this.likeUser}>
+              <span className="fa fa-star" aria-hidden="true"></span>
               <span>Like</span>
             </button>
           </div>
