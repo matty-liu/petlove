@@ -7,7 +7,7 @@ export const FETCH_USER = "FETCH_USER"
 
 export const fetchAllUsers = (users) => ({
   type: FETCH_ALL_USERS,
-  users
+  users,
 })
 
 export const fetchUser = (user) => ({
