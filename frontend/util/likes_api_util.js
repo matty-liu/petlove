@@ -1,7 +1,15 @@
+
 export const getLikes = () => {
   return $.ajax({
     method: "GET",
     url: `api/likes`
+  })
+}
+
+export const getLike = (userId) => {
+  return $.ajax({
+    method: "GET",
+    url: `api/likes/${userId}`,
   })
 }
 
