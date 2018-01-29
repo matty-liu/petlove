@@ -11,7 +11,7 @@ class Api::LikesController < ApplicationController
 
   def create
     # find a user like
-    @like = Like.find_by(liker_id: current_user.id, likee_id: like_params)
+    @like = Like.find_by(liker_id: current_user.id, likee_id: like_params["likee_id"])
     if @like # if user like exist, update the like
       if @like.update(like: !@like.like)
         render "api/likes/show"
@@ -19,7 +19,7 @@ class Api::LikesController < ApplicationController
         render json: @like.errors.full_messages, status: 422
       end
     else # if user like doesn't exist, create the like
-      @like = Like.new(liker_id: current_user.id, likee_id: like_params, like: true)
+      @like = Like.new(liker_id: current_user.id, likee_id: like_params["likee_id"], like: true)
       if @like.save
         render "api/likes/show"
       else
@@ -50,7 +50,7 @@ class Api::LikesController < ApplicationController
   private
 
   def like_params
-    params.require(:like).permit(:liker_id,:likee_id, :like)
+    params.require(:like).permit(:liker_id, :likee_id, :like)
   end
 
 end
