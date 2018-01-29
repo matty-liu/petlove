@@ -4,3 +4,11 @@ export const getLikes = () => {
     url: `api/likes`
   })
 }
+
+export const likeUser = (userId) => {
+  return $.ajax({
+    method: "POST",
+    url: `api/likes`,
+    data: { like: { likee_id: userId } },
+  })
+}
