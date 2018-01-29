@@ -1,7 +1,7 @@
 import React from 'react'
 import Modal from 'react-modal';
 
-import editModalStyle from './modal/edit_modal.js'
+import editModalStyle from '../modal/edit_modal.js'
 import EditFormContainer from './edit_form_container';
 
 class ProfilePageMainEssay extends React.Component {

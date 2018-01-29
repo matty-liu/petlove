@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { update } from '../actions/users_actions';
+import { update } from '../../actions/users_actions';
 import QuestionForm from './question_form';
 
 // let user = state.entities.users[ownProps.userId]

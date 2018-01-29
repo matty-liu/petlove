@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
 import loginModalStyle from './modal/login_modal.js'
-import SessionFormContainer from './session_form_container';
+import SessionFormContainer from './session/session_form_container';
 
 import { Link, Redirect } from 'react-router-dom';
 

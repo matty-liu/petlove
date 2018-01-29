@@ -4,7 +4,7 @@ import { HashRouter } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 
 import App from './App';
-import Landing from './Landing';
+import Landing from './landing_page/Landing';
 import { AuthRoute } from '../util/route_util';
 
 import RootModal from './modal/modal_container';

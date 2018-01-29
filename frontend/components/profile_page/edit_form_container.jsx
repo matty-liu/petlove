@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 
 import EditForm from './edit_form';
-import { update } from '../actions/users_actions';
+import { update } from '../../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
-  
+
   return {
     errors: state.errors.session,
     sex: state.session.currentUser.sex,

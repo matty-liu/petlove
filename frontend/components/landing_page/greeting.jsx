@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Modal from './modal/modal.jsx';
-import loginModalStyle from './modal/login_modal.js';
-import SessionFormContainer from './session_form_container';
+import Modal from '../modal/modal.jsx';
+import loginModalStyle from '../modal/login_modal.js';
+import SessionFormContainer from '../session/session_form_container';
 
 import { Link } from 'react-router-dom';
 

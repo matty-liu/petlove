@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import GreetingContainer from './greeting_container';
 import LandingPageContainer from './landing_page_container';
 
-import { AuthRoute } from '../util/route_util';
+import { AuthRoute } from '../../util/route_util';
 
 const Landing = () => {
 

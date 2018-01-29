@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 
-import HomePage from './home_page';
-import { getUsers } from '../actions/users_actions';
-import { closeModal } from '../actions/modal_action';
+import UsersPage from './browse_users';
+import { getUsers } from '../../actions/users_actions';
 
 function mapStateToProps(state, ownProps) {
   let loggedIn;
+
   if (state.session.currentUser) {
     loggedIn = true
   } else {
@@ -47,10 +47,9 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch, ownProps) {
   return {
-    getUsers: () => dispatch(getUsers()),
-    closeModal: () => dispatch(closeModal()),
+    getUsers: () => dispatch(getUsers())
   }
 
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(HomePage)
+export default connect(mapStateToProps,mapDispatchToProps)(UsersPage)

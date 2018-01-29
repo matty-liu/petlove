@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect, withRouter } from 'react-router-dom'
 
-import SessionFormContainer from './session_form_container'
+import SessionFormContainer from '../session/session_form_container'
 
 class LandingPage extends React.Component {
   constructor(props) {

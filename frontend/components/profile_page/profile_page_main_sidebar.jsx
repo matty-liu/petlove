@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
-import editModalStyle from './modal/edit_modal.js'
+import editModalStyle from '../modal/edit_modal.js'
 import EditFormContainer from './edit_form_container';
 
 class ProfilePageMainSidebar extends React.Component {

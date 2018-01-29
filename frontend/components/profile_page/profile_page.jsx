@@ -5,7 +5,7 @@ import ProfilePageHeader from './profile_page_header_container';
 import ProfilePageMainEssay from './profile_page_main_essay_container';
 import ProfilePageMainSidebar from './profile_page_main_sidebar_container';
 
-import QuestionFormContainer from './question_form_container';
+import QuestionFormContainer from '../question/question_form_container';
 
 class ProfilePage extends React.Component {
 

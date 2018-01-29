@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 
 import UserShowPageHeader from './user_show_page_header';
-import { update, updatePic } from '../actions/users_actions';
+import { update, updatePic } from '../../actions/users_actions';
 
-import { likeUser } from '../actions/likes_action'
+import { likeUser } from '../../actions/likes_action'
 
 function mapStateToProps(state, ownProps) {
 

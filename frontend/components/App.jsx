@@ -2,11 +2,11 @@ import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 
 import NavBar from './nav_bar_container';
-import LandingPageContainer from './landing_page_container';
-import HomePageContainer from './home_page_container';
-import ProfilePageContainer from './profile_page_container';
-import UserShowPageContainer from './user_show_page_container';
-import UsersPageContainer from './browse_users_container';
+import LandingPageContainer from './landing_page/landing_page_container';
+import HomePageContainer from './home_page/home_page_container';
+import ProfilePageContainer from './profile_page/profile_page_container';
+import UserShowPageContainer from './user_show_page/user_show_page_container';
+import UsersPageContainer from './user_show_page/browse_users_container';
 import LikesPageContainer from './likes/likes_page_container';
 
 import { AuthRoute } from '../util/route_util';
