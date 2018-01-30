@@ -21,9 +21,17 @@ class Api::UsersController < ApplicationController
 
   def update
     @user = current_user
-
     if @user.update(user_params)
       render "api/users/update"
+    else
+      render json: @user.errors.full_messages, status: 403
+    end
+  end
+
+  def show
+    @user = User.find_by(id: params[:id])
+    if @user
+      render "api/users/show"
     else
       render json: @user.errors.full_messages, status: 403
     end
