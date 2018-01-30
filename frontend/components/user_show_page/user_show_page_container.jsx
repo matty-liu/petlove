@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 import UserShowPage from './user_show_page';
 
-import { getUser, getUsers } from '../../actions/users_actions'
+import { getUser } from '../../actions/users_actions'
 import { getLike, likeUser } from '../../actions/likes_action'
 
 
@@ -32,7 +32,6 @@ function mapDispatchToProps(dispatch, ownProps) {
 
   return {
     getUser: (userId) => dispatch(getUser(userId)),
-    getUsers: () => dispatch(getUsers()),
     getLike: (userId) => dispatch(getLike(userId)),
   }
 

@@ -33,7 +33,6 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch, ownProps) {
   return {
-    getUsers: () => dispatch(getUsers()),
     getLike: (userId) => dispatch(getLike(userId)),
     likeUser: (userId) => dispatch(likeUser(userId)),
   }
