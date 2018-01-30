@@ -19,25 +19,22 @@ class ProfilePage extends React.Component {
       return (
         <div className="profile">
           <ProfilePageHeader userId={this.props.userId} />
-          <div className="profile-contain">
-            <div className="profile-main">
-              <div className="profile-main-about">
-                <ProfilePageMainEssay />
-                <ProfilePageMainSidebar />
-              </div>
+          <div className="profile-main">
+            <div className="profile-main-about">
+              <ProfilePageMainEssay />
+              <ProfilePageMainSidebar />
             </div>
-            <div className="profile-main-questions">
-              <div className="profile-question-main">
-                <div className="profile-questions-match-title">Match Questions</div>
-                <QuestionFormContainer />
-              </div>
+          </div>
+          <div className="profile-main-questions">
+            <div className="profile-question-main">
+              <div className="profile-questions-match-title">Match Questions</div>
+              <QuestionFormContainer />
             </div>
           </div>
         </div>
       )
     }
   }
-
 }
 
 export default ProfilePage;

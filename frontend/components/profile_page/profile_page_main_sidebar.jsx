@@ -17,10 +17,6 @@ class ProfilePageMainSidebar extends React.Component {
       orientation: this.props.orientation
     }
 
-    // if (this.props.status !== "") {
-    //   this.state.status === this.state.status
-    // }
-
     this.onModalOpen = this.onModalOpen.bind(this);
     this.closeModal = this.closeModal.bind(this);
 
@@ -45,8 +41,6 @@ class ProfilePageMainSidebar extends React.Component {
 
     return (
       <div className="profile-content-sidebar">
-
-
         <div onClick={this.handleEdit} className="profile-content-sidebar1">
           <i className="fa fa-address-card-o"></i>
           <div className="profile-content-sidebar-details1">

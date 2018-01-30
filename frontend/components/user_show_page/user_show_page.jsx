@@ -30,7 +30,6 @@ class UserShowPage extends React.Component {
       )
     }
   }
-
 }
 
 export default UserShowPage;

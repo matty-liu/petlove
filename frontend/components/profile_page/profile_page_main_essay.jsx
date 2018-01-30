@@ -37,19 +37,17 @@ class ProfilePageMainEssay extends React.Component {
 
     return (
       <div className="profile-main-essay">
-        <div className="profile-main-essay-cont1">
-          <span className="profile-main-essay-cont1-summary">My self summary
-          &nbsp;<i className="fa fa-pencil" aria-hidden="true" onClick={this.handleEdit}></i></span>
-
-          <div className="profile-main-essay-cont1-summary-text">
-            {this.props.profile}
-          </div>
-
+        <h2 className="profile-main-essay-title">My self summary
+          &nbsp;<i className="fa fa-pencil" aria-hidden="true" onClick={this.handleEdit}></i>
+        </h2>
+        <div className="profile-main-essay-summary">
+          {this.props.profile}
         </div>
 
         <div className="profile-main-essay-cont2">
-          <span className="profile-main-essay-cont1-summary">You should send me a message if...
-          &nbsp;<i className="fa fa-pencil" aria-hidden="true" onClick={this.handleEdit}></i> </span>
+          <h2 className="profile-main-essay-title">You should send me a message if...
+            &nbsp;<i className="fa fa-pencil" aria-hidden="true" onClick={this.handleEdit}></i>
+          </h2>
           <div className="profile-main-essay-cont1-summary-text">
             {this.props.profile2}
           </div>
