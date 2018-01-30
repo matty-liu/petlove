@@ -10,15 +10,6 @@ const usersReducer = ( state = {}, action ) => {
     case FETCH_ALL_USERS:
       return Object.assign({},state,action.users);
 
-    // case RECEIVE_CURRENT_USER:
-    //   if (!action.currentUser) {
-    //     return {user: null}
-    //   } else {
-    //     user = action.currentUser;
-    //     newState = Object.assign({}, state, [user.id]: user);
-    //     return newState;
-    //   }
-
     case RECEIVE_UPDATE_USER:
       user = action.user;
       newState = Object.assign({}, state, {[user.id]: action.user});

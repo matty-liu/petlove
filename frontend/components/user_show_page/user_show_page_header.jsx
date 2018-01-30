@@ -17,7 +17,6 @@ class UserShowPageHeader extends React.Component {
   }
 
   render() {
-
     if (this.props.username) {
       return (
         <div className="profile-header">
@@ -37,7 +36,7 @@ class UserShowPageHeader extends React.Component {
             </button>
             <button className="profile-header-buttons-like" onClick={this.likeUser}>
               <span className="fa fa-star" aria-hidden="true"></span>
-              <span>Like</span>
+              <span>{this.props.like ? "Liked" : "Like"}</span>
             </button>
           </div>
         </div>

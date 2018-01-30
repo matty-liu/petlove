@@ -11,11 +11,22 @@ function mapStateToProps(state, ownProps) {
     return {}
   } else {
     let user = state.entities.users[ownProps.userId]
-    return {
-      imageUrl: user.image_url,
-      username: user.username,
-      location: user.location,
-      userId: user.id,
+    if (state.entities.likes[ownProps.userId]) {
+      return {
+        imageUrl: user.image_url,
+        username: user.username,
+        location: user.location,
+        userId: user.id,
+        like: state.entities.likes[ownProps.userId].like,
+      }
+    } else {
+      return {
+        imageUrl: user.image_url,
+        username: user.username,
+        location: user.location,
+        userId: user.id,
+        like: false,
+      }
     }
   }
 }
