@@ -1,17 +1,22 @@
 .navbar-main {
-  display: flex;
   position: sticky;
   top: 0;
-  background-color: #104da1;
+
+  display: flex;
   justify-content: space-between;
+
+  min-width: 925px;
   width: auto;
   min-height: 55px;
   max-height: 55px;
   padding-top: 10px;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(157,186,242,0.25);
-  z-index: 1;
+
+  background-color: #104da1;
   opacity: 0.99;
+
+  z-index: 1;
 }
 
 .navbar-main-left {
