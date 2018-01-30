@@ -50,7 +50,7 @@ class ProfilePageMainEssay extends React.Component {
           <h2 className="profile-main-essay-title">You should send me a message if...
             &nbsp;<i className="fa fa-pencil" aria-hidden="true" onClick={this.handleEdit}></i>
           </h2>
-          <div className="profile-main-essay-cont1-summary-text">
+          <div className="profile-main-essay-summary">
             {this.props.profile2}
           </div>
         </div>
