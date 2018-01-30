@@ -11,7 +11,7 @@ export const fetchAllUsers = (users) => ({
 })
 
 export const fetchUser = (user) => ({
-  type: FETCH_ALL_USERS,
+  type: FETCH_USER,
   users: user,
 })
 
@@ -23,12 +23,11 @@ export const getUsers = () => (dispatch) => {
 
 export const getUser = (userId) => (dispatch) => {
   return APIUtil
-  .getUsers()
+  .getUser(userId)
   .then((user) => dispatch(fetchUser(user)))
 }
 
 export const receiveUpdateUser = user => {
-
   return {
     type: RECEIVE_UPDATE_USER,
     user: user,
@@ -46,7 +45,6 @@ export const receiveUpdateErrors = user => ({
 })
 
 export const update = (user) => (dispatch) => {
-
   return APIUtil
     .update(user)
     .then(
@@ -56,7 +54,6 @@ export const update = (user) => (dispatch) => {
 }
 
 export const updatePic = (formData, userId) => (dispatch) => {
-
   return APIUtil
     .updatePic(formData, userId)
     .then(
