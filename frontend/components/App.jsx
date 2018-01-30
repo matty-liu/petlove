@@ -14,7 +14,7 @@ import { AuthRoute } from '../util/route_util';
 const App = () => {
 
   return (
-    <div className="page">
+    <div id="app">
 
       <script>
         { document.body.style.backgroundColor = "#104da1" }

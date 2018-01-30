@@ -13,10 +13,6 @@
   padding-bottom: 60px;
   height: auto;
   width: 1000px;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .profile-questions-container {
@@ -26,7 +22,6 @@
   font-size: 18px;
   box-shadow: 0 0 1em lightgray;
   border-radius: 5px;
-  width: 600px;
 }
 
 .profile-question {
@@ -46,6 +41,7 @@
 .profile-questions-match-title {
   font-size: 19px;
   background-color: rgba(243, 245, 250, 1);
+  margin-top: 20px;
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
 }

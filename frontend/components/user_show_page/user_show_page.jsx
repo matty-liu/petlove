@@ -19,13 +19,15 @@ class UserShowPage extends React.Component {
     } else {
       return (
       <div className="profile">
-        <UserShowPageHeader userId={this.props.userId} />
-          <div className="profile-main">
-            <div className="profile-main-about">
-              <UserShowPageMainEssay userId={this.props.userId} />
-              <UserShowPageMainSidebar userId={this.props.userId} />
-            </div>
+        <div className="profile-header-container">
+          <UserShowPageHeader userId={this.props.userId} />
+        </div>
+        <div className="profile-main">
+          <div className="profile-main-about">
+            <UserShowPageMainEssay userId={this.props.userId} />
+            <UserShowPageMainSidebar userId={this.props.userId} />
           </div>
+        </div>
       </div>
       )
     }

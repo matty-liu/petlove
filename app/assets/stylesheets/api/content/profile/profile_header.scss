@@ -1,16 +1,14 @@
-.profile-contain {
-  background-color: rgba(243, 245, 250, 1)
-}
-
 .profile-header {
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
   position: relative;
+
+  background-color: #104da1;
   height: 150px;
-  margin-top: 40px;
   max-width: 880px;
 
+  padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
   margin-left: auto;

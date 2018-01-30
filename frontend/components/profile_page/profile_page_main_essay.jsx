@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 import editModalStyle from '../modal/edit_modal.js'
 import EditFormContainer from './edit_form_container';
 
+import QuestionFormContainer from '../question/question_form_container';
+
 class ProfilePageMainEssay extends React.Component {
 
   constructor(props) {
@@ -50,6 +52,13 @@ class ProfilePageMainEssay extends React.Component {
           </h2>
           <div className="profile-main-essay-cont1-summary-text">
             {this.props.profile2}
+          </div>
+        </div>
+
+        <div className="profile-main-questions">
+          <div className="profile-question-main">
+            <div className="profile-questions-match-title">Match Questions</div>
+            <QuestionFormContainer />
           </div>
         </div>
 
