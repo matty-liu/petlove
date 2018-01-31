@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resource :sessions, only: [:create, :destroy]
     resource :responses, only: [:create]
     resources :likes, only: [:index, :create, :show]
+    resources :questions, only: [:index, :show]
   end
 
 end
